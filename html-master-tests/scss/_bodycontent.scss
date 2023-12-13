@@ -1,0 +1,264 @@
+.bode {
+    // min-height: 500vh;
+
+
+    // radial start
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+    body {
+      font-family: "Roboto", sans-serif;
+      background:#d2eaf1;
+    
+    }
+
+    .circle-wrap-container{
+      text-align: center;
+      width: 100%;
+    }
+    
+    .circle-wrap {
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      background: #fefcff;
+      border-radius: 50%;
+      border: 1px solid #cdcbd0;
+      pointer-events: none;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+
+      .circle .mask.full, .circle .fill{
+        left: inherit !important;
+      }
+
+      .stepbox{
+        width: 750px;
+        height: 150px;
+        position: absolute;
+        left: 0px;
+        z-index: 99999999;
+        font-family: Arial, Helvetica, sans-serif;
+        transform: none !important;
+
+        & > div{
+          float: left;
+          width: 150px;
+          height: 150px;
+          line-height: 150px;
+          font-size: 80px;
+          color: rgb(4, 174, 137);
+          text-align: center;
+        }
+
+      }
+
+    }
+    
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      border-radius: 50%;
+      // opacity: 0;
+      @include transition(all 0.3s ease 0s);
+      transform: rotate(0deg);
+    }
+
+    .circle{
+
+      
+
+      &.active-1of4{
+        .mask.full, .fill{
+          transform: rotate(45deg);
+        }
+      }
+      &.active-2of4{
+        .mask.full, .fill{
+          transform: rotate(90deg);
+        }
+      }
+      &.active-3of4{
+        .mask.full, .fill{
+          transform: rotate(135deg);
+        }
+      }
+      &.active-4of4{
+        .mask.full, .fill{
+          transform: rotate(180deg);
+        }
+      }
+    }
+    
+    .circle-wrap .circle .mask {
+      clip: rect(0px, 150px, 150px, 75px);
+    }
+    
+    .circle-wrap .inside-circle {
+      width: 122px;
+      height: 122px;
+      border-radius: 50%;
+      background: #d2eaf1;
+      line-height: 120px;
+      text-align: center;
+      margin-top: 14px;
+      margin-left: 14px;
+      color: #1e51dc;
+      position: absolute;
+      z-index: 100;
+      font-weight: 700;
+      font-size: 2em;
+    }
+    
+    /* color animation */
+    
+    /* 3rd progress bar */
+    .mask .fill {
+      clip: rect(0px, 75px, 150px, 0px);
+      background-color: #227ded;
+    }
+    
+    .mask.full,
+    .circle .fill {
+      animation: fill ease-in-out 3s;
+    }
+
+   
+    @keyframes fill{
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    // radial end
+    
+
+
+    // scroll-test-1
+    .scroll-test-1{
+        background-color: #ece8e8;
+        position: relative;
+        height: 100vh;
+        &.active{
+        
+
+          .slider-item{
+            pointer-events: auto !important;
+          }
+        }
+
+        .slider-item{
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          // position: fixed;
+          // left: 0px;
+          // top: 0px;
+          // z-index: 1px;
+          opacity: 0;
+          &.inactive{
+            pointer-events: none;
+          }
+        }
+    }
+
+    .scroll-test-2{
+        background-color: #ff8d8d;
+        height: 100vh;
+        overflow: hidden;
+        &.active{
+            // margin-top: 500vh;
+        }
+        
+    }
+
+    // slider 
+    .slick-slide {
+      text-align: center;
+      color: #419be0;
+      background: white;
+      margin:10px;
+    }
+    
+    h4{
+      text-align:center;
+    }
+    
+    
+    // site-tab-group-btn
+    .ball{
+      background-color: #06257b;
+      width:0;
+      height:0;
+      border-radius:30px;
+      position:absolute;
+      @include transition(all 0.5s ease 0s);
+      left: 0px;
+      top: 5px;
+      visibility: hidden;
+    }
+    .site-tab-group-btn{
+      padding: 5px;
+      display: inline-block;
+      background-color: #041b5a;
+      border-radius: 30px;
+      overflow: hidden;
+      margin-top: 30px;
+      position: relative;
+
+      &:hover{
+        .ball{
+          visibility: visible;
+        }
+      }
+
+      span{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        z-index: 1;
+        left: 5px;
+        top: 5px;
+        border-radius: 30px;
+        background-color: rgb(142, 210, 142);
+        pointer-events: none;
+        @include transition(all 0.3s ease 0s);
+      }
+
+      .button-wrap{
+        float: left;
+        &.active{
+          .main-button{
+            color: black;
+          }
+        }
+      }
+
+
+        .main-button{
+          padding: 10px 25px;
+          color: white;
+          border-radius: 30px;
+          text-decoration: none;
+          border: none;
+          display: block;
+          position: relative;
+          z-index: 2;
+        }
+    }
+
+
+}
+
+
+
+
+
+

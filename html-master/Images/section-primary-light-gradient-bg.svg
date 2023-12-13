@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1843" data-name="Rectangle 1843" width="1920" height="1080" transform="translate(0 1885)" fill="#4456f2"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.976" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0b0d48"/>
+      <stop offset="1" stop-color="#0b0d48" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_165" data-name="Mask Group 165" transform="translate(0 -1885)" clip-path="url(#clip-path)">
+    <rect id="Rectangle_1847" data-name="Rectangle 1847" width="1920" height="1080" transform="translate(0 1885)" fill="#4456f2"/>
+    <rect id="Rectangle_1566" data-name="Rectangle 1566" width="525.211" height="1189.176" transform="translate(2133.451 1518.072) rotate(43)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_1844" data-name="Rectangle 1844" width="525.211" height="1189.176" transform="translate(1310.115 3638.424) rotate(-137)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_1845" data-name="Rectangle 1845" width="525.211" height="1189.176" transform="translate(-213.451 3638.424) rotate(-137)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_1846" data-name="Rectangle 1846" width="525.211" height="1189.176" transform="translate(-330.451 3297) rotate(-137)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

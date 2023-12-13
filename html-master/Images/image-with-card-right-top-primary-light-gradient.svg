@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="919" height="617" viewBox="0 0 919 617">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1912" data-name="Rectangle 1912" width="919" height="617" rx="15" fill="#4456f2"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.976" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0b0d48"/>
+      <stop offset="0.453" stop-color="#0a104b" stop-opacity="0.757"/>
+      <stop offset="1" stop-color="#0b0d48" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_171" data-name="Mask Group 171" clip-path="url(#clip-path)">
+    <path id="Path_2977" data-name="Path 2977" d="M94.806,49,470.18,45.7l-7.471,849.575-375.374,3.3Z" transform="translate(1310.812 -545.836) rotate(45)" fill="url(#linear-gradient)"/>
+    <path id="Path_2978" data-name="Path 2978" d="M94.806,49,470.18,45.7l-7.471,849.575-375.374,3.3Z" transform="translate(1257.626 -399.999) rotate(45)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
