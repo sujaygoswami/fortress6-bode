@@ -1,19 +1,21 @@
 // client logo slider
-// document.addEventListener('DOMContentLoaded', function () {
-//   new Splide('.client-logo-module .splide', {
-//     type   : 'loop',
-//     drag   : 'free',
-//     focus  : 'center',
-//     arrows : false,
-//     pagination : false,
-//     autoWidth : true,
-//     gap : 112,
-//     perPage: 7,
-//     autoScroll: {
-//       speed: 1,
-//     },
-//   }).mount( window.splide.Extensions );
-// });
+if ( $(".splide").length ) {
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.client-logo-module .splide', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    arrows : false,
+    pagination : false,
+    autoWidth : true,
+    gap : 112,
+    perPage: 7,
+    autoScroll: {
+      speed: 1,
+    },
+  }).mount( window.splide.Extensions );
+});
+}
 
 
 
@@ -379,29 +381,12 @@ jQuery('.product-detail-sync-slider').each(function(){
   });
 });
 
-// cover slider
-jQuery('.cover-slider-module').each(function(){
 
-  var SLIDER = jQuery(this);
 
-  
-  SLIDER.slick({
-    centerPadding: '275px',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: true,
-    centerMode: true,
-    focusOnSelect: true,
-    infinite: true,
-  });
-});
 
-// global isotop
-jQuery('.global-isotop .grid').isotope({
-  // options
-  itemSelector: '.grid-item'
-});
+
+
+
 
 // sliding card module text with tile view
 var controller = $.superscrollorama();
@@ -411,6 +396,44 @@ var paralaxCard = TweenMax.to(
   $('.paralax-pause-scroller.type-1').find('.slidings-tiles.type-1'), .5, {css:{top: -150 + '%'}}
 );
 controller.pin('.paralax-pause-scroller.type-1', 4000, {offset: -50, anim: paralaxCard});
+
+// type 2
+var paralaxCard = TweenMax.to( 
+  $('.paralax-pause-scroller.type-2').find('.slidings-tiles.type-2'), .5, {css:{top: -120 + '%'}}
+);
+controller.pin('.paralax-pause-scroller.type-2', 4000, {offset: -100, anim: paralaxCard});
+
+// type 3
+var paralaxCard = TweenMax.to( 
+  $('.paralax-pause-scroller.type-3').find('.slidings-tiles.type-3'), .5, {css:{top: -220 + 'vh'}}
+);
+controller.pin('.paralax-pause-scroller.type-3', 4000, {offset: -100, anim: paralaxCard});
+
+// global isotop
+jQuery('.global-isotop .grid').isotope({
+  // options
+  itemSelector: '.grid-item'
+});
+
+// serial-box-wrap
+jQuery('.serial-box-wrap .serial-box-col').each(function(){
+  var SERIALBOXINDEX = jQuery(this).index();
+  var INDEXOUTPUT = SERIALBOXINDEX + 1;
+  var int_number = INDEXOUTPUT;
+  var int_length = (''+int_number).length;
+  jQuery(this).attr('data-serial', INDEXOUTPUT);
+
+  jQuery(this).find('.serial-box').append('<span class="serial-number"></span>');
+
+  if(int_length < 2){
+    jQuery(this).find('.serial-box span').html('0' + INDEXOUTPUT);
+  }else{
+    jQuery(this).find('.serial-box span').html(INDEXOUTPUT);
+  }
+
+  
+
+});
 
 
 
@@ -436,6 +459,32 @@ jQuery(window).load(function(){
     jQuery('.loader-screen').fadeOut();
     jQuery('body').css('overflow', 'auto');
   }, 2000);
+
+  // cover slider
+  setTimeout(function() {
+    // cover slider
+    jQuery('.cover-slider-module').each(function(){
+
+      var SLIDER = jQuery(this);
+
+      
+      SLIDER.slick({
+        centerPadding: '275px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        centerMode: true,
+        focusOnSelect: true,
+        infinite: true,
+      });
+
+      jQuery(this).find('.slick-arrow').append('<span></span>');
+      jQuery(this).find('.slick-prev').addClass('curve-link type-3-back hover-type-primary-light no-text-button size-type-2');
+      jQuery(this).find('.slick-next').addClass('curve-link type-2 hover-type-primary-light no-text-button size-type-2');
+
+    });
+  }, 2100);
   
 
 // navigation
@@ -467,10 +516,7 @@ jQuery('.close-mega-desktop-menu').click(function(){
       $this.find('.the-slider').addClass('inactive');
     }, 100);
   });
-  
-  
 
-  
 
 
 // match height
@@ -484,7 +530,14 @@ jQuery('.close-mega-desktop-menu').click(function(){
 
   jQuery('.product-listing-card-type .product-bild').matchHeight();
 
-  jQuery('.measure-card-info').matchHeight();
+
+  jQuery('.measure-card-module').each(function(){
+    jQuery(this).find('.measure-card-info').matchHeight({byRow: false});
+    jQuery(this).find('.measure-card-header').matchHeight();
+  });
+
+  
+
 
 
 

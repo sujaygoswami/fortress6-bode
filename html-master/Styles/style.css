@@ -8155,6 +8155,8 @@ html, body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     border-radius: 20px; }
+  .bode .section-mx-height-100 {
+    max-height: 100vh; }
   .bode .section-padding-type-1 {
     padding-top: 150px;
     padding-bottom: 120px; }
@@ -8174,15 +8176,25 @@ html, body {
   .bode .section-padding-type-7 {
     padding-top: 150px;
     padding-bottom: 300px; }
+  .bode .section-padding-type-8 {
+    padding-top: 80px;
+    padding-bottom: 125px; }
   .bode .bg-grey-type-1 {
     background-color: var(--site-grey-type-1); }
+  .bode .bg-grey-gradient-type-1 {
+    background-image: url(../Images/grey-bg-gradient-type-1.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover; }
   .bode .bg-site-primary {
     background-color: var(--site-primary-color); }
   .bode .bg-site-primary-light {
     background-color: var(--site-primary-color-light); }
   .bode .bg-site-primary-light-gradient {
-    background: url(../Images/section-primary-light-gradient-bg.svg) no-repeat left top;
-    background-size: cover; }
+    background-image: url(../Images/section-primary-light-gradient-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top; }
   .bode .bg-white {
     background-color: white; }
   .bode .pos-relative {
@@ -8207,6 +8219,8 @@ html, body {
     margin-bottom: 180px; }
   .bode .element-gap.element-gap-type-5 {
     margin-bottom: 190px; }
+  .bode .element-gap.element-gap-type-6 {
+    margin-bottom: 230px; }
   .bode .container-inset {
     max-width: 66.25%; }
   .bode .container-inset-max {
@@ -8215,6 +8229,8 @@ html, body {
     max-width: 95.75%; }
   .bode .container-inset-min {
     max-width: 57.9375%; }
+  .bode .container-inset-min-less {
+    max-width: 49.375%; }
   .bode .container-min {
     max-width: 1100px;
     margin: 0 auto; }
@@ -8253,6 +8269,20 @@ html, body {
       .bode .my-row.md-grid > .my-col {
         padding-left: 35px;
         padding-right: 35px; }
+    .bode .my-row.md-grid-max {
+      margin-left: -40px;
+      margin-right: -40px;
+      row-gap: 80px; }
+      .bode .my-row.md-grid-max > .my-col {
+        padding-left: 40px;
+        padding-right: 40px; }
+    .bode .my-row.md-grid-max-2 {
+      margin-left: -44px;
+      margin-right: -44px;
+      row-gap: 88px; }
+      .bode .my-row.md-grid-max-2 > .my-col {
+        padding-left: 44px;
+        padding-right: 44px; }
     .bode .my-row.md-grid-less {
       margin-left: -28px;
       margin-right: -28px;
@@ -8317,9 +8347,13 @@ html, body {
     text-decoration: none;
     border: none;
     font-weight: var(--site-primary-font-Semibold); }
+    .bode .curve-link.no-text-button {
+      padding: 0px !important; }
     .bode .curve-link.typo-2 {
       font-size: 15px;
       letter-spacing: 2.25px; }
+    .bode .curve-link.link-text-primary {
+      color: var(--site-primary-color); }
     .bode .curve-link:hover span::after {
       left: 0px; }
     .bode .curve-link:hover span::before {
@@ -8331,6 +8365,8 @@ html, body {
       padding-bottom: 20px;
       background-image: url(../Images/button-curve-type-1.svg);
       background-size: 93.7px; }
+      .bode .curve-link.type-1.over-grey-bg {
+        background-image: url(../Images/button-curve-type-1-grey.svg); }
     .bode .curve-link.type-2 {
       min-width: 118.95px;
       padding-right: 118.95px;
@@ -8338,11 +8374,45 @@ html, body {
       padding-bottom: 35px;
       background-image: url(../Images/button-curve-type-1.svg);
       background-size: 118.95px; }
+      .bode .curve-link.type-2.size-type-2 {
+        width: 129.03px;
+        height: 115.11px;
+        background-image: url(../Images/button-curve-type-1-size-2.svg);
+        background-size: 129.03px; }
       .bode .curve-link.type-2 span {
         width: 75px;
         height: 75px; }
         .bode .curve-link.type-2 span::before {
           background-size: 25px; }
+    .bode .curve-link.type-3-back {
+      min-width: 118.95px;
+      padding-top: 30px;
+      padding-bottom: 70px;
+      padding-left: 127px;
+      background-image: url(../Images/button-curve-type-3-back.svg);
+      background-size: 118.95px;
+      background-position: left top; }
+      .bode .curve-link.type-3-back.size-type-2 {
+        width: 129.03px;
+        height: 115.11px;
+        background-image: url(../Images/button-curve-type-3-back-size-2.svg);
+        background-size: 129.03px; }
+      .bode .curve-link.type-3-back:hover span:before {
+        background-image: url(../Images/arrow-left-solid-secondary.svg); }
+      .bode .curve-link.type-3-back:hover span:after {
+        right: 0px; }
+      .bode .curve-link.type-3-back span {
+        width: 75px;
+        height: 75px;
+        left: 0px;
+        top: 0px; }
+        .bode .curve-link.type-3-back span::before {
+          background-image: url(../Images/arrow-left-solid-primary-dark.svg); }
+        .bode .curve-link.type-3-back span::before {
+          background-size: 25px; }
+        .bode .curve-link.type-3-back span:after {
+          right: -100%;
+          left: initial; }
     .bode .curve-link.position-type-1 {
       position: absolute;
       right: 0px;
@@ -8350,6 +8420,11 @@ html, body {
       z-index: 10; }
     .bode .curve-link.position-type-2 {
       position: relative; }
+    .bode .curve-link.position-type-3 {
+      position: absolute;
+      left: 20px;
+      top: 0px;
+      z-index: 10; }
     .bode .curve-link span {
       position: absolute;
       width: 56px;
@@ -8470,6 +8545,8 @@ html, body {
     margin-bottom: 0px; }
     .bode .basic-entry.group-header h1 + p, .bode .basic-entry.group-header .h1 + p, .bode .basic-entry.group-header h1 + ul, .bode .basic-entry.group-header .h1 + ul, .bode .basic-entry.group-header h1 + ol, .bode .basic-entry.group-header .h1 + ol, .bode .basic-entry.group-header h2 + p, .bode .basic-entry.group-header .h2 + p, .bode .basic-entry.group-header h2 + ul, .bode .basic-entry.group-header .h2 + ul, .bode .basic-entry.group-header h2 + ol, .bode .basic-entry.group-header .h2 + ol, .bode .basic-entry.group-header h3 + p, .bode .basic-entry.group-header .h3 + p, .bode .basic-entry.group-header h3 + ul, .bode .basic-entry.group-header .h3 + ul, .bode .basic-entry.group-header h3 + ol, .bode .basic-entry.group-header .h3 + ol, .bode .basic-entry.group-header h4 + p, .bode .basic-entry.group-header .h4 + p, .bode .basic-entry.group-header h4 + ul, .bode .basic-entry.group-header .h4 + ul, .bode .basic-entry.group-header h4 + ol, .bode .basic-entry.group-header .h4 + ol, .bode .basic-entry.group-header h5 + p, .bode .basic-entry.group-header .h5 + p, .bode .basic-entry.group-header h5 + ul, .bode .basic-entry.group-header .h5 + ul, .bode .basic-entry.group-header h5 + ol, .bode .basic-entry.group-header .h5 + ol, .bode .basic-entry.group-header h6 + p, .bode .basic-entry.group-header .h6 + p, .bode .basic-entry.group-header h6 + ul, .bode .basic-entry.group-header .h6 + ul, .bode .basic-entry.group-header h6 + ol, .bode .basic-entry.group-header .h6 + ol {
       margin-top: 60px; }
+  .bode .basic-entry.group-header.group-header-with-attach-sub h1 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h1 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h1 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h1 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h1 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h1 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h2 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h2 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h2 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h2 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h2 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h2 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h3 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h3 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h3 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h3 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h3 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h3 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h4 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h4 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h4 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h4 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h4 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h4 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h5 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h5 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h5 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h5 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h5 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h5 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h6 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h6 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h6 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h6 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h6 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h6 + ol {
+    margin-top: 0px; }
   .bode .basic-entry h1, .bode .basic-entry .h1 {
     font-size: 60px;
     line-height: 70px;
@@ -8513,6 +8590,12 @@ html, body {
       line-height: 50px;
       letter-spacing: 0.3px;
       margin-bottom: 30px; }
+    .bode .basic-entry p.extra-lg, .bode .basic-entry li.extra-lg {
+      font-size: 45px;
+      line-height: 65px; }
+    .bode .basic-entry p.normal-lg, .bode .basic-entry li.normal-lg {
+      font-size: 30px;
+      line-height: 50px; }
     .bode .basic-entry p.sm-para, .bode .basic-entry li.sm-para {
       font-size: 17px;
       line-height: 30px;
@@ -8587,7 +8670,8 @@ html, body {
     text-decoration: none;
     border: none;
     background-color: var(--site-secondary-color);
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 20px; }
     .bode .site-btn.shadow {
       -moz-box-shadow: 0px 3px 20px #00000029;
       -webkit-box-shadow: 0px 3px 20px #00000029;
@@ -8646,12 +8730,26 @@ html, body {
         background-position: left top; }
   .bode .image-with-content-card-module {
     position: relative; }
+    .bode .image-with-content-card-module.serial-box .serial-number {
+      position: absolute;
+      display: inline-block;
+      right: 0px;
+      top: 0px;
+      width: 107px;
+      height: 107px;
+      text-align: center;
+      line-height: 107px;
+      font-size: 47px;
+      letter-spacing: 1.65px;
+      font-weight: var(--site-primary-font-bold); }
     .bode .image-with-content-card-module.view-2 .content-part {
       width: 71.5625%;
       padding: 50px 124px;
       display: grid;
       align-items: center;
-      min-height: 490px; }
+      min-height: 490px;
+      background: url(../Images/serial-box-round-corner-type-1-bg.svg) no-repeat right top;
+      background-size: cover; }
       .bode .image-with-content-card-module.view-2 .content-part .basic-entry {
         max-width: inherit; }
         .bode .image-with-content-card-module.view-2 .content-part .basic-entry p {
@@ -8899,7 +8997,14 @@ html, body {
           box-shadow: 0px 3px 10px #00000029;
           background-color: var(--site-secondary-color);
           font-size: 0px;
-          margin-right: 20px; }
+          margin-right: 20px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 25.71px; }
+          .bode .tab-filter-slider-module .the-slider .slider-nav .slider-arrows .slick-arrow.slick-next {
+            background-image: url(../Images/arrow-right-solid-primary-dark.svg); }
+          .bode .tab-filter-slider-module .the-slider .slider-nav .slider-arrows .slick-arrow.slick-prev {
+            background-image: url(../Images/arrow-left-solid-primary-dark.svg); }
           .bode .tab-filter-slider-module .the-slider .slider-nav .slider-arrows .slick-arrow:last-child {
             margin-right: 0px; }
           .bode .tab-filter-slider-module .the-slider .slider-nav .slider-arrows .slick-arrow.slick-disabled {
@@ -8975,9 +9080,9 @@ html, body {
       .bode .product-detail-with-slider-module .product-info-card .product-title h3, .bode .product-detail-with-slider-module .product-info-card .product-title .h3, .bode .product-detail-with-slider-module .product-info-card .product-title h4, .bode .product-detail-with-slider-module .product-info-card .product-title .h4, .bode .product-detail-with-slider-module .product-info-card .product-title h5, .bode .product-detail-with-slider-module .product-info-card .product-title .h5, .bode .product-detail-with-slider-module .product-info-card .product-title h6, .bode .product-detail-with-slider-module .product-info-card .product-title .h6 {
         margin-bottom: 10px; }
   .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-for {
-    margin-bottom: 70px; }
-    .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-for:last-child {
-      margin-bottom: 0px; }
+    padding-bottom: 112px;
+    background: url(../Images/product-detail-slider-stage.svg) no-repeat center bottom;
+    background-size: 712.75px; }
     .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-for .slider-element {
       text-align: center; }
     .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-for img {
@@ -8986,7 +9091,7 @@ html, body {
       display: inline-block; }
   .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-nav {
     width: 600px;
-    margin: 0 auto; }
+    margin: -40px auto 0 auto; }
     .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-nav .slick-list {
       min-height: 145px; }
     .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-nav .slick-slide.slick-current .slider-element {
@@ -9046,7 +9151,11 @@ html, body {
       -ms-border-radius: 100%;
       border-radius: 100%;
       background-color: var(--site-secondary-color);
-      margin: 0 auto; }
+      margin: 0 auto;
+      background-image: url(../Images/play-icon-primary.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 30.4px; }
   .bode .product-listing-card-type .the-card {
     padding: 60px 40px 140px 40px;
     -webkit-border-radius: 20px;
@@ -9064,6 +9173,36 @@ html, body {
     .bode .product-listing-card-type .product-bild img {
       display: inline-block;
       margin: 0 auto; }
+  .bode .cover-slider-module .slick-dots {
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 50px; }
+    .bode .cover-slider-module .slick-dots li {
+      margin: 0 7px;
+      padding: 0px;
+      display: inline-block; }
+      .bode .cover-slider-module .slick-dots li.slick-active {
+        pointer-events: none; }
+        .bode .cover-slider-module .slick-dots li.slick-active button {
+          opacity: 1; }
+      .bode .cover-slider-module .slick-dots li::marker {
+        display: none; }
+      .bode .cover-slider-module .slick-dots li button {
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        width: 94px;
+        height: 6px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        border-radius: 15px;
+        background-color: var(--site-primary-color);
+        opacity: 0.4;
+        font-size: 0px; }
   .bode .cover-slider-module .slick-slide {
     padding: 0 12px; }
   .bode .cover-slider-module .slider-element {
@@ -9075,6 +9214,26 @@ html, body {
     .bode .cover-slider-module .slider-element img {
       width: 100%;
       height: auto; }
+  .bode .cover-slider-module .slick-arrow {
+    position: absolute;
+    bottom: 77px;
+    font-size: 0px;
+    z-index: 1;
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    overflow: hidden; }
+    .bode .cover-slider-module .slick-arrow.slick-prev {
+      left: 0px; }
+      .bode .cover-slider-module .slick-arrow.slick-prev span {
+        top: 40px;
+        left: 15px; }
+    .bode .cover-slider-module .slick-arrow.slick-next {
+      right: 0px; }
+      .bode .cover-slider-module .slick-arrow.slick-next span {
+        right: 15px;
+        top: 40px;
+        bottom: inherit; }
   .bode .team-module.type-2 .team-bild {
     margin-bottom: 30px; }
   .bode .team-module .team-bild {
@@ -9084,6 +9243,8 @@ html, body {
     .bode .team-module .team-bild img {
       width: 100%;
       height: auto; }
+  .bode .team-module .team-info .name {
+    font-size: 25px; }
   .bode .team-module .team-info a {
     color: inherit; }
   .bode .client-logo-module .img-holder {
@@ -9128,7 +9289,7 @@ html, body {
         .bode .measure-card-module .the-card.has-link > a:hover .curve-link span::before {
           background-image: url(../Images/arrow-right-solid-secondary.svg); }
       .bode .measure-card-module .the-card.has-link .measure-card-info {
-        padding-right: 95px;
+        padding-right: 90px;
         padding-bottom: 60px;
         position: relative; }
     .bode .measure-card-module .the-card.type-bg-primary-light {
@@ -9218,23 +9379,23 @@ html, body {
           left: 0px;
           top: 100%;
           content: ' ';
-          background-color: var(--site-primary-color);
+          background-color: var(--site-primary-color-light);
           border-radius: 100%;
           -webkit-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s; }
   .bode .paralax-pause-scroller {
     width: 100%; }
-  .bode .sliding-card-module-text-tile-view .slidings-tiles {
+  .bode .sliding-card-module-text-tile-view.no-height {
+    height: 0px; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 {
     position: relative;
     left: -65px;
     top: 17%; }
-    .bode .sliding-card-module-text-tile-view .slidings-tiles .my-row {
-      row-gap: 0px; }
-    .bode .sliding-card-module-text-tile-view .slidings-tiles .my-col {
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col {
       margin-top: 20px; }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles .my-col:nth-child(2) {
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col:nth-child(2) {
         margin-top: 80px; }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles .my-col > .main-wrap {
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap {
         border-radius: 15px;
         min-height: 180px;
         backdrop-filter: blur(30px);
@@ -9247,9 +9408,135 @@ html, body {
         font-size: 25px;
         line-height: 30px;
         font-weight: var(--site-primary-font-Semibold); }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles .my-col > .main-wrap span {
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap span {
           display: inline-block;
           margin: 0 auto; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles .my-row {
+    row-gap: 0px; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 {
+    position: relative;
+    left: inherit;
+    top: 17%; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col {
+      margin-top: 20px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col:nth-child(2) {
+        margin-top: 80px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap {
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        min-height: inherit;
+        backdrop-filter: none;
+        padding: 0px;
+        background-color: transparent; }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          z-index: 1;
+          text-align: center;
+          display: grid;
+          align-items: center; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1 {
+            font-size: 39px;
+            line-height: 47px;
+            letter-spacing: 1.36px; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h2 {
+            font-size: 37px;
+            line-height: 45px; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h6 {
+            text-shadow: 0px 3px 20px #00000029; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content .text-holder {
+            display: inline-block;
+            margin: 0 auto;
+            padding: 50px; }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap:before {
+          content: ' ';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          background-color: rgba(0, 0, 0, 0.2); }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap.set-back {
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-size: cover; }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap > img {
+          display: block;
+          visibility: hidden;
+          width: 100%;
+          height: auto; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 {
+    position: relative;
+    left: inherit; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col {
+      margin-top: 80px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:first-child {
+        margin-top: 0px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:nth-child(2) {
+        margin-top: 200px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 170px 35px 40px 35px;
+      color: white;
+      background-color: var(--site-primary-color-light); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.has-bottom-link {
+        padding-bottom: 100px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h6 {
+        color: var(--site-grey-type-1); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h4 {
+        font-size: 28px;
+        line-height: 42px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-1 {
+        background-color: var(--site-primary-color-light); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-2 {
+        background-image: url(../Images/blue-light-sliding-tile-gradient-bg-1.svg);
+        background-repeat: no-repeat;
+        background-position: right top -5px;
+        background-size: cover; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-3 {
+        background-image: url(../Images/blue-light-sliding-tile-gradient-bg-2.svg);
+        background-repeat: no-repeat;
+        background-position: right -10px bottom;
+        background-size: cover; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-4 {
+        background-image: url(../Images/blue-light-sliding-tile-gradient-bg-3.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover; }
+  .bode .cover-bg-content-module {
+    height: 100vh;
+    position: relative; }
+    .bode .cover-bg-content-module.set-back {
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: cover; }
+    .bode .cover-bg-content-module .the-content {
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      text-align: center;
+      display: grid;
+      align-items: center; }
+      .bode .cover-bg-content-module .the-content > .main-wrap {
+        margin: 0 auto; }
+        .bode .cover-bg-content-module .the-content > .main-wrap.basic-entry h1, .bode .cover-bg-content-module .the-content > .main-wrap.basic-entry .h1 {
+          font-size: 94px;
+          line-height: 104px;
+          letter-spacing: 3.29px; }
 
 .bode footer.footer .footer-caption {
   position: absolute;
