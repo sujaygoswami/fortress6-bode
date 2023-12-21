@@ -435,6 +435,39 @@ jQuery('.serial-box-wrap .serial-box-col').each(function(){
 
 });
 
+// fancy box
+Fancybox.bind("[data-fancybox]", {
+  Thumbs: false,
+  Toolbar: {
+    display: {
+      right: ["close"],
+      left: ["infobar"],
+    },
+  },
+  on: {
+    done: (fancybox, slide) => {
+      var SELECTEDFANCYCONTENT = jQuery('.fancybox__slide.is-selected .fancybox__content');
+
+      jQuery('.fancybox__slide').each(function(){
+        var CONTENT = jQuery(this).find('.fancybox__content');
+        var CAPTION = jQuery(this).find('.fancybox__caption');
+        var INFOBAR = jQuery(this).find('.fancybox__infobar');
+
+        jQuery(CAPTION).detach().appendTo(CONTENT);
+
+      });
+
+      jQuery('.fancybox__infobar').detach().appendTo(SELECTEDFANCYCONTENT);
+
+      jQuery('.fancybox__content').each(function(){
+        jQuery(this).find('.fancybox__caption, .fancybox__infobar').wrapAll('<div class="caption-content-holder"></div>');
+        jQuery(this).find('.caption-content-holder:not(:last-child)').remove();
+      });
+      
+    },
+  },
+});
+
 
 
 
