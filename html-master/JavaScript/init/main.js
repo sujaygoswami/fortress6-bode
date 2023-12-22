@@ -508,7 +508,7 @@ jQuery(window).load(function(){
   setTimeout(function() {
     jQuery('.loader-screen').fadeOut();
     jQuery('body').css('overflow', 'auto');
-  }, 3000);
+  }, 2200);
 
   // cover slider
     jQuery('.cover-slider-module').each(function(){
