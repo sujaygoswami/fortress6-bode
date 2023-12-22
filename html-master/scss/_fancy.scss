@@ -830,9 +830,9 @@ html.with-fancybox body.hide-scrollbar {
     z-index: 1
 }
 
-.is-idle .fancybox__nav {
-    animation: .15s ease-out both f-fadeOut
-}
+// .is-idle .fancybox__nav {
+//     animation: .15s ease-out both f-fadeOut
+// }
 
 .is-idle.is-compact .fancybox__footer {
     pointer-events: none;
@@ -1284,10 +1284,10 @@ html.with-fancybox body.hide-scrollbar {
     right: 0
 }
 
-.is-idle .fancybox__toolbar {
-    pointer-events: none;
-    animation: .15s ease-out both f-fadeOut
-}
+// .is-idle .fancybox__toolbar {
+//     pointer-events: none;
+//     animation: .15s ease-out both f-fadeOut
+// }
 
 .fancybox__toolbar__column {
     display: flex;

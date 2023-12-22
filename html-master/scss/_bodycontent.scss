@@ -422,6 +422,22 @@
         text-decoration: none;
         border: none;
         font-weight: var(--site-primary-font-Semibold);
+        &.no-curve{
+            background-image: none !important;
+            width: auto !important;
+            height: auto !important;
+            min-width: inherit !important;
+            @include border-radius(100%);
+
+            span{
+                position: relative;
+                display: block;
+                left: 0;
+                top: inherit;
+                right: inherit;
+                bottom: inherit;
+            }
+        }
         &.no-text-button{
             padding: 0px !important;
         }
@@ -1446,23 +1462,10 @@
                    z-index: 1;
 
                    .slick-arrow{
-                        width: 75px;
-                        height: 75px;
-                        @include border-radius(100%);
-                        border: none;
                         @include box-shadow(0px 3px 10px #00000029);
-                        background-color: var(--site-secondary-color);
+                        background-color: transparent;
                         font-size: 0px;
                         margin-right: 20px;
-                        background-repeat: no-repeat;
-                        background-position: center center;
-                        background-size: 25.71px;
-                        &.slick-next{
-                            background-image: url(../Images/arrow-right-solid-primary-dark.svg);
-                        }
-                        &.slick-prev{
-                            background-image: url(../Images/arrow-left-solid-primary-dark.svg);
-                        }
                         &:last-child{
                             margin-right: 0px;
                         }
@@ -1732,47 +1735,39 @@
     // cover-slider-module
     .cover-slider-module{
 
-        .slick-dots{
+       
+        .slider-element{
+            width: 70%;
+            margin-right: 24px;
+        }
+        
+
+        .flickity-page-dots{
             width: 100%;
             list-style: none;
             margin: 0px;
             padding: 0px;
             text-align: center;
             margin-top: 50px;
+            position: static;
 
             li{
                 margin: 0 7px;
                 padding: 0px;
                 display: inline-block;
+                width: 94px;
+                height: 6px;
+                @include border-radius(15px);
+                background-color: var(--site-primary-color);
+                opacity: 0.4;
+                font-size: 0px;
 
-                &.slick-active{
-                    pointer-events: none;
-                    button{
-                        opacity: 1;
-                    }
-                }
-
-                &::marker{
-                    display: none;
-                }
-
-                button{
-                    margin: 0px;
-                    padding: 0px;
-                    border: none;
-                    width: 94px;
-                    height: 6px;
-                    @include border-radius(15px);
-                    background-color: var(--site-primary-color);
-                    opacity: 0.4;
-                    font-size: 0px;
+                &.is-selected{
+                    opacity: 1;
                 }
             }
         }
 
-        .slick-slide{
-            padding: 0 12px;
-        }
         .slider-element{
             @include border-radius(15px);
             overflow: hidden;
@@ -1782,18 +1777,26 @@
             }
         }
 
-        .slick-arrow{
+        .flickity-button{
             position: absolute;
-            bottom: 77px;
+            bottom: 70px;
             font-size: 0px;
             z-index: 1;
             border: none;
             padding: 0px;
             background-color: transparent;
             overflow: hidden;
+            @include border-radius(0px);
+            transform: none;
+            top: initial;
+            opacity: 1 !important;
+
+            & > svg{
+                display: none;
+            }
             
             
-            &.slick-prev{
+            &.previous{
                 left: 0px;
 
                 span{
@@ -1802,7 +1805,7 @@
                 }
             }
 
-            &.slick-next{
+            &.next{
                 right: 0px;
 
                 span{
@@ -2375,6 +2378,34 @@
 
     // fancy
     .fancybox__container{
+        .fancybox__nav{
+            button{
+                background-color: transparent;
+                span{
+                    pointer-events: none;
+                }
+                svg{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 1;
+                    path{
+                        display: none;
+                    }
+                }
+                &:before{
+                    display: none;
+                }
+            }
+        }
+        .f-button.close{
+            background-color: transparent;
+        }
+        .global-centered-rounded-action-button{
+            top: 80px;
+        }
         .fancybox__backdrop{
             background-color: white;
         }

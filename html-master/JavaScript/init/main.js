@@ -345,6 +345,9 @@ jQuery('.tab-filter-slider-module .the-slider').each(function(){
     });
   }
   SLIDERNAV.find('.slick-arrow').wrapAll('<div class="slider-arrows"><div class="container-fluid"></div></div>');
+  SLIDERNAV.find('.slick-arrow').append('<span></span>');
+  SLIDERNAV.find('.slick-prev').addClass('curve-link type-3-back hover-type-primary-light no-text-button size-type-2 no-curve');
+  SLIDERNAV.find('.slick-next').addClass('curve-link type-2 hover-type-primary-light no-text-button size-type-2 no-curve');
 
   jQuery('.tab-filter-slider-module .product-card .product-bild').matchHeight();
   jQuery('.tab-filter-slider-module .product-card .product-primary-info').matchHeight();
@@ -438,6 +441,8 @@ jQuery('.serial-box-wrap .serial-box-col').each(function(){
 // fancy box
 Fancybox.bind("[data-fancybox]", {
   Thumbs: false,
+  wheel: false,
+  contentClick: false,
   Toolbar: {
     display: {
       right: ["close"],
@@ -446,6 +451,18 @@ Fancybox.bind("[data-fancybox]", {
   },
   on: {
     done: (fancybox, slide) => {
+
+      jQuery('.fancybox__toolbar__column.is-right').addClass('global-centered-rounded-action-button');
+      jQuery('.fancybox__toolbar__column.is-right button').addClass('the-trigger type-1 close');
+      jQuery('.fancybox__toolbar__column.is-right button').append('<span></span>');
+      jQuery('.fancybox__toolbar__column.is-right button svg').remove();
+      jQuery('.fancybox__toolbar__column.is-right button span:not(:first-child)').remove();
+      jQuery('.fancybox__nav button').append('<span></span>');
+      jQuery('.fancybox__nav button span:not(:last-child)').remove();
+      jQuery('.fancybox__nav button.is-prev').addClass('curve-link type-3-back hover-type-primary-light no-text-button size-type-2 no-curve');
+      jQuery('.fancybox__nav button.is-next').addClass('curve-link type-2 hover-type-primary-light no-text-button size-type-2 no-curve');
+
+
       var SELECTEDFANCYCONTENT = jQuery('.fancybox__slide.is-selected .fancybox__content');
 
       jQuery('.fancybox__slide').each(function(){
@@ -491,33 +508,25 @@ jQuery(window).load(function(){
   setTimeout(function() {
     jQuery('.loader-screen').fadeOut();
     jQuery('body').css('overflow', 'auto');
-  }, 2000);
+  }, 3000);
 
   // cover slider
-  setTimeout(function() {
-    // cover slider
     jQuery('.cover-slider-module').each(function(){
 
       var SLIDER = jQuery(this);
 
-      
-      SLIDER.slick({
-        centerPadding: '275px',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        centerMode: true,
-        focusOnSelect: true,
-        infinite: true,
+      SLIDER.flickity({
+        // options
+        cellAlign: 'center',
+        contain: true,
+        wrapAround: true
       });
 
-      jQuery(this).find('.slick-arrow').append('<span></span>');
-      jQuery(this).find('.slick-prev').addClass('curve-link type-3-back hover-type-primary-light no-text-button size-type-2');
-      jQuery(this).find('.slick-next').addClass('curve-link type-2 hover-type-primary-light no-text-button size-type-2');
+      jQuery(this).find('.flickity-button').append('<span></span>');
+      jQuery(this).find('.previous').addClass('curve-link type-3-back hover-type-primary-light no-text-button size-type-2');
+      jQuery(this).find('.next').addClass('curve-link type-2 hover-type-primary-light no-text-button size-type-2');
 
     });
-  }, 2100);
   
 
 // navigation
