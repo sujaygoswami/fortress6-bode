@@ -63,6 +63,10 @@
         visibility: hidden;
         pointer-events: none;
 
+        @media screen and (max-height: 720px){
+            padding-top: 50px;
+        }
+
         &.animated{
             -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
@@ -78,6 +82,39 @@
             background-size: 609px;
             padding: 60px 0;
             position: relative;
+
+            .global-centered-rounded-action-button{
+                & + .attch-row-grid{
+                    overflow: auto;
+
+                    /* width */
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+                    
+                    /* Track */
+                    &::-webkit-scrollbar-track {
+                        box-shadow: none; 
+                        border-radius: 0px;
+                    }
+                    
+                    /* Handle */
+                    &::-webkit-scrollbar-thumb {
+                        background: transparent; 
+                        border-radius: 10px;
+                        opacity: 0.3;
+                    }
+                    
+                    /* Handle on hover */
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: transparent; 
+                    }
+                }
+            }
+
+            @media screen and (max-height: 720px){
+                padding: 20px 0;
+            }
         }
 
         .mega-menu-quick-link{
@@ -218,3 +255,4 @@
     
     
 }
+

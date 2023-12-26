@@ -16,13 +16,19 @@
             align-items: center;
             z-index: 1;
             color: var(--site-secondary-color);
-            font-size: 84px;
-            line-height: 126px;
+            font-size: 65px;
+            line-height: 75px;
             text-transform: uppercase;
             font-family: var(--site-secondary-font);
             font-weight: var(--site-secondary-font-normal);
             left: 0px;
             top: 0px;
+
+            @media screen and (min-width: $xxl){
+               
+                font-size: 84px;
+                line-height: 126px;
+            }
 
             span{
                 display: inline-block;

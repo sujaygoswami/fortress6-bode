@@ -332,7 +332,7 @@ jQuery('.tab-filter-slider-module .the-slider').each(function(){
     });
 
     $slider.slick({
-      slidesToShow: 5,
+      slidesToShow: 1,
       slidesToScroll: 1,
       asNavFor: SLIDERFOR,
       dots: false,
