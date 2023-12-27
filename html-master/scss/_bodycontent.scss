@@ -1,6 +1,6 @@
 .bode {
     padding-top: 102px;
-    overflow: hidden;
+    // overflow: hidden;
 
     .loader-screen{
         width: 100%;
@@ -11,7 +11,7 @@
         background-color: white;
         left: 0px;
         top: 0px;
-        // display: none;
+        display: none;
     }
     // basic start
     .has-partly-bg{
@@ -162,8 +162,19 @@
         background-size: cover;
     }
 
+    .bg-grey-gradient-type-2{
+        background-image: url(../Images/radila-grey-graident-bg.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+    }
+
     .bg-site-primary{
         background-color: var(--site-primary-color);
+    }
+
+    .bg-site-secondary{
+        background-color: var(--site-secondary-color);
     }
 
     .bg-site-primary-light{
