@@ -1,7 +1,11 @@
 .hotspot-module{
-  max-width: 1190px;
+  max-width: 87%;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
+
+  @media screen and (min-width: $xxl){
+    max-width: 1190px;
+  }
 
   .cursor{
     display: none;

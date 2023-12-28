@@ -412,6 +412,12 @@ var paralaxCard = TweenMax.to(
 );
 controller.pin('.paralax-pause-scroller.type-3', 4000, {offset: -100, anim: paralaxCard});
 
+// type 4
+var paralaxCard = TweenMax.to( 
+  $('.paralax-pause-scroller.type-4').find('.slidings-tiles.type-3'), .5, {css:{top: -120 + 'vh'}}
+);
+controller.pin('.paralax-pause-scroller.type-4', 4000, {offset: -100, anim: paralaxCard});
+
 // global isotop
 jQuery('.global-isotop .grid').isotope({
   // options

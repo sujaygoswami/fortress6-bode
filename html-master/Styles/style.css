@@ -8250,6 +8250,11 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right top -5px; }
+  .bode .bg-site-primary-3d-hall {
+    background-image: url(../Images/primary-color-3d-hall-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom; }
   .bode .bg-white {
     background-color: white; }
   .bode .pos-relative {
@@ -9575,12 +9580,31 @@ html, body {
   .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 {
     position: relative;
     left: inherit; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:first-child {
+      margin-top: 80px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:nth-child(2) {
+      margin-top: 0px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:nth-child(3) {
+      margin-top: 170px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:first-child {
+      margin-top: 110px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:nth-child(2) {
+      margin-top: 170px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:nth-child(3) {
+      margin-top: 0px; }
     .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col {
       margin-top: 80px; }
       .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:first-child {
         margin-top: 0px; }
       .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:nth-child(2) {
         margin-top: 200px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild {
+      text-align: center;
+      margin-bottom: 20px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild:last-child {
+        margin-bottom: 0px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild img {
+        display: inline-block; }
     .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap {
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
@@ -9590,6 +9614,10 @@ html, body {
       padding: 70px 25px 40px 25px;
       color: white;
       background-color: var(--site-primary-color-light); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.view-two {
+        padding: 0px 30px 20px 30px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h6 {
+        color: inherit; }
       @media screen and (min-width: 1700px) {
         .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap {
           padding: 170px 35px 40px 35px; } }
@@ -9602,6 +9630,8 @@ html, body {
         line-height: 42px; }
       .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-1 {
         background-color: var(--site-primary-color-light); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey {
+        background-color: var(--site-grey-type-1); }
       .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-2 {
         background-image: url(../Images/blue-light-sliding-tile-gradient-bg-1.svg);
         background-repeat: no-repeat;
@@ -9633,7 +9663,8 @@ html, body {
       display: grid;
       align-items: center; }
       .bode .cover-bg-content-module .the-content > .main-wrap {
-        margin: 0 auto; }
+        margin: 0 auto;
+        padding: 25px; }
         .bode .cover-bg-content-module .the-content > .main-wrap.basic-entry h1, .bode .cover-bg-content-module .the-content > .main-wrap.basic-entry .h1 {
           font-size: 94px;
           line-height: 104px;
@@ -15778,12 +15809,15 @@ https://flickity.metafizzy.co
   opacity: 1; }
 
 .hotspot-module {
-  max-width: 1190px;
+  max-width: 87%;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
   /* magnet mouse */
   /* Green Tri Small */
   /* card */ }
+  @media screen and (min-width: 1700px) {
+    .hotspot-module {
+      max-width: 1190px; } }
   .hotspot-module .cursor {
     display: none; }
   .hotspot-module:hover .cursor {

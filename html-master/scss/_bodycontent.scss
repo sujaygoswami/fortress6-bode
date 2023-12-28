@@ -195,6 +195,13 @@
         background-position: right top -5px;
     }
 
+    .bg-site-primary-3d-hall{
+        background-image: url(../Images/primary-color-3d-hall-bg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
 
     .bg-white{
         background-color: white;
@@ -2261,6 +2268,34 @@
             &.type-3{
                 position: relative;
                 left: inherit;
+                &.view-2{
+                    .my-col{
+                        &:first-child{
+                            margin-top: 80px;
+                        }
+                        &:nth-child(2){
+                            margin-top: 0px;
+                           } 
+                        &:nth-child(3){
+                            margin-top: 170px;
+                        }  
+                    }
+                   
+                }
+                &.view-3{
+                    .my-col{
+                        &:first-child{
+                            margin-top: 110px;
+                        }
+                        &:nth-child(2){
+                            margin-top: 170px;
+                           } 
+                        &:nth-child(3){
+                            margin-top: 0px;
+                        }  
+                    }
+                   
+                }
                 .my-col{
                     margin-top: 80px;
 
@@ -2271,6 +2306,17 @@
                         margin-top: 200px;
                        }   
                 }
+                .product-bild{
+                    text-align: center;
+                    margin-bottom: 20px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+
+                    img{
+                        display: inline-block;
+                    }
+                }
                 .grid-item{
                     & > .main-wrap{
                         @include border-radius(15px);
@@ -2278,6 +2324,18 @@
                         padding: 70px 25px 40px 25px;
                         color: white;
                         background-color: var(--site-primary-color-light);
+
+                        &.view-two{
+                            padding: 0px 30px 20px 30px;
+                        }
+
+                        &.bg-type-grey{
+                            .basic-entry{
+                                h1, h2, h3, h4, h5, h6{
+                                    color: inherit;
+                                }
+                            }
+                        }
 
                         @media screen and (min-width: $xxl){
                             padding: 170px 35px 40px 35px;
@@ -2300,6 +2358,10 @@
 
                         &.bg-type-1{
                             background-color: var(--site-primary-color-light);
+                        }
+
+                        &.bg-type-grey{
+                            background-color: var(--site-grey-type-1);
                         }
                         &.bg-type-2{
                             background-image: url(../Images/blue-light-sliding-tile-gradient-bg-1.svg);
@@ -2347,6 +2409,7 @@
 
             & > .main-wrap{
                 margin: 0 auto;
+                padding: 25px;
 
                 &.basic-entry{
                     h1{
