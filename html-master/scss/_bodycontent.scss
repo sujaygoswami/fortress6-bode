@@ -1218,9 +1218,7 @@
     // overlay-card-module start
     .overlay-card-module{
 
-        &.type-2{
-
-        }
+       
 
         &.overlay-gradient{
             .my-col{
@@ -1443,15 +1441,7 @@
     .tab-filter-slider-module{
         overflow-x: hidden;
 
-        .tab-content{
-            & > .tab-pane{
-               
-
-                &.show{
-                    
-                }
-            }
-        }
+        
 
         .tab-nav-group{
             margin-bottom: 65px;
