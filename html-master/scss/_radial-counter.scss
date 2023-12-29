@@ -27,6 +27,7 @@
       .circle .mask.full, .circle .fill{
         top: inherit !important;
         bottom: inherit !important;
+        margin-top: inherit !important;
       }
 
       .stepbox{
@@ -40,6 +41,7 @@
         transform: none !important;
         border-radius: 50%;
         margin-left: 5px;
+        margin-top: inherit !important;
 
         & > div{
           width: 240px;

@@ -2568,4 +2568,23 @@
         }
     }
 
+    // radial-counter-module
+    .radial-counter-module{
+        .counter-text-wrap{
+            overflow: hidden;
+            & > .main-wrap{
+                max-width: 60%;
+                margin-left: auto;
+                position: relative;
+                top: inherit !important;
+                transform: none !important;
+            }
+
+            .slider-cell{
+                margin-top: 20px;
+            }
+        }
+    }
+    // radial-counter-module
+
 }

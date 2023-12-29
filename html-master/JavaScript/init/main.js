@@ -395,34 +395,52 @@ jQuery('.product-detail-sync-slider').each(function(){
 var controller = $.superscrollorama();
 
 // type 1
-var paralaxCard = TweenMax.to( 
-  $('.paralax-pause-scroller.type-1').find('.slidings-tiles.type-1'), .5, {css:{top: -150 + '%'}}
-);
-controller.pin('.paralax-pause-scroller.type-1', 4000, {offset: -50, anim: paralaxCard});
+jQuery('.paralax-pause-scroller.type-1').each(function(){
+  var PARENTS = jQuery(this);
+  var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
+  var paralaxCard = TweenMax.to( 
+    $(PARENTS).find('.slidings-tiles.type-1'), .5, {css:{top: -TOTALHEIGHT}}
+  );
+  controller.pin(PARENTS, 4000, {offset: -50, anim: paralaxCard});
+});
+
 
 // type 2
-var paralaxCard = TweenMax.to( 
-  $('.paralax-pause-scroller.type-2').find('.slidings-tiles.type-2'), .5, {css:{top: -120 + '%'}}
-);
-controller.pin('.paralax-pause-scroller.type-2', 4000, {offset: -100, anim: paralaxCard});
+jQuery('.paralax-pause-scroller.type-2').each(function(){
+  var PARENTS = jQuery(this);
+  var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
+  var paralaxCard = TweenMax.to( 
+    $(PARENTS).find('.slidings-tiles.type-2'), .5, {css:{top: -TOTALHEIGHT}}
+  );
+  controller.pin(PARENTS, 4000, {offset: -100, anim: paralaxCard});
+});
+
 
 // type 3
-var paralaxCard = TweenMax.to( 
-  $('.paralax-pause-scroller.type-3').find('.slidings-tiles.type-3'), .5, {css:{top: -220 + 'vh'}}
-);
-controller.pin('.paralax-pause-scroller.type-3', 4000, {offset: -100, anim: paralaxCard});
+jQuery('.paralax-pause-scroller.type-3').each(function(){
+  var PARENTS = jQuery(this);
+  var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
+  var TOTALHEIGHTPLUS = TOTALHEIGHT + 200;
+  var paralaxCard = TweenMax.to( 
+    $(PARENTS).find('.slidings-tiles.type-3'), .5, {css:{top: -TOTALHEIGHTPLUS}}
+  );
+  controller.pin(PARENTS, 4000, {offset: -100, anim: paralaxCard});
+});
+
 
 // type 4
-var paralaxCard = TweenMax.to( 
-  $('.paralax-pause-scroller.type-4').find('.slidings-tiles.type-3'), .5, {css:{top: -120 + 'vh'}}
-);
-controller.pin('.paralax-pause-scroller.type-4', 4000, {offset: -100, anim: paralaxCard});
+jQuery('.paralax-pause-scroller.type-4').each(function(){
+  var PARENTS = jQuery(this);
+  var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
+  var TOTALHEIGHTPLUS = TOTALHEIGHT + 200;
+  var paralaxCard = TweenMax.to( 
+    $(PARENTS).find('.slidings-tiles.type-3'), .5, {css:{top: -TOTALHEIGHTPLUS}}
+  );
+  controller.pin(PARENTS, 4000, {offset: -100, anim: paralaxCard});
+});
 
-// type 5
-var circleProgress = TweenMax.to( 
-  $('.paralax-pause-scroller.type-5').find('.circle .mask.full, .circle .fill, .stepbox'), .5, {css:{rotation: 180, top: -294 + '%'}}
-);
-controller.pin('.paralax-pause-scroller.type-5', 4000, {offset: -100, anim: circleProgress});
+
+
 
 // global isotop
 jQuery('.global-isotop .grid').isotope({
@@ -589,6 +607,38 @@ jQuery('.close-mega-desktop-menu').click(function(){
     jQuery(this).find('.measure-card-info').matchHeight({byRow: false});
     jQuery(this).find('.measure-card-header').matchHeight();
   });
+
+// paralax
+var controller = $.superscrollorama();
+
+
+// counter paralaxtype 5 start
+  
+  jQuery('.counter-text-wrap').each(function(){
+    var PARENTS = $(this).parents('.paralax-pause-scroller.type-5');
+    jQuery(this).find('.slider-cell').matchHeight({byRow: false});
+
+    var SLIDERCELLMAXHEIGHT = jQuery(this).find('.slider-cell').height();
+    jQuery(this).height(SLIDERCELLMAXHEIGHT + 20);
+
+    var TOTALHEIGHT = jQuery(this).find('> .main-wrap').height();
+    var TOTALHEIGHTPLUS = TOTALHEIGHT + 20;
+    var TOTALHEIGHTPLUSLESS1PART = TOTALHEIGHTPLUS - SLIDERCELLMAXHEIGHT;
+
+
+    var circleProgress = TweenMax.to( 
+      PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: -294 + '%', marginTop: - TOTALHEIGHTPLUSLESS1PART}},
+    );
+    controller.pin(PARENTS, 4000, {offset: -100, anim: circleProgress});
+
+  });
+
+  
+ 
+
+  // counter paralaxtype 5 end
+
+
 
   
 

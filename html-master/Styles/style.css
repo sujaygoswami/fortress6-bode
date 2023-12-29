@@ -9771,6 +9771,16 @@ html, body {
           text-align: right; }
     .bode .fancybox__container .fancybox__content .caption-content-holder:not(:last-child) {
       display: none; }
+  .bode .radial-counter-module .counter-text-wrap {
+    overflow: hidden; }
+    .bode .radial-counter-module .counter-text-wrap > .main-wrap {
+      max-width: 60%;
+      margin-left: auto;
+      position: relative;
+      top: inherit !important;
+      transform: none !important; }
+    .bode .radial-counter-module .counter-text-wrap .slider-cell {
+      margin-top: 20px; }
 
 .bode footer.footer > .container-fluid, .bode footer.footer > .container-sm, .bode footer.footer > .container-md, .bode footer.footer > .container-lg, .bode footer.footer > .container-xl, .bode footer.footer > .container-xxl {
   padding-top: 20px;
@@ -15984,7 +15994,8 @@ https://flickity.metafizzy.co
     border-radius: 50%; }
   .circle-wrap .circle .mask.full, .circle-wrap .circle .fill {
     top: inherit !important;
-    bottom: inherit !important; }
+    bottom: inherit !important;
+    margin-top: inherit !important; }
   .circle-wrap .stepbox {
     width: 240px;
     height: auto;
@@ -15995,7 +16006,8 @@ https://flickity.metafizzy.co
     font-family: Arial, Helvetica, sans-serif;
     transform: none !important;
     border-radius: 50%;
-    margin-left: 5px; }
+    margin-left: 5px;
+    margin-top: inherit !important; }
     .circle-wrap .stepbox > div {
       width: 240px;
       height: 240px;
