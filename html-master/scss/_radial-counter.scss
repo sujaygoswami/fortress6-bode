@@ -1,0 +1,160 @@
+
+    .circle-wrap-container{
+      padding-right: 135px;
+    }
+    .circle-wrap {
+      margin-left: auto;
+      width: 250px;
+      height: 250px;
+      background: transparent;
+      border-radius: 50%;
+      pointer-events: none;
+      position: relative;
+      overflow: hidden;
+
+      &:before{
+        width: 100%;
+        height: 100%;
+        content: ' ';
+        display: block;
+        border: 5px solid rgba($color: $site-primary-color-light, $alpha: 0.3);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        @include border-radius(50%);
+      }
+
+      .circle .mask.full, .circle .fill{
+        top: inherit !important;
+        bottom: inherit !important;
+      }
+
+      .stepbox{
+        width: 240px;
+        height: auto;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 200;
+        font-family: Arial, Helvetica, sans-serif;
+        transform: none !important;
+        border-radius: 50%;
+        margin-left: 5px;
+
+        & > div{
+          width: 240px;
+          height: 240px;
+          line-height: 240px;
+          font-size: 125px;
+          color: var(--site-primary-color-light);
+          text-align: center;
+          font-weight: var(--site-primary-font-bold);
+          margin-top: 5px;
+          border-radius: 50%;
+          // background-color: antiquewhite;
+        }
+
+      }
+
+      // .stepbox{
+      //   width: 750px;
+      //   height: 150px;
+      //   position: absolute;
+      //   left: 0px;
+      //   z-index: 99999999;
+      //   font-family: Arial, Helvetica, sans-serif;
+      //   transform: none !important;
+      //   top: 0px;
+
+      //   & > div{
+      //     float: left;
+      //     width: 150px;
+      //     height: 150px;
+      //     line-height: 150px;
+      //     font-size: 80px;
+      //     color: rgb(4, 174, 137);
+      //     text-align: center;
+      //   }
+
+      // }
+
+    }
+    
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      border-radius: 50%;
+      // opacity: 0;
+      @include transition(all 0.3s ease 0s);
+      transform: rotate(0deg);
+    }
+
+    .circle{
+
+      
+
+      &.active-1of4{
+        .mask.full, .fill{
+          transform: rotate(45deg);
+        }
+      }
+      &.active-2of4{
+        .mask.full, .fill{
+          transform: rotate(90deg);
+        }
+      }
+      &.active-3of4{
+        .mask.full, .fill{
+          transform: rotate(135deg);
+        }
+      }
+      &.active-4of4{
+        .mask.full, .fill{
+          transform: rotate(180deg);
+        }
+      }
+    }
+    
+    .circle-wrap .circle .mask {
+      clip: rect(0px, 250px, 250px, 125px);
+    }
+    
+    .circle-wrap .inside-circle {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: white;
+      line-height: 120px;
+      text-align: center;
+      margin-top: 5px;
+      margin-left: 5px;
+      position: absolute;
+      z-index: 100;
+      font-weight: 700;
+      font-size: 2em;
+    }
+    
+    /* color animation */
+    
+    /* 3rd progress bar */
+    .mask .fill {
+      clip: rect(0px, 125px, 250px, 0px);
+      background-color: var(--site-primary-color-light);
+    }
+    
+    .mask.full,
+    .circle .fill {
+      animation: fill ease-in-out 3s;
+    }
+
+   
+    @keyframes fill{
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }

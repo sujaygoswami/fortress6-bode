@@ -418,6 +418,12 @@ var paralaxCard = TweenMax.to(
 );
 controller.pin('.paralax-pause-scroller.type-4', 4000, {offset: -100, anim: paralaxCard});
 
+// type 5
+var circleProgress = TweenMax.to( 
+  $('.paralax-pause-scroller.type-5').find('.circle .mask.full, .circle .fill, .stepbox'), .5, {css:{rotation: 180, top: -294 + '%'}}
+);
+controller.pin('.paralax-pause-scroller.type-5', 4000, {offset: -100, anim: circleProgress});
+
 // global isotop
 jQuery('.global-isotop .grid').isotope({
   // options

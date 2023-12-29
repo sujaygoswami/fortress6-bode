@@ -7957,7 +7957,7 @@ html, body {
   width: 100%;
   left: 0px;
   top: 0px;
-  z-index: 50;
+  z-index: 300;
   background-color: white; }
   .bode header.header .header-search-form {
     position: relative; }
@@ -8179,6 +8179,8 @@ html, body {
     border-radius: 20px; }
   .bode .section-mx-height-100 {
     max-height: 100vh; }
+  .bode .section-height-100 {
+    height: 100vh; }
   .bode .section-padding-type-1 {
     padding-top: 150px;
     padding-bottom: 120px; }
@@ -15954,3 +15956,108 @@ https://flickity.metafizzy.co
     opacity: 0.4; }
     .hotspot-module .cards_inner__card:nth-of-type(3) .card-no {
       visibility: hidden; }
+
+.circle-wrap-container {
+  padding-right: 135px; }
+
+.circle-wrap {
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  position: relative;
+  overflow: hidden; }
+  .circle-wrap:before {
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    display: block;
+    border: 5px solid rgba(68, 86, 242, 0.3);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .circle-wrap .circle .mask.full, .circle-wrap .circle .fill {
+    top: inherit !important;
+    bottom: inherit !important; }
+  .circle-wrap .stepbox {
+    width: 240px;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: none !important;
+    border-radius: 50%;
+    margin-left: 5px; }
+    .circle-wrap .stepbox > div {
+      width: 240px;
+      height: 240px;
+      line-height: 240px;
+      font-size: 125px;
+      color: var(--site-primary-color-light);
+      text-align: center;
+      font-weight: var(--site-primary-font-bold);
+      margin-top: 5px;
+      border-radius: 50%; }
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  transform: rotate(0deg); }
+
+.circle.active-1of4 .mask.full, .circle.active-1of4 .fill {
+  transform: rotate(45deg); }
+
+.circle.active-2of4 .mask.full, .circle.active-2of4 .fill {
+  transform: rotate(90deg); }
+
+.circle.active-3of4 .mask.full, .circle.active-3of4 .fill {
+  transform: rotate(135deg); }
+
+.circle.active-4of4 .mask.full, .circle.active-4of4 .fill {
+  transform: rotate(180deg); }
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 250px, 250px, 125px); }
+
+.circle-wrap .inside-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: white;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em; }
+
+/* color animation */
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 125px, 250px, 0px);
+  background-color: var(--site-primary-color-light); }
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s; }
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
