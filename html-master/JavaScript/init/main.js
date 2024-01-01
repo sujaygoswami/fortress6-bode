@@ -382,6 +382,7 @@ jQuery('.product-detail-sync-slider').each(function(){
     focusOnSelect: true,
     infinite: true,
   });
+  jQuery(this).find('.slider-nav .slick-slide').matchHeight();
 });
 
 
@@ -513,6 +514,16 @@ Fancybox.bind("[data-fancybox]", {
       
     },
   },
+});
+
+// header responsive
+if ($(window).width() < 1000) {
+  jQuery('.header-search-form').detach().appendTo('header.header > .main-wrap');
+}
+
+jQuery('.mobile-search-trigger').click(function(){
+  jQuery(this).toggleClass('active');
+  jQuery('.header-search-form').toggle();
 });
 
 

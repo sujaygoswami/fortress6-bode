@@ -1,5 +1,5 @@
 .bode {
-    padding-top: 102px;
+    padding-top: var(--header-height);
     // overflow: hidden;
 
     .loader-screen{
@@ -736,8 +736,8 @@
         }
         h1{
             
-            font-size: 60px;
-            line-height: 70px;
+            font-size: 55px;
+            line-height: 65px;
             letter-spacing: 3.36px;
             font-family: var(--site-secondary-font);
             font-weight: var( --site-secondary-font-normal);
@@ -1012,6 +1012,24 @@
         &.start{
             height: calc(100vh - (var(--header-height)));
         }
+
+        @media screen and (max-width: $lg){
+            .banner-video-module{
+                &.ratio{
+                    height: 100%;
+    
+                    & > video{
+                        width: auto;
+                        height: 100%;
+                    }
+    
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
 
         .banner-content{
             position: absolute;
@@ -1675,7 +1693,9 @@
                     
 
                     & > div{
-                        aspect-ratio: 1/1;
+                        @media screen and (min-width: $xl){
+                            aspect-ratio: 1/1;
+                        }
                     }
                 }
 
@@ -1694,13 +1714,20 @@
                         background-color: white;
                         width: 100%;
                         @include border-radius(5px);
+                        padding: 15px;
                     }
 
                     img{
-                        max-height: 106px;
-                        max-width: 106px;
                         display: inline-block;
                         margin: 0 auto;
+                        max-width: 79px;
+                        max-height: 79px;
+
+                        @media screen and (min-width: $xxl){
+               
+                            max-width: 94px;
+                            max-height: 94px;
+                        }
                     }
                 }
 
@@ -1822,7 +1849,7 @@
 
         .flickity-button{
             position: absolute;
-            bottom: 70px;
+            bottom: 64px;
             font-size: 0px;
             z-index: 1;
             border: none;
@@ -2574,10 +2601,14 @@
             overflow: hidden;
             & > .main-wrap{
                 max-width: 60%;
-                margin-left: auto;
+                margin-left: inherit;
                 position: relative;
                 top: inherit !important;
                 transform: none !important;
+
+                @media screen and (min-width: $xxl){
+                    margin-left: auto;
+                }
             }
 
             .slider-cell{
