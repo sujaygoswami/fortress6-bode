@@ -522,11 +522,16 @@
             }
 
             span{
-                width: 75px;
-                height: 75px;
+                @media screen and (min-width: $md) {
+                    
+                
+                    width: 75px;
+                    height: 75px;
 
-                &::before{
-                    background-size: 25px;
+                    &::before{
+                        background-size: 25px;
+                    }
+
                 }
             }
         }
@@ -1013,7 +1018,7 @@
             height: calc(100vh - (var(--header-height)));
         }
 
-        @media screen and (max-width: $lg){
+        @media screen and (max-width: $xxl){
             .banner-video-module{
                 &.ratio{
                     height: 100%;
@@ -1039,6 +1044,7 @@
             top: 0px;
             z-index: 1;
             color: var( --site-grey-type-1);
+            padding: 0 15px;
 
             .basic-entry{
 
@@ -1234,8 +1240,11 @@
                 }
 
                 p{
-                    font-size: 23px;
-                    line-height: 45px;
+                    @media screen and (min-width: $md){
+                        font-size: 23px;
+                        line-height: 45px;
+                    }
+                   
                 }
 
                 
@@ -1433,7 +1442,7 @@
               left: 5px;
               top: 5px;
               border-radius: 30px;
-              background-color: rgb(142, 210, 142);
+              background-color: var(--site-secondary-color);
               pointer-events: none;
               @include transition(all 0.3s ease 0s);
             }

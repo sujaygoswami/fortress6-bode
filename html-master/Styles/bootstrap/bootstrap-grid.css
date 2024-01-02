@@ -70,7 +70,7 @@
   margin-right: auto;
   margin-left: auto; }
 
-@media (min-width: 576px) {
+@media (min-width: 999px) {
   .container, .container-sm {
     max-width: 100%; } }
 
@@ -271,7 +271,7 @@
 .gy-5 {
   --bs-gutter-y: 3rem; }
 
-@media (min-width: 576px) {
+@media (min-width: 999px) {
   .col-sm {
     flex: 1 0 0%; }
   .row-cols-sm-auto > * {
@@ -1349,7 +1349,7 @@
 .ps-5 {
   padding-left: 3rem !important; }
 
-@media (min-width: 576px) {
+@media (min-width: 999px) {
   .d-sm-inline {
     display: inline !important; }
   .d-sm-inline-block {
