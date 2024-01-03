@@ -698,7 +698,7 @@
 
         .text-input{
             height: 100%;
-            padding: 0 44px 0 77px;
+            padding: 0 20px 0 77px;
             border: none;
             background-color: transparent;
             font-size: 20px;
@@ -1016,6 +1016,7 @@
 
         &.start{
             height: calc(100vh - (var(--header-height)));
+            min-height: 530px;
         }
 
         @media screen and (max-width: $xxl){
@@ -1346,11 +1347,21 @@
         }
 
         .video-card-wrapper{
-            max-height: 894px;
+            min-height: 894px;
 
             video{
-                width: 100%;
-                height: auto;
+                width: auto;
+                height: 100%;
+
+                @media screen and (min-width: 768px){
+                    width: 100%;
+                    height: auto;
+                }
+
+                @media screen and (max-width: 1064px) and (min-width: 1000px){
+                    width: auto;
+                    height: 100%;
+                }
             }
         }
     }

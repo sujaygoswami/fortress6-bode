@@ -46,9 +46,11 @@ else if( isAppleDevice() ){
 jQuery('body').addClass('ios-device');
 jQuery('html').addClass('ios-device');
 
-  // jQuery( window ).on( "orientationchange", function( event ) {
-  //   location.reload();
-  // });
+  jQuery( window ).on( "orientationchange", function( event ) {
+    if ($(window).width() >= 768) {
+      location.reload();
+    }
+  });
 
 
 }
