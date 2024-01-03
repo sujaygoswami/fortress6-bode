@@ -52,6 +52,12 @@
         padding-top: var(--header-height-mobile);
 
         // basic
+
+        .element-gap{
+            &.element-gap-type-2{
+                margin-bottom: 65px;
+            }
+        }
         
         .mobile-no-uplift{
             padding-top: 0px !important;
@@ -73,6 +79,19 @@
                 & > .my-col{
                     padding-bottom: 35px;
                     border-bottom: 1px solid;
+                }
+            }
+        }
+
+        .mobile-griding-type-2{
+            &.my-row{
+                margin-left: -5px;
+                margin-right: -5px;
+                row-gap: 10px;
+
+                & > .my-col{
+                    padding-left: 5px;
+                    padding-right: 5px;
                 }
             }
         }
@@ -126,6 +145,117 @@
         }
         // basic
 
+        // sliding-card-module-text-tile-view
+        .sliding-card-module-text-tile-view{
+            .slidings-tiles{
+                &.type-1{
+                    left: initial;
+
+                    & > .my-row{
+                       
+
+                        & > .my-col{
+                           
+                            margin-top: 10px;
+
+                            &:nth-child(2){
+                                margin-top: 60px;
+                            }
+                        }
+                    }
+
+                    .my-col{
+                        & > .main-wrap{
+                            padding: 30px;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                &.type-2{
+                    .my-col{
+                        margin-top: 10px;
+                        &:nth-child(2){
+                            margin-top: 10px;
+                        }
+                        & > .main-wrap{
+                            .overlay-content{
+                                .text-holder{
+                                    padding: 20px;
+                                }
+                                &.basic-entry{
+                                    h1{
+                                        font-size: 25px;
+                                        line-height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // sliding-card-module-text-tile-view
+
+        
+
+        // special-header
+        .special-header{
+            .mobile-right-pad-type-1{
+                padding-right: 30px;
+            }
+            .right-pad-type-1{
+                padding-right: 0px;
+            }
+            .right-pad-type-2{
+                padding-right: 25px;
+            }
+            h1{
+                font-size: 35px;
+                line-height: 47px;
+            }
+        }
+        // special-header
+        
+
+        // curved-module-header
+        .curved-module-header{
+            &.pos-left-top{
+                .main-part{
+                    @include border-radius(0 0 15px 0);
+                }
+
+                &:after{
+                    right: -19px;
+                }
+            }
+            .main-part{
+                padding: 8px 20px 8px 10px;
+            }
+        }
+        // curved-module-header
+
+        // page-curved-header
+        .page-curved-header{
+            &:after{
+                right: -14px;
+            }
+            .main-header-part{
+                padding: 22px 30px 22px 20px;
+                @include border-radius(0 35px 0 0);
+            }
+            .basic-entry{
+                h1{
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+        }
+        // page-curved-header
+
+        
+        
+
         // curve link
         .curve-link{
             font-size: 11px;
@@ -150,6 +280,11 @@
             }
         }
         // curve link
+
+        .site-btn{
+            font-size: 13px;
+            padding: 8.5px 27px;
+        }
 
         // typo graphy
         .basic-entry{
@@ -194,11 +329,21 @@
                 line-height: 22px;
                 margin-bottom: 20px;
 
+                &.normal-lg{
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+
                 &.lg-para{
                     font-size: 13px;
                     line-height: 22px;
                     margin-bottom: 20px;
                     letter-spacing: initial;
+                }
+
+                &.extra-lg{
+                    font-size: 16px;
+                    line-height: 22px;
                 }
             }
         }

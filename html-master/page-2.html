@@ -24,7 +24,7 @@
 
 
      <!-- header -->
-     <header class="header d-grid flex-grid-align-center">
+    <header class="header d-grid flex-grid-align-center">
         <div class="main-wrap default-inset-left-right">
             <div class="container-fluid">
                <div class="row my-row flex-grid-align-center default-grid">
@@ -37,13 +37,16 @@
                 <!-- logo col -->
                 <!-- header service part -->
                 <div class="col-auto my-col ms-auto">
-                    <div class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap">
+                    <div class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap responsive-mobile-deafult-column-gap">
                         <!-- search -->
                         <div class="header-search-form">
                             <input type="text" class="text-input" placeholder="Suche…">
                             <input type="submit" class="search-submit" value=" ">
                         </div>
                         <!-- search -->
+                        <!-- mobile search trigger -->
+                        <div class="mobile-search-trigger d-block d-md-none"></div>
+                        <!-- mobile search trigger -->
                         <!-- nav -->
                         <div class="main-nav">
                             <!-- hamber -->
@@ -61,9 +64,9 @@
         <div class="site-mega-menu animated desktop-menu">
             <div class="main-menu-wrap">
                 <div class="global-centered-rounded-action-button"><div class="the-trigger type-1 close close-mega-desktop-menu"><span></span></div></div>
-                <div class="row my-row attch-row-grid full-height">
+                <div class="row my-row attch-row-grid full-height site-menu-column-holder">
                     <!-- col -->
-                    <div class="col-auto my-col">
+                    <div class="col-md-auto my-col quick-link-col col-12">
                         <div class="main-wrap full-height d-grid flex-grid-align-end">
                             <div class="mega-menu-quick-link">
                                 <ul>
@@ -73,7 +76,7 @@
                                     <li><a href="#">Compliance</a></li>
                                     <li><a href="#">Download-Center</a></li>
                                     <li><a href="#">Kontakt</a></li>
-                                    <li>
+                                    <li class="site-mega-menu-lang-switcher-li d-md-block d-none">
                                         <div class="language-switcher switcher-module inside-mega-menu">
                                             <div class="site-tab-group-btn clearfix">
                                                 <span></span>
@@ -85,11 +88,19 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="language-switcher switcher-module inside-mega-menu mobile-mega-menu-switcher d-block d-md-none">
+                                <div class="site-tab-group-btn clearfix">
+                                    <span></span>
+                                    <div class="ball"></div>
+                                    <div class="button-wrap active"><a href="javascript:void(0)" class="main-button">DE</a></div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">EN</a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- col -->
                     <!-- col -->
-                    <div class="col-auto my-col ms-auto">
+                    <div class="col-md-auto my-col ms-auto main-link-col col-12">
                         <div class="main-wrap">
                             <div class="mega-menu-main-link">
                                 <ul>
@@ -117,7 +128,7 @@
     <main>
 
         <!-- section -->
-        <section class="section-row default-inset-left-right">
+        <section class="section-row default-inset-left-right responsive-mobile-view">
             <!-- banner module -->
             <div class="banner-module default-box-radius-all-side overflow-hidden start has-page-curved-header">
                 <!-- video -->
@@ -173,22 +184,22 @@
                         <div class="row my-row sm-grid">
 
                             <!-- col -->
-                            <div class="col-7 my-col">
+                            <div class="col-md-7 col-12 my-col">
                                 <!-- special header -->
                                 <div class="special-header pull-text-right text-site-grey-type-1">
                                     <h1 class="right-pad-type-2">Mobilität</h1>
                                     <h1 class="right-pad-type-1">Von</h1>
-                                    <h1>Morgen</h1>
+                                    <h1 class="mobile-right-pad-type-1">Morgen</h1>
                                 </div>
                                 <!-- special header -->
                             </div>
                             <!-- col -->
 
                             <!-- col -->
-                            <div class="col-5 my-col">
+                            <div class="col-md-5 col-12 my-col">
                                 <!-- sliding tiles -->
                                 <div class="slidings-tiles global-isotop type-1">
-                                    <div class="row my-row sm-grid grid">
+                                    <div class="row my-row sm-grid grid mobile-griding-type-2">
                                         <!-- col -->
                                         <div class="col-6 my-col grid-item">
                                             <div class="main-wrap">
@@ -263,7 +274,7 @@
                             <div class="slidings-tiles global-isotop type-2">
                                 <div class="row my-row sm-grid grid">
                                     <!-- col -->
-                                    <div class="col-6 my-col grid-item">
+                                    <div class="col-md-6 col-12 my-col grid-item">
                                         <div class="main-wrap full-height set-back">
                                             <img src="Images/sliding-card-bild-1.jpg">
                                             <div class="overlay-content basic-entry text-site-grey-type-1">
@@ -275,7 +286,7 @@
                                     </div>
                                     <!-- col -->
                                     <!-- col -->
-                                    <div class="col-6 my-col grid-item">
+                                    <div class="col-md-6 col-12 my-col grid-item">
                                         <div class="main-wrap full-height set-back">
                                             <img src="Images/sliding-card-bild-1.jpg">
                                             <div class="overlay-content basic-entry text-site-grey-type-1">
@@ -287,7 +298,7 @@
                                     </div>
                                     <!-- col -->
                                     <!-- col -->
-                                    <div class="col-6 my-col grid-item">
+                                    <div class="col-md-6 col-12 my-col grid-item">
                                         <div class="main-wrap full-height set-back">
                                             <img src="Images/sliding-card-bild-1.jpg">
                                             <div class="overlay-content basic-entry text-site-grey-type-1">
@@ -299,7 +310,7 @@
                                     </div>
                                     <!-- col -->
                                     <!-- col -->
-                                    <div class="col-6 my-col grid-item">
+                                    <div class="col-md-6 col-12 my-col grid-item">
                                         <div class="main-wrap full-height set-back">
                                             <img src="Images/sliding-card-bild-1.jpg">
                                             <div class="overlay-content basic-entry text-site-grey-type-1">
@@ -369,7 +380,7 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container-fluid mobile-inset-padding-sm">
             <!-- footer build -->
             <div class="footer-build default-box-radius-all-side overflow-hidden set-back">
                 <img src="Images/footer-bild.jpg">
@@ -387,8 +398,8 @@
                 <!-- footer logo -->
                 <div class="footer-logo">
                     <div class="row my-row">
-                        <div class="site-logo col-auto my-col"><img src="Images/Logo_BODE_white.svg" width="154"></div>
-                        <div class="certificate-badge col-auto my-col ms-auto"><img src="Images/csr.svg" width="92"></div>
+                        <div class="site-logo col-md-auto col-12 my-col"><img src="Images/Logo_BODE_white.svg" width="154"></div>
+                        <div class="certificate-badge col-md-auto col-12 my-col ms-auto"><img src="Images/csr.svg" width="92"></div>
                     </div>
                 </div>
                 <!-- footer logo -->
@@ -397,7 +408,7 @@
                     <div class="container-fluid">
                         <div class="row my-row justify-content-md-center">
                             <!-- info -->
-                            <div class="col my-col basic-entry col-auto">
+                            <div class="col my-col basic-entry col-md-auto col-12">
                                 <p>
                                     <strong>Bode – Die Tür GmbH</strong><br>
                                     Ochshäuser Str. 14<br>
@@ -406,7 +417,7 @@
                             </div>
                             <!-- info -->
                             <!-- info -->
-                            <div class="col my-col basic-entry col-auto">
+                            <div class="col my-col basic-entry col-md-auto col-12">
                                 <p>
                                     <strong>Kontakt</strong><br>
                                     <a href="#">Tel +49 561 5009-0</a><br>
@@ -421,7 +432,7 @@
                 <!-- footer mail box -->
                 <div class="footer-mail-box">
                     <div class="row my-row justify-content-md-center">
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="special-iconic-input-box">
                                 <div class="main-wrap">
                                     <input type="text" class="text-input" placeholder="info@schaltbau-bode.de">
@@ -445,10 +456,10 @@
                 <div class="footer-navigation">
                     <div class="row my-row flex-grid-align-end">
                         <!-- col -->
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="main-wrap row my-row flex-grid-align-center">
                                 <!-- language switcher col -->
-                                <div class="col my-col col-auto">
+                                <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
                                         <div class="language-switcher switcher-module">
                                             <div class="site-tab-group-btn clearfix">
@@ -462,7 +473,7 @@
                                 </div>
                                 <!-- language switcher col -->
                                  <!-- footer menu col -->
-                                 <div class="col my-col col-auto">
+                                 <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
                                        <div class="footer-menu">
                                             <ul>
@@ -477,7 +488,7 @@
                         </div>
                         <!-- col -->
                         <!-- col -->
-                        <div class="col my-col col-auto ms-auto">
+                        <div class="col my-col col-md-auto col-12 ms-auto">
                             <div class="main-wrap">
                                 <div class="copy-right-text">©2023 Bode – Die Tür GmbH</div>
                             </div>

@@ -9585,8 +9585,6 @@ html, body {
           .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h6 {
             text-shadow: 0px 3px 20px #00000029; }
           .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content .text-holder {
-            display: inline-block;
-            margin: 0 auto;
             padding: 50px; }
         .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap:before {
           content: ' ';
@@ -9948,6 +9946,8 @@ html, body {
 @media screen and (max-width: 999px) {
   .bode {
     padding-top: var(--header-height-mobile); }
+    .bode .element-gap.element-gap-type-2 {
+      margin-bottom: 65px; }
     .bode .mobile-no-uplift {
       padding-top: 0px !important;
       margin-top: 0px !important; }
@@ -9961,6 +9961,13 @@ html, body {
     .bode .mobile-griding-type-1.has-mobile-col-separator > .my-col {
       padding-bottom: 35px;
       border-bottom: 1px solid; }
+    .bode .mobile-griding-type-2.my-row {
+      margin-left: -5px;
+      margin-right: -5px;
+      row-gap: 10px; }
+      .bode .mobile-griding-type-2.my-row > .my-col {
+        padding-left: 5px;
+        padding-right: 5px; }
     .bode .my-row.sm-grid {
       row-gap: 15px; }
     .bode .section-padding-lg {
@@ -9990,6 +9997,54 @@ html, body {
       .bode .container.mobile-inset-padding-medium, .bode .container-fluid.mobile-inset-padding-medium, .bode .mobile-inset-padding-medium.container-sm, .bode .mobile-inset-padding-medium.container-md, .bode .mobile-inset-padding-medium.container-lg, .bode .mobile-inset-padding-medium.container-xl, .bode .mobile-inset-padding-medium.container-xxl {
         padding-left: 20px;
         padding-right: 20px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 {
+      left: initial; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 > .my-row > .my-col {
+        margin-top: 10px; }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 > .my-row > .my-col:nth-child(2) {
+          margin-top: 60px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap {
+        padding: 30px;
+        font-size: 16px;
+        line-height: 22px; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col {
+      margin-top: 10px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col:nth-child(2) {
+        margin-top: 10px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content .text-holder {
+        padding: 20px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1 {
+        font-size: 25px;
+        line-height: 30px; }
+    .bode .special-header .mobile-right-pad-type-1 {
+      padding-right: 30px; }
+    .bode .special-header .right-pad-type-1 {
+      padding-right: 0px; }
+    .bode .special-header .right-pad-type-2 {
+      padding-right: 25px; }
+    .bode .special-header h1, .bode .special-header .h1 {
+      font-size: 35px;
+      line-height: 47px; }
+    .bode .curved-module-header.pos-left-top .main-part {
+      -webkit-border-radius: 0 0 15px 0;
+      -moz-border-radius: 0 0 15px 0;
+      -ms-border-radius: 0 0 15px 0;
+      border-radius: 0 0 15px 0; }
+    .bode .curved-module-header.pos-left-top:after {
+      right: -19px; }
+    .bode .curved-module-header .main-part {
+      padding: 8px 20px 8px 10px; }
+    .bode .page-curved-header:after {
+      right: -14px; }
+    .bode .page-curved-header .main-header-part {
+      padding: 22px 30px 22px 20px;
+      -webkit-border-radius: 0 35px 0 0;
+      -moz-border-radius: 0 35px 0 0;
+      -ms-border-radius: 0 35px 0 0;
+      border-radius: 0 35px 0 0; }
+    .bode .page-curved-header .basic-entry h1, .bode .page-curved-header .basic-entry .h1 {
+      font-size: 22px;
+      line-height: 30px; }
     .bode .curve-link {
       font-size: 11px; }
       .bode .curve-link.typo-2 {
@@ -10007,6 +10062,9 @@ html, body {
         padding-right: 57.99px;
         padding-top: 32px;
         padding-bottom: 16px; }
+    .bode .site-btn {
+      font-size: 13px;
+      padding: 8.5px 27px; }
     .bode .basic-entry.module-header h3, .bode .basic-entry.module-header .h3 {
       font-size: 22px;
       line-height: 30px; }
@@ -10034,11 +10092,17 @@ html, body {
       font-size: 13px;
       line-height: 22px;
       margin-bottom: 20px; }
+      .bode .basic-entry p.normal-lg, .bode .basic-entry li.normal-lg {
+        font-size: 13px;
+        line-height: 22px; }
       .bode .basic-entry p.lg-para, .bode .basic-entry li.lg-para {
         font-size: 13px;
         line-height: 22px;
         margin-bottom: 20px;
         letter-spacing: initial; }
+      .bode .basic-entry p.extra-lg, .bode .basic-entry li.extra-lg {
+        font-size: 16px;
+        line-height: 22px; }
     .bode header.header {
       height: var(--header-height-mobile); }
       .bode header.header > .main-wrap {
