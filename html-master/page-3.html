@@ -27,45 +27,46 @@
     <header class="header d-grid flex-grid-align-center">
         <div class="main-wrap default-inset-left-right">
             <div class="container-fluid">
-                <div class="row my-row flex-grid-align-center default-grid">
-                    <!-- logo col -->
-                    <div class="col-auto my-col">
-                        <div class="main-wrap site-logo">
-                            <a href="index.html"><img src="Images/Logo_BODE.svg" width="150"></a>
-                        </div>
+               <div class="row my-row flex-grid-align-center default-grid">
+                <!-- logo col -->
+                <div class="col-auto my-col">
+                    <div class="main-wrap site-logo">
+                        <a href="index.html"><img src="Images/Logo_BODE.svg" width="150"></a>
                     </div>
-                    <!-- logo col -->
-                    <!-- header service part -->
-                    <div class="col-auto my-col ms-auto">
-                        <div class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap">
-                            <!-- search -->
-                            <div class="header-search-form">
-                                <input type="text" class="text-input" placeholder="Suche…">
-                                <input type="submit" class="search-submit" value=" ">
-                            </div>
-                            <!-- search -->
-                            <!-- nav -->
-                            <div class="main-nav">
-                                <!-- hamber -->
-                                <div class="nav-hmbg"></div>
-                                <!-- hamber -->
-                            </div>
-                            <!-- nav -->
-                        </div>
-                    </div>
-                    <!-- header service part -->
                 </div>
+                <!-- logo col -->
+                <!-- header service part -->
+                <div class="col-auto my-col ms-auto">
+                    <div class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap responsive-mobile-deafult-column-gap">
+                        <!-- search -->
+                        <div class="header-search-form">
+                            <input type="text" class="text-input" placeholder="Suche…">
+                            <input type="submit" class="search-submit" value=" ">
+                        </div>
+                        <!-- search -->
+                        <!-- mobile search trigger -->
+                        <div class="mobile-search-trigger d-block d-md-none"></div>
+                        <!-- mobile search trigger -->
+                        <!-- nav -->
+                        <div class="main-nav">
+                            <!-- hamber -->
+                            <div class="nav-hmbg"></div>
+                            <!-- hamber -->
+                        </div>
+                        <!-- nav -->
+                    </div>
+                </div>
+                <!-- header service part -->
+               </div> 
             </div>
         </div>
         <!-- site mega menu -->
         <div class="site-mega-menu animated desktop-menu">
             <div class="main-menu-wrap">
-                <div class="global-centered-rounded-action-button">
-                    <div class="the-trigger type-1 close close-mega-desktop-menu"><span></span></div>
-                </div>
-                <div class="row my-row attch-row-grid full-height">
+                <div class="global-centered-rounded-action-button"><div class="the-trigger type-1 close close-mega-desktop-menu"><span></span></div></div>
+                <div class="row my-row attch-row-grid full-height site-menu-column-holder">
                     <!-- col -->
-                    <div class="col-auto my-col">
+                    <div class="col-md-auto my-col quick-link-col col-12">
                         <div class="main-wrap full-height d-grid flex-grid-align-end">
                             <div class="mega-menu-quick-link">
                                 <ul>
@@ -75,25 +76,31 @@
                                     <li><a href="#">Compliance</a></li>
                                     <li><a href="#">Download-Center</a></li>
                                     <li><a href="#">Kontakt</a></li>
-                                    <li>
+                                    <li class="site-mega-menu-lang-switcher-li d-md-block d-none">
                                         <div class="language-switcher switcher-module inside-mega-menu">
                                             <div class="site-tab-group-btn clearfix">
                                                 <span></span>
                                                 <div class="ball"></div>
-                                                <div class="button-wrap active"><a href="javascript:void(0)"
-                                                        class="main-button">DE</a></div>
-                                                <div class="button-wrap"><a href="javascript:void(0)"
-                                                        class="main-button">EN</a></div>
+                                                <div class="button-wrap active"><a href="javascript:void(0)" class="main-button">DE</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)" class="main-button">EN</a></div>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="language-switcher switcher-module inside-mega-menu mobile-mega-menu-switcher d-block d-md-none">
+                                <div class="site-tab-group-btn clearfix">
+                                    <span></span>
+                                    <div class="ball"></div>
+                                    <div class="button-wrap active"><a href="javascript:void(0)" class="main-button">DE</a></div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">EN</a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- col -->
                     <!-- col -->
-                    <div class="col-auto my-col ms-auto">
+                    <div class="col-md-auto my-col ms-auto main-link-col col-12">
                         <div class="main-wrap">
                             <div class="mega-menu-main-link">
                                 <ul>
@@ -121,7 +128,7 @@
     <main>
 
         <!-- section -->
-        <section class="section-row default-inset-left-right">
+        <section class="section-row default-inset-left-right responsive-mobile-view">
             <!-- banner module -->
             <div class="banner-module default-box-radius-all-side overflow-hidden start has-page-curved-header">
                 <!-- video -->
@@ -176,8 +183,8 @@
             <div class="tab-filter-slider-module">
                 <!-- tab nav group -->
                 <div class="tab-nav-group">
-                    <div class="container-fluid">
-                        <div class="row my-row justify-content-md-center">
+                    <div class="container-fluid mobile-inset-padding-sm">
+                        <div class="row my-row justify-content-center">
                             <div class="col my-col col-auto">
                                 <div class="tab-switcher-style-main switcher-module">
                                     <div class="site-tab-group-btn clearfix nav" role="tablist">
@@ -203,7 +210,7 @@
 
                         <!-- slider nav -->
                         <div class="counter">
-                            <div class="container-fluid"><span></span></div>
+                            <div class="container-fluid mobile-inset-padding-sm"><span></span></div>
                         </div>
                         <div class="slider-nav">
                             <!-- sliding element -->
@@ -352,14 +359,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -384,14 +391,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -416,14 +423,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -448,14 +455,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -480,14 +487,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -512,14 +519,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -544,14 +551,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -576,14 +583,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -608,14 +615,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -647,7 +654,7 @@
 
                         <!-- slider nav -->
                         <div class="counter">
-                            <div class="container-fluid"><span></span></div>
+                            <div class="container-fluid mobile-inset-padding-sm"><span></span></div>
                         </div>
                         <div class="slider-nav">
                             <!-- sliding element -->
@@ -796,14 +803,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -828,14 +835,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -860,14 +867,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -892,14 +899,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -924,14 +931,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -956,14 +963,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -988,14 +995,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1020,14 +1027,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1052,14 +1059,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1091,7 +1098,7 @@
 
                         <!-- slider nav -->
                         <div class="counter">
-                            <div class="container-fluid"><span></span></div>
+                            <div class="container-fluid mobile-inset-padding-sm"><span></span></div>
                         </div>
                         <div class="slider-nav">
                             <!-- sliding element -->
@@ -1240,14 +1247,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1272,14 +1279,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1304,14 +1311,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1336,14 +1343,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1368,14 +1375,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1400,14 +1407,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1432,14 +1439,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1464,14 +1471,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1496,14 +1503,14 @@
                                 <div class="container container-min">
                                     <div class="row my-row md-grid flex-grid-align-center">
                                         <!-- col -->
-                                        <div class="col-5 my-col">
+                                        <div class="col-md-5 col-12 my-col">
                                             <div class="main-wrap product-bild">
                                                 <img src="Images/product-bild-1.png">
                                             </div>
                                         </div>
                                         <!-- col -->
                                         <!-- col -->
-                                        <div class="col-7 my-col">
+                                        <div class="col-md-7 col-12 my-col">
                                             <div class="main-wrap product-info basic-entry">
                                                 <div class="product-title">BIDS®</div>
                                                 <div class="product-sub-title">
@@ -1613,7 +1620,7 @@
 
         <!-- section -->
         <section class="section-row has-centered-container section-padding-lg">
-            <div class="container">
+            <div class="container mobile-inset-padding-sm">
                 <!-- image with content card -->
                 <div class="image-with-content-card-module default-box-radius-all-side overflow-hidden d-flex">
                     <div class="image-part set-back"><img src="Images/content-image.jpeg"></div>
@@ -1639,9 +1646,9 @@
     </main>
     <!-- main -->
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container-fluid">
+     <!-- footer -->
+     <footer class="footer">
+        <div class="container-fluid mobile-inset-padding-sm">
             <!-- footer build -->
             <div class="footer-build default-box-radius-all-side overflow-hidden set-back">
                 <img src="Images/footer-bild.jpg">
@@ -1650,20 +1657,17 @@
                 </div>
             </div>
             <!-- footer build -->
-
+            
             <!-- footer service part -->
             <div class="footer-service-part default-box-radius-all-side pos-relative">
                 <!-- go up -->
-                <div class="go-top-wrapper global-centered-rounded-action-button">
-                    <div class="the-trigger type-1 up-arrow go-top"><span></span></div>
-                </div>
+                <div class="go-top-wrapper global-centered-rounded-action-button"><div class="the-trigger type-1 up-arrow go-top"><span></span></div></div>
                 <!-- go up -->
                 <!-- footer logo -->
                 <div class="footer-logo">
                     <div class="row my-row">
-                        <div class="site-logo col-auto my-col"><img src="Images/Logo_BODE_white.svg" width="154"></div>
-                        <div class="certificate-badge col-auto my-col ms-auto"><img src="Images/csr.svg" width="92">
-                        </div>
+                        <div class="site-logo col-md-auto col-12 my-col"><img src="Images/Logo_BODE_white.svg" width="154"></div>
+                        <div class="certificate-badge col-md-auto col-12 my-col ms-auto"><img src="Images/csr.svg" width="92"></div>
                     </div>
                 </div>
                 <!-- footer logo -->
@@ -1672,7 +1676,7 @@
                     <div class="container-fluid">
                         <div class="row my-row justify-content-md-center">
                             <!-- info -->
-                            <div class="col my-col basic-entry col-auto">
+                            <div class="col my-col basic-entry col-md-auto col-12">
                                 <p>
                                     <strong>Bode – Die Tür GmbH</strong><br>
                                     Ochshäuser Str. 14<br>
@@ -1681,7 +1685,7 @@
                             </div>
                             <!-- info -->
                             <!-- info -->
-                            <div class="col my-col basic-entry col-auto">
+                            <div class="col my-col basic-entry col-md-auto col-12">
                                 <p>
                                     <strong>Kontakt</strong><br>
                                     <a href="#">Tel +49 561 5009-0</a><br>
@@ -1696,7 +1700,7 @@
                 <!-- footer mail box -->
                 <div class="footer-mail-box">
                     <div class="row my-row justify-content-md-center">
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="special-iconic-input-box">
                                 <div class="main-wrap">
                                     <input type="text" class="text-input" placeholder="info@schaltbau-bode.de">
@@ -1710,12 +1714,9 @@
                 <!-- footer social -->
                 <div class="footer-social">
                     <div class="row my-row justify-content-center md-grid-less flex-grid-align-center">
-                        <div class="col-auto my-col"><a href="#"><img src="Images/linkedin-white.svg" width="30.84"></a>
-                        </div>
-                        <div class="col-auto my-col"><a href="#"><img src="Images/instagram-white.svg"
-                                    width="30.41"></a></div>
-                        <div class="col-auto my-col"><a href="#"><img src="Images/youtube-white.svg" width="40.57"></a>
-                        </div>
+                        <div class="col-auto my-col"><a href="#"><img src="Images/linkedin-white.svg" width="30.84"></a></div>
+                        <div class="col-auto my-col"><a href="#"><img src="Images/instagram-white.svg" width="30.41"></a></div>
+                        <div class="col-auto my-col"><a href="#"><img src="Images/youtube-white.svg" width="40.57"></a></div>
                     </div>
                 </div>
                 <!-- footer social -->
@@ -1723,33 +1724,31 @@
                 <div class="footer-navigation">
                     <div class="row my-row flex-grid-align-end">
                         <!-- col -->
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="main-wrap row my-row flex-grid-align-center">
                                 <!-- language switcher col -->
-                                <div class="col my-col col-auto">
+                                <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
                                         <div class="language-switcher switcher-module">
                                             <div class="site-tab-group-btn clearfix">
                                                 <span></span>
                                                 <div class="ball"></div>
-                                                <div class="button-wrap active"><a href="javascript:void(0)"
-                                                        class="main-button">DE</a></div>
-                                                <div class="button-wrap"><a href="javascript:void(0)"
-                                                        class="main-button">EN</a></div>
+                                                <div class="button-wrap active"><a href="javascript:void(0)" class="main-button">DE</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)" class="main-button">EN</a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- language switcher col -->
-                                <!-- footer menu col -->
-                                <div class="col my-col col-auto">
+                                 <!-- footer menu col -->
+                                 <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
-                                        <div class="footer-menu">
+                                       <div class="footer-menu">
                                             <ul>
                                                 <li><a href="#">Datenschutz</a></li>
                                                 <li><a href="#">Impressum</a></li>
                                             </ul>
-                                        </div>
+                                       </div>
                                     </div>
                                 </div>
                                 <!-- footer menu col -->
@@ -1757,12 +1756,12 @@
                         </div>
                         <!-- col -->
                         <!-- col -->
-                        <div class="col my-col col-auto ms-auto">
+                        <div class="col my-col col-md-auto col-12 ms-auto">
                             <div class="main-wrap">
                                 <div class="copy-right-text">©2023 Bode – Die Tür GmbH</div>
                             </div>
                         </div>
-                        <!-- col -->
+                        <!-- col -->    
                     </div>
                 </div>
                 <!-- footer navigation -->

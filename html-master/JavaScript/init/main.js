@@ -303,7 +303,8 @@ jQuery('.tab-filter-slider-module .the-slider').each(function(){
     dots: false,
     arrows: false,
     fade: true,
-    asNavFor: SLIDERNAV
+    asNavFor: SLIDERNAV,
+    adaptiveHeight: true
   });
 
 
@@ -343,7 +344,18 @@ jQuery('.tab-filter-slider-module .the-slider').each(function(){
       focusOnSelect: true,
       variableWidth: true,
       infinite: false,
-      draggable: false
+      draggable: false,
+      responsive: [
+        {
+          breakpoint: 999,
+          settings: {
+            centerPadding: '75px',
+            centerMode: true,
+            arrows: false,
+            infinite: true,
+          }
+        }
+      ]
     });
   }
   SLIDERNAV.find('.slick-arrow').wrapAll('<div class="slider-arrows"><div class="container-fluid"></div></div>');
@@ -651,6 +663,7 @@ jQuery('.close-mega-desktop-menu').click(function(){
     jQuery(this).find('.measure-card-header').matchHeight();
   });
 
+
 // paralax
 var controller = $.superscrollorama();
 
@@ -659,7 +672,13 @@ var controller = $.superscrollorama();
   
   jQuery('.counter-text-wrap').each(function(){
     var PARENTS = $(this).parents('.paralax-pause-scroller.type-5');
+    var STEPBOXHEIGHT = jQuery(PARENTS).find('.stepbox').height();
+    var DESKTOPSTEPBOXHEIGHT = jQuery(STEPBOXHEIGHT - 250);
+    var MOBILESTEPBOXHEIGHT = jQuery(STEPBOXHEIGHT - 94);
+    // console.log(DESKTOPSTEPBOXHEIGHT);
+    // console.log(MOBILESTEPBOXHEIGHT);
     jQuery(this).find('.slider-cell').matchHeight({byRow: false});
+    
 
     var SLIDERCELLMAXHEIGHT = jQuery(this).find('.slider-cell').height();
     jQuery(this).height(SLIDERCELLMAXHEIGHT + 20);
@@ -668,11 +687,19 @@ var controller = $.superscrollorama();
     var TOTALHEIGHTPLUS = TOTALHEIGHT + 20;
     var TOTALHEIGHTPLUSLESS1PART = TOTALHEIGHTPLUS - SLIDERCELLMAXHEIGHT;
 
+    if ($(window).width() > 1000) {
+      var circleProgress = TweenMax.to( 
+        PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: - 730, marginTop: - TOTALHEIGHTPLUSLESS1PART}},
+      );
+      controller.pin(PARENTS, 4000, {offset: -100, anim: circleProgress});
+    }
 
-    var circleProgress = TweenMax.to( 
-      PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: -294 + '%', marginTop: - TOTALHEIGHTPLUSLESS1PART}},
-    );
-    controller.pin(PARENTS, 4000, {offset: -100, anim: circleProgress});
+    if ($(window).width() < 1000) {
+      var circleProgress = TweenMax.to( 
+        PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: - 265, marginTop: - TOTALHEIGHTPLUSLESS1PART}},
+      );
+      controller.pin(PARENTS, 4000, {offset: -100, anim: circleProgress});
+    }
 
   });
 

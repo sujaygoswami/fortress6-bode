@@ -284,6 +284,12 @@
         .site-btn{
             font-size: 13px;
             padding: 8.5px 27px;
+
+            &.sm{
+                font-size: 11px;
+                padding: 10px 20px;
+                @include border-radius(18px);
+            }
         }
 
         // typo graphy
@@ -848,6 +854,98 @@
             }
         }
         // footer
+
+        // switcher-module
+        .switcher-module{
+            &.tab-switcher-style-main{
+                .site-tab-group-btn{
+                    .main-button{
+                        font-size: 11px;
+                        line-height: 16px;
+                        padding: 7px;
+                        @include border-radius(30px);
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+
+        // tab-filter-slider-module
+        .tab-filter-slider-module{
+
+            .product-first-view{
+                padding-bottom: 20px;
+                .product-bild{
+                    text-align: center;
+
+                    img{
+                        display: inline-block;
+                        max-width: 220px;
+                        width: inherit;
+                    }
+                }
+                .product-title{
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+
+                .product-excerpt{
+                    margin-bottom: 0px;
+                }
+
+                .product-sub-title{
+                    margin-bottom: 20px;
+                    h4{
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            .tab-nav-group{
+                margin-bottom: 40px;
+            }
+
+            .the-slider{
+                .counter{
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+
+                .slider-nav{
+                    padding-bottom: 0px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .product-card{
+                .product-bild{
+                    margin-bottom: 10px;
+                }
+                & > .main-wrap{
+                    padding: 15px;
+                    @include border-radius(10px);
+                }
+                .product-primary-info{
+                    .product-title{
+                        font-size: 18px;
+                        line-height: 30px;
+                        margin-bottom: 0px;
+                    }
+                    .product-excerpt{
+                        &.basic-entry{
+                            p{
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // tab-filter-slider-module
+
+        
         
 
     }

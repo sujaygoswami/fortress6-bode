@@ -792,6 +792,10 @@
                 & + {
                     p, ul, ol{
                         margin-top: 60px;
+
+                        @media screen and (max-width: $md) {
+                            margin-top: 25px;
+                        }
                     }
                 }
             }
@@ -1488,9 +1492,7 @@
 
     // tab-filter-slider-module
     .tab-filter-slider-module{
-        overflow-x: hidden;
-
-        
+            overflow-x: hidden;
 
         .tab-nav-group{
             margin-bottom: 65px;
@@ -1529,9 +1531,11 @@
             }
             
             .slider-nav{
-                padding-left: 285px;
                 padding-bottom: 60px;
                 margin-bottom: 50px;
+                @media screen and (min-width: $md){
+                    padding-left: 285px;
+                }
                 &:last-child{
                     margin-bottom: 0px;
                 }
@@ -1569,7 +1573,10 @@
                         }
                     }
                     & > div{
-                        width: 280px;
+                        width: 190px;
+                        @media screen and (min-width: $md){
+                            width: 280px;
+                        }
                     }
                 }
             }
@@ -1577,6 +1584,12 @@
 
         // product-first-view
         .product-first-view{
+            .product-bild{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
             .product-title{
                 font-size: 60px;
                 line-height: 70px;
@@ -1626,8 +1639,12 @@
                 img{
                     display: inline-block;
                     width: auto;
-                    max-width: 100%;
+                    max-width: 74px;
                     height: auto;
+
+                    @media screen and (min-width: $md){
+                        max-width: 100%;
+                    }
                 }
 
                 &:last-child{
@@ -2623,6 +2640,10 @@
                 position: relative;
                 top: inherit !important;
                 transform: none !important;
+
+                @media screen and (max-width: $md) {
+                    max-width: inherit;
+                }
 
                 @media screen and (min-width: $xxl){
                     margin-left: auto;

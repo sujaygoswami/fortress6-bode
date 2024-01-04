@@ -8634,6 +8634,9 @@ html, body {
     margin-bottom: 0px; }
     .bode .basic-entry.group-header h1 + p, .bode .basic-entry.group-header .h1 + p, .bode .basic-entry.group-header h1 + ul, .bode .basic-entry.group-header .h1 + ul, .bode .basic-entry.group-header h1 + ol, .bode .basic-entry.group-header .h1 + ol, .bode .basic-entry.group-header h2 + p, .bode .basic-entry.group-header .h2 + p, .bode .basic-entry.group-header h2 + ul, .bode .basic-entry.group-header .h2 + ul, .bode .basic-entry.group-header h2 + ol, .bode .basic-entry.group-header .h2 + ol, .bode .basic-entry.group-header h3 + p, .bode .basic-entry.group-header .h3 + p, .bode .basic-entry.group-header h3 + ul, .bode .basic-entry.group-header .h3 + ul, .bode .basic-entry.group-header h3 + ol, .bode .basic-entry.group-header .h3 + ol, .bode .basic-entry.group-header h4 + p, .bode .basic-entry.group-header .h4 + p, .bode .basic-entry.group-header h4 + ul, .bode .basic-entry.group-header .h4 + ul, .bode .basic-entry.group-header h4 + ol, .bode .basic-entry.group-header .h4 + ol, .bode .basic-entry.group-header h5 + p, .bode .basic-entry.group-header .h5 + p, .bode .basic-entry.group-header h5 + ul, .bode .basic-entry.group-header .h5 + ul, .bode .basic-entry.group-header h5 + ol, .bode .basic-entry.group-header .h5 + ol, .bode .basic-entry.group-header h6 + p, .bode .basic-entry.group-header .h6 + p, .bode .basic-entry.group-header h6 + ul, .bode .basic-entry.group-header .h6 + ul, .bode .basic-entry.group-header h6 + ol, .bode .basic-entry.group-header .h6 + ol {
       margin-top: 60px; }
+      @media screen and (max-width: 1000px) {
+        .bode .basic-entry.group-header h1 + p, .bode .basic-entry.group-header .h1 + p, .bode .basic-entry.group-header h1 + ul, .bode .basic-entry.group-header .h1 + ul, .bode .basic-entry.group-header h1 + ol, .bode .basic-entry.group-header .h1 + ol, .bode .basic-entry.group-header h2 + p, .bode .basic-entry.group-header .h2 + p, .bode .basic-entry.group-header h2 + ul, .bode .basic-entry.group-header .h2 + ul, .bode .basic-entry.group-header h2 + ol, .bode .basic-entry.group-header .h2 + ol, .bode .basic-entry.group-header h3 + p, .bode .basic-entry.group-header .h3 + p, .bode .basic-entry.group-header h3 + ul, .bode .basic-entry.group-header .h3 + ul, .bode .basic-entry.group-header h3 + ol, .bode .basic-entry.group-header .h3 + ol, .bode .basic-entry.group-header h4 + p, .bode .basic-entry.group-header .h4 + p, .bode .basic-entry.group-header h4 + ul, .bode .basic-entry.group-header .h4 + ul, .bode .basic-entry.group-header h4 + ol, .bode .basic-entry.group-header .h4 + ol, .bode .basic-entry.group-header h5 + p, .bode .basic-entry.group-header .h5 + p, .bode .basic-entry.group-header h5 + ul, .bode .basic-entry.group-header .h5 + ul, .bode .basic-entry.group-header h5 + ol, .bode .basic-entry.group-header .h5 + ol, .bode .basic-entry.group-header h6 + p, .bode .basic-entry.group-header .h6 + p, .bode .basic-entry.group-header h6 + ul, .bode .basic-entry.group-header .h6 + ul, .bode .basic-entry.group-header h6 + ol, .bode .basic-entry.group-header .h6 + ol {
+          margin-top: 25px; } }
   .bode .basic-entry.group-header.group-header-with-attach-sub h1 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h1 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h1 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h1 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h1 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h1 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h2 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h2 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h2 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h2 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h2 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h2 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h3 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h3 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h3 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h3 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h3 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h3 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h4 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h4 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h4 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h4 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h4 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h4 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h5 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h5 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h5 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h5 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h5 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h5 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub h6 + p, .bode .basic-entry.group-header.group-header-with-attach-sub .h6 + p, .bode .basic-entry.group-header.group-header-with-attach-sub h6 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub .h6 + ul, .bode .basic-entry.group-header.group-header-with-attach-sub h6 + ol, .bode .basic-entry.group-header.group-header-with-attach-sub .h6 + ol {
     margin-top: 0px; }
   .bode .basic-entry h1, .bode .basic-entry .h1 {
@@ -9103,9 +9106,11 @@ html, body {
       .bode .tab-filter-slider-module .the-slider .counter span {
         display: inline-block; }
     .bode .tab-filter-slider-module .the-slider .slider-nav {
-      padding-left: 285px;
       padding-bottom: 60px;
       margin-bottom: 50px; }
+      @media screen and (min-width: 1000px) {
+        .bode .tab-filter-slider-module .the-slider .slider-nav {
+          padding-left: 285px; } }
       .bode .tab-filter-slider-module .the-slider .slider-nav:last-child {
         margin-bottom: 0px; }
       .bode .tab-filter-slider-module .the-slider .slider-nav .slider-arrows {
@@ -9133,7 +9138,13 @@ html, body {
         .bode .tab-filter-slider-module .the-slider .slider-nav .slick-slide.slick-current .product-card > .main-wrap {
           border-color: var(--site-primary-color-light); }
         .bode .tab-filter-slider-module .the-slider .slider-nav .slick-slide > div {
-          width: 280px; }
+          width: 190px; }
+          @media screen and (min-width: 1000px) {
+            .bode .tab-filter-slider-module .the-slider .slider-nav .slick-slide > div {
+              width: 280px; } }
+    .bode .tab-filter-slider-module .product-first-view .product-bild img {
+      width: 100%;
+      height: auto; }
     .bode .tab-filter-slider-module .product-first-view .product-title {
       font-size: 60px;
       line-height: 70px;
@@ -9172,8 +9183,11 @@ html, body {
         .bode .tab-filter-slider-module .product-card .product-bild img {
           display: inline-block;
           width: auto;
-          max-width: 100%;
+          max-width: 74px;
           height: auto; }
+          @media screen and (min-width: 1000px) {
+            .bode .tab-filter-slider-module .product-card .product-bild img {
+              max-width: 100%; } }
         .bode .tab-filter-slider-module .product-card .product-bild:last-child {
           margin-bottom: 0px; }
       .bode .tab-filter-slider-module .product-card .product-primary-info .product-title {
@@ -9804,6 +9818,9 @@ html, body {
       position: relative;
       top: inherit !important;
       transform: none !important; }
+      @media screen and (max-width: 1000px) {
+        .bode .radial-counter-module .counter-text-wrap > .main-wrap {
+          max-width: inherit; } }
       @media screen and (min-width: 1700px) {
         .bode .radial-counter-module .counter-text-wrap > .main-wrap {
           margin-left: auto; } }
@@ -10065,6 +10082,13 @@ html, body {
     .bode .site-btn {
       font-size: 13px;
       padding: 8.5px 27px; }
+      .bode .site-btn.sm {
+        font-size: 11px;
+        padding: 10px 20px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        -ms-border-radius: 18px;
+        border-radius: 18px; }
     .bode .basic-entry.module-header h3, .bode .basic-entry.module-header .h3 {
       font-size: 22px;
       line-height: 30px; }
@@ -10372,7 +10396,57 @@ html, body {
         background-position: center center; }
       .bode footer.footer .global-centered-rounded-action-button .the-trigger span {
         width: 55.18px;
-        height: 55.18px; } }
+        height: 55.18px; }
+    .bode .switcher-module.tab-switcher-style-main .site-tab-group-btn .main-button {
+      font-size: 11px;
+      line-height: 16px;
+      padding: 7px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      border-radius: 30px;
+      letter-spacing: 3px; }
+    .bode .tab-filter-slider-module .product-first-view {
+      padding-bottom: 20px; }
+      .bode .tab-filter-slider-module .product-first-view .product-bild {
+        text-align: center; }
+        .bode .tab-filter-slider-module .product-first-view .product-bild img {
+          display: inline-block;
+          max-width: 220px;
+          width: inherit; }
+      .bode .tab-filter-slider-module .product-first-view .product-title {
+        font-size: 22px;
+        line-height: 30px; }
+      .bode .tab-filter-slider-module .product-first-view .product-excerpt {
+        margin-bottom: 0px; }
+      .bode .tab-filter-slider-module .product-first-view .product-sub-title {
+        margin-bottom: 20px; }
+        .bode .tab-filter-slider-module .product-first-view .product-sub-title h4, .bode .tab-filter-slider-module .product-first-view .product-sub-title .h4 {
+          font-size: 16px;
+          line-height: 22px; }
+    .bode .tab-filter-slider-module .tab-nav-group {
+      margin-bottom: 40px; }
+    .bode .tab-filter-slider-module .the-slider .counter {
+      font-size: 13px;
+      line-height: 16px; }
+    .bode .tab-filter-slider-module .the-slider .slider-nav {
+      padding-bottom: 0px;
+      margin-bottom: 30px; }
+    .bode .tab-filter-slider-module .product-card .product-bild {
+      margin-bottom: 10px; }
+    .bode .tab-filter-slider-module .product-card > .main-wrap {
+      padding: 15px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px; }
+    .bode .tab-filter-slider-module .product-card .product-primary-info .product-title {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 0px; }
+    .bode .tab-filter-slider-module .product-card .product-primary-info .product-excerpt.basic-entry p {
+      font-size: 12px;
+      line-height: 18px; } }
 
 /*! Vendor */
 /*!
@@ -16439,6 +16513,9 @@ https://flickity.metafizzy.co
 
 .circle-wrap-container {
   padding-right: 135px; }
+  @media screen and (max-width: 1000px) {
+    .circle-wrap-container {
+      padding-right: 0px; } }
 
 .circle-wrap {
   margin-left: auto;
@@ -16449,6 +16526,11 @@ https://flickity.metafizzy.co
   pointer-events: none;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 1000px) {
+    .circle-wrap {
+      width: 94px;
+      height: 94px;
+      margin-bottom: 15px; } }
   .circle-wrap:before {
     width: 100%;
     height: 100%;
@@ -16478,6 +16560,9 @@ https://flickity.metafizzy.co
     border-radius: 50%;
     margin-left: 5px;
     margin-top: inherit !important; }
+    @media screen and (max-width: 1000px) {
+      .circle-wrap .stepbox {
+        width: 84px; } }
     .circle-wrap .stepbox > div {
       width: 240px;
       height: 240px;
@@ -16488,6 +16573,12 @@ https://flickity.metafizzy.co
       font-weight: var(--site-primary-font-bold);
       margin-top: 5px;
       border-radius: 50%; }
+      @media screen and (max-width: 1000px) {
+        .circle-wrap .stepbox > div {
+          width: 84px;
+          height: 84px;
+          line-height: 84px;
+          font-size: 47px; } }
 
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
@@ -16498,6 +16589,11 @@ https://flickity.metafizzy.co
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   transform: rotate(0deg); }
+  @media screen and (max-width: 1000px) {
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+      width: 94px;
+      height: 94px; } }
 
 .circle.active-1of4 .mask.full, .circle.active-1of4 .fill {
   transform: rotate(45deg); }
@@ -16513,6 +16609,9 @@ https://flickity.metafizzy.co
 
 .circle-wrap .circle .mask {
   clip: rect(0px, 250px, 250px, 125px); }
+  @media screen and (max-width: 1000px) {
+    .circle-wrap .circle .mask {
+      clip: rect(0px, 94px, 94px, 47px); } }
 
 .circle-wrap .inside-circle {
   width: 240px;
@@ -16527,12 +16626,19 @@ https://flickity.metafizzy.co
   z-index: 100;
   font-weight: 700;
   font-size: 2em; }
+  @media screen and (max-width: 1000px) {
+    .circle-wrap .inside-circle {
+      width: 84px;
+      height: 84px; } }
 
 /* color animation */
 /* 3rd progress bar */
 .mask .fill {
   clip: rect(0px, 125px, 250px, 0px);
   background-color: var(--site-primary-color-light); }
+  @media screen and (max-width: 1000px) {
+    .mask .fill {
+      clip: rect(0px, 47px, 94px, 0px); } }
 
 .mask.full,
 .circle .fill {
