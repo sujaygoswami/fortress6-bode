@@ -124,10 +124,10 @@
         padding-bottom: 90px;
 
         &.padding-bottom-only{
-            padding-top: 0px;
+            padding-top: 0px !important;
         }
         &.padding-top-only{
-            padding-bottom: 0px;
+            padding-bottom: 0px !important;
         }
     }
 
@@ -136,10 +136,10 @@
         padding-bottom: 180px;
 
         &.padding-bottom-only{
-            padding-top: 0px;
+            padding-top: 0px !important;
         }
         &.padding-top-only{
-            padding-bottom: 0px;
+            padding-bottom: 0px !important;
         }
     }
 
@@ -148,10 +148,10 @@
         padding-bottom: 20px;
 
         &.padding-bottom-only{
-            padding-top: 0px;
+            padding-top: 0px !important;
         }
         &.padding-top-only{
-            padding-bottom: 0px;
+            padding-bottom: 0px !important;
         }
     }
 
@@ -1751,7 +1751,6 @@
                         background-color: white;
                         width: 100%;
                         @include border-radius(5px);
-                        padding: 15px;
                     }
 
                     img{
