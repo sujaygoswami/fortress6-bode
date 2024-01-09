@@ -1018,27 +1018,35 @@
     .banner-module{
         position: relative;
 
+        &.default-box-radius-all-side{
+            @include border-radius(0px !important);
+        }
+
+        .banner-video-module, .banner-image-module{
+            @include border-radius(15px);
+            overflow: hidden;
+        }
+
+        .banner-video-module{
+            height: 100%;
+
+            video{
+                width: 100%;
+                height: auto;
+                @media screen and (max-width: 1120px){
+                    width: auto;
+                    height: 100%;
+                }
+            }
+           
+        }
+
         &.start{
             height: calc(100vh - (var(--header-height)));
             min-height: 530px;
         }
 
-        @media screen and (max-width: $xxl){
-            .banner-video-module{
-                &.ratio{
-                    height: 100%;
-    
-                    & > video{
-                        width: auto;
-                        height: 100%;
-                    }
-    
-                    &::before{
-                        display: none;
-                    }
-                }
-            }
-        }
+        
         
 
         .banner-content{
@@ -1584,6 +1592,7 @@
 
         // product-first-view
         .product-first-view{
+            padding-bottom: 20px;
             .product-bild{
                 img{
                     width: 100%;
