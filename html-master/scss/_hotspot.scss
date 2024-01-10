@@ -68,6 +68,11 @@
         transform: translate(-50%, -50%) rotate(0deg);
         z-index: 3;
         transition: all ease 0.2s;
+        @media screen and (max-width: ($md - 1px)){
+          width: 54px;
+          height: 54px;
+          padding: 4px;
+        }
       }
       .target.active{
         border-color: var(--site-secondary-color);
@@ -83,12 +88,20 @@
         margin: 0;
         font-size:27px;
         line-height: 62px;
+
+        @media screen and (max-width: ($md - 1px)){
+          font-size: 17px;
+          line-height: 40px;
+        }
       }
       
       /* card */
       .cards {
         position: relative;
         left: -40%;
+        @media screen and (max-width: ($md - 1px)){
+          left: inherit;
+        }
       }
       .cards_inner {
         perspective: 800px;
@@ -187,6 +200,24 @@
           visibility: hidden;
         }
       }
+}
+
+
+@media screen and (max-width: $md) {
+  .hotspot-module{
+    .cards_inner__card{
+      padding: 10px 20px 20px 20px;
+      .basic-entry{
+        h1, h2, h3, h4, h5, h6{
+          margin-bottom: 15px;
+        }
+      }
+      .card-no{
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
 

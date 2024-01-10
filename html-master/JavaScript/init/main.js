@@ -416,7 +416,12 @@ jQuery('.paralax-pause-scroller.type-1').each(function(){
   var paralaxCard = TweenMax.to( 
     $(PARENTS).find('.slidings-tiles.type-1'), .5, {css:{top: -TOTALHEIGHT}}
   );
-  controller.pin(PARENTS, 4000, {offset: -50, anim: paralaxCard});
+  if ($(window).width() >= 1000) {
+    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+  }
+  if ($(window).width() < 1000) {
+    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+  }
 });
 
 
@@ -427,7 +432,12 @@ jQuery('.paralax-pause-scroller.type-2').each(function(){
   var paralaxCard = TweenMax.to( 
     $(PARENTS).find('.slidings-tiles.type-2'), .5, {css:{top: -TOTALHEIGHT}}
   );
-  controller.pin(PARENTS, 4000, {offset: -100, anim: paralaxCard});
+  if ($(window).width() >= 1000) {
+    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+  }
+  if ($(window).width() < 1000) {
+    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+  }
 });
 
 
@@ -439,7 +449,14 @@ jQuery('.paralax-pause-scroller.type-3').each(function(){
   var paralaxCard = TweenMax.to( 
     $(PARENTS).find('.slidings-tiles.type-3'), .5, {css:{top: -TOTALHEIGHTPLUS}}
   );
-  controller.pin(PARENTS, 4000, {offset: -100, anim: paralaxCard});
+
+  if ($(window).width() >= 1000) {
+    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+  }
+  
+  if ($(window).width() < 1000) {
+    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+  }
 });
 
 
@@ -451,7 +468,12 @@ jQuery('.paralax-pause-scroller.type-4').each(function(){
   var paralaxCard = TweenMax.to( 
     $(PARENTS).find('.slidings-tiles.type-3'), .5, {css:{top: -TOTALHEIGHTPLUS}}
   );
-  controller.pin(PARENTS, 4000, {offset: -100, anim: paralaxCard});
+  if ($(window).width() >= 1000) {
+    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+  }
+  if ($(window).width() < 1000) {
+    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+  }
 });
 
 
@@ -568,6 +590,17 @@ if ($(window).width() < 1000) {
 
 
 
+// hotspot-module mobile
+if ($(window).width() < 1000) {
+  jQuery('.hotspot-module').each(function(){
+    var TARGET = jQuery(this).find('.target-col');
+    var CARD = jQuery(this).find('.card-col');
+
+    jQuery(CARD).detach().insertBefore(TARGET);
+
+  });
+  
+}
 
 
 });
@@ -830,6 +863,8 @@ const cursor = new Cursor(element, target);
 
 // Card Slider - Start
 function cardSlide(){
+  var FIRSTHEIGHT = jQuery('.cards_inner__card:first-child').height();
+  jQuery('.card-col').height(FIRSTHEIGHT + 50);
   $('.antrieb-image .target:first-child()').addClass('active');
   $(document).on('click', ".target:not('.active')", function() {
         $('.target').removeClass('active');
@@ -847,6 +882,10 @@ function cardSlide(){
           $('.cards_inner .wrap').prepend('<div class="cards_inner__card ' + el_class_end + ' card_in" data-card="'+number+'">'+text+'</div>')
           el.remove();
         },160);
+        setTimeout(function(){
+          var FIRSTHEIGHT = jQuery('.cards_inner__card:first-child').height();
+          jQuery('.card-col').height(FIRSTHEIGHT + 50);
+        },200);
         setTimeout(function(){
           $('.card_in').removeClass('card_in')
         },500);
