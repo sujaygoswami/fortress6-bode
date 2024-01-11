@@ -674,6 +674,13 @@
             overflow: hidden;
             position: relative;
             background-color: white;
+
+            &.button-type{
+                line-height: 70px;
+                &:hover{
+                    background-color: var(--site-secondary-color);
+                }
+            }
             
 
             &.has-iconic-bg{
@@ -1035,11 +1042,32 @@
             height: 100%;
 
             video{
-                width: 100%;
-                height: auto;
-                @media screen and (max-width: 1120px){
-                    width: auto;
+                display: none;
+                @media (orientation: landscape) {
                     height: 100%;
+                    width: auto;
+                    &.landscape{
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 1631px) and (orientation: landscape) {
+                    height: auto;
+                    width: 100%;
+                }
+                
+
+                @media (orientation: portrait) {
+                    height: 100%;
+                    width: auto;
+                    &.portrait{
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 560px) and (orientation: portrait) {
+                    height: auto;
+                    width: 100%;
                 }
             }
            
@@ -2124,6 +2152,15 @@
             display: grid;
             align-items: center;
 
+            &:hover{
+                span{
+                    width: 85px;
+                    height: 85px;
+                    background-color: var(--site-primary-color-light);
+                    @include transition(all 0.2s ease 0s);
+                }
+            }
+
             &.type-1{
                 background-image: url(../Images/global-center-circle-type-1.svg);
                 width: 132.75px;
@@ -2180,6 +2217,7 @@
                 margin: 0 auto;
                 position: relative;
                 overflow: hidden;
+                @include transition(all 0.4s ease 0s);
 
                 &:before{
                     width: 100%;
@@ -2206,6 +2244,8 @@
                     background-color: var(--site-primary-color-light);
                     border-radius: 100%;
                     @include transition(all 0.3s ease 0s);
+                    display: none;
+                    pointer-events: none;
                 }
             }
         }

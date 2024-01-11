@@ -46,6 +46,21 @@
     }
 }
 
+// from tab end special
+.bode{
+    @media screen and (max-width: ($smEnd - 1px)){
+        .banner-module{
+            .banner-water-mark{
+                & > .main-wrap{
+                    & > img{
+                        margin-left: auto;
+                        margin-right: initial;
+                    }
+                }
+            }
+        }
+    }
+}
 // from mobile to the rest
 @media screen and (max-width: ($md - 1px)){
     .bode{
@@ -554,6 +569,14 @@
                     background-size: 62.06px;
                     align-items: flex-start;
 
+                    &:hover{
+                        span{
+                            width: 45px;
+                            height: 45px;
+                            top: -14px;
+                        }
+                    }
+
                     span{
                         width: 40px;
                         height: 40px;
@@ -589,10 +612,13 @@
 
             .quick-link-col{
                 margin-left: auto;
-                position: absolute;
                 width: 100%;
                 left: 0px;
                 bottom: 0px;
+
+                @media screen and (min-height: 700px) {
+                    position: absolute;
+                }
                 
                 & > .main-wrap{
                     padding: 30px 30px 20px 30px;
@@ -695,8 +721,6 @@
                 & > .main-wrap{
                     & > img{
                         max-width: 310px;
-                        margin-left: auto;
-                        margin-right: initial;
                     }
                 }
             }
@@ -866,6 +890,21 @@
         .special-iconic-input-box{
             .main-wrap{
                 height: 40px;
+                &.button-type{
+                    line-height: 40px;
+                }
+
+                &.has-iconic-bg{
+                    &:before{
+                        width: 50px;
+                    }
+
+                    &.mail-send-input{
+                        &:before{
+                            background-size: 17.65px;
+                        }
+                    }
+                }
             }
 
             .text-input{
@@ -1014,6 +1053,12 @@
             .global-centered-rounded-action-button{
                 top: -32px;
                 .the-trigger{
+                    &:hover{
+                        span{
+                            width: 60.18px;
+                            height: 60.18px;
+                        }
+                    }
                     &.up-arrow{
                         span{
                             &:before{

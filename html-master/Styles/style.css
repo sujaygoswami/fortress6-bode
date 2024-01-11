@@ -7959,7 +7959,14 @@ html, body {
   left: 0px;
   top: 0px;
   z-index: 300;
-  background-color: white; }
+  background-color: white;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .bode header.header.header-onscroll-hidden {
+    top: -60px; }
+    @media screen and (min-width: 1000px) {
+      .bode header.header.header-onscroll-hidden {
+        top: -102px; } }
   .bode header.header .header-search-form {
     position: relative; }
     .bode header.header .header-search-form .text-input {
@@ -8028,12 +8035,13 @@ html, body {
     position: relative; }
     .bode .site-mega-menu .main-menu-wrap .global-centered-rounded-action-button + .attch-row-grid {
       overflow: auto;
+      max-height: 80vh;
       /* width */
       /* Track */
       /* Handle */
       /* Handle on hover */ }
       .bode .site-mega-menu .main-menu-wrap .global-centered-rounded-action-button + .attch-row-grid::-webkit-scrollbar {
-        width: 5px; }
+        width: 0px; }
       .bode .site-mega-menu .main-menu-wrap .global-centered-rounded-action-button + .attch-row-grid::-webkit-scrollbar-track {
         box-shadow: none;
         border-radius: 0px; }
@@ -8565,6 +8573,10 @@ html, body {
     overflow: hidden;
     position: relative;
     background-color: white; }
+    .bode .special-iconic-input-box .main-wrap.button-type {
+      line-height: 70px; }
+      .bode .special-iconic-input-box .main-wrap.button-type:hover {
+        background-color: var(--site-secondary-color); }
     .bode .special-iconic-input-box .main-wrap.has-iconic-bg:before {
       width: 77px;
       height: 100%;
@@ -8799,12 +8811,27 @@ html, body {
     .bode .banner-module .banner-video-module {
       height: 100%; }
       .bode .banner-module .banner-video-module video {
-        width: 100%;
-        height: auto; }
-        @media screen and (max-width: 1120px) {
+        display: none; }
+        @media (orientation: landscape) {
           .bode .banner-module .banner-video-module video {
-            width: auto;
-            height: 100%; } }
+            height: 100%;
+            width: auto; }
+            .bode .banner-module .banner-video-module video.landscape {
+              display: block; } }
+        @media (min-width: 1631px) and (orientation: landscape) {
+          .bode .banner-module .banner-video-module video {
+            height: auto;
+            width: 100%; } }
+        @media (orientation: portrait) {
+          .bode .banner-module .banner-video-module video {
+            height: 100%;
+            width: auto; }
+            .bode .banner-module .banner-video-module video.portrait {
+              display: block; } }
+        @media (min-width: 560px) and (orientation: portrait) {
+          .bode .banner-module .banner-video-module video {
+            height: auto;
+            width: 100%; } }
     .bode .banner-module.start {
       height: calc(100vh - (var(--header-height)));
       min-height: 530px; }
@@ -9489,6 +9516,12 @@ html, body {
       text-align: center;
       display: grid;
       align-items: center; }
+      .bode .global-centered-rounded-action-button .the-trigger:hover span {
+        width: 85px;
+        height: 85px;
+        background-color: var(--site-primary-color-light);
+        -webkit-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s; }
       .bode .global-centered-rounded-action-button .the-trigger.type-1 {
         background-image: url(../Images/global-center-circle-type-1.svg);
         width: 132.75px;
@@ -9515,7 +9548,9 @@ html, body {
         background-color: var(--site-secondary-color);
         margin: 0 auto;
         position: relative;
-        overflow: hidden; }
+        overflow: hidden;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s; }
         .bode .global-centered-rounded-action-button .the-trigger span:before {
           width: 100%;
           height: 100%;
@@ -9540,7 +9575,9 @@ html, body {
           background-color: var(--site-primary-color-light);
           border-radius: 100%;
           -webkit-transition: all 0.3s ease 0s;
-          transition: all 0.3s ease 0s; }
+          transition: all 0.3s ease 0s;
+          display: none;
+          pointer-events: none; }
   .bode .paralax-pause-scroller {
     width: 100%; }
   .bode .sliding-card-module-text-tile-view.no-height {
@@ -9868,6 +9905,8 @@ html, body {
   font-weight: var(--site-secondary-font-normal);
   left: 0px;
   top: 0px; }
+  .bode footer.footer .footer-caption a {
+    color: inherit; }
   @media screen and (min-width: 1700px) {
     .bode footer.footer .footer-caption {
       font-size: 84px;
@@ -9980,6 +10019,11 @@ html, body {
   .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-nav .slider-element img {
     max-width: 60px;
     max-height: 60px; } }
+
+@media screen and (max-width: 767px) {
+  .bode .banner-module .banner-water-mark > .main-wrap > img {
+    margin-left: auto;
+    margin-right: initial; } }
 
 @media screen and (max-width: 999px) {
   .bode {
@@ -10256,6 +10300,10 @@ html, body {
           background-position: left bottom;
           background-size: 62.06px;
           align-items: flex-start; }
+          .bode .site-mega-menu .global-centered-rounded-action-button .the-trigger.type-1:hover span {
+            width: 45px;
+            height: 45px;
+            top: -14px; }
           .bode .site-mega-menu .global-centered-rounded-action-button .the-trigger.type-1 span {
             width: 40px;
             height: 40px;
@@ -10277,10 +10325,14 @@ html, body {
         margin-top: 15px; }
       .bode .site-mega-menu .quick-link-col {
         margin-left: auto;
-        position: absolute;
         width: 100%;
         left: 0px;
-        bottom: 0px; }
+        bottom: 0px; } }
+      @media screen and (max-width: 999px) and (min-height: 700px) {
+        .bode .site-mega-menu .quick-link-col {
+          position: absolute; } }
+
+@media screen and (max-width: 999px) {
         .bode .site-mega-menu .quick-link-col > .main-wrap {
           padding: 30px 30px 20px 30px; }
         .bode .site-mega-menu .quick-link-col .site-tab-group-btn {
@@ -10332,9 +10384,7 @@ html, body {
     .bode .banner-module.start {
       height: calc(100vh - (var(--header-height-mobile))); }
     .bode .banner-module .banner-water-mark > .main-wrap > img {
-      max-width: 310px;
-      margin-left: auto;
-      margin-right: initial; }
+      max-width: 310px; }
     .bode .measure-card-module .measure-card-header {
       margin-bottom: 0px; }
     .bode .measure-card-module .the-card.has-link > a {
@@ -10422,6 +10472,12 @@ html, body {
         border-bottom: none; }
     .bode .special-iconic-input-box .main-wrap {
       height: 40px; }
+      .bode .special-iconic-input-box .main-wrap.button-type {
+        line-height: 40px; }
+      .bode .special-iconic-input-box .main-wrap.has-iconic-bg:before {
+        width: 50px; }
+      .bode .special-iconic-input-box .main-wrap.has-iconic-bg.mail-send-input:before {
+        background-size: 17.65px; }
     .bode .special-iconic-input-box .text-input {
       font-size: 13px;
       padding-left: 50px;
@@ -10498,6 +10554,9 @@ html, body {
       min-height: 222px; }
     .bode footer.footer .global-centered-rounded-action-button {
       top: -32px; }
+      .bode footer.footer .global-centered-rounded-action-button .the-trigger:hover span {
+        width: 60.18px;
+        height: 60.18px; }
       .bode footer.footer .global-centered-rounded-action-button .the-trigger.up-arrow span:before {
         background-size: 16.56px; }
       .bode footer.footer .global-centered-rounded-action-button .the-trigger.type-1 {

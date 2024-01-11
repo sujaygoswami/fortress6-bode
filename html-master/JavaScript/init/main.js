@@ -99,15 +99,22 @@ var site = {}
 
 
 
-site.FIRSTLOOK = function() {
+site.HEADERVISIBILITYONSCROLL = function() {
 
+  var HEADERHEIGHT = jQuery('header.header').height();
     
 
-
+  if (jQuery(document).scrollTop() > 100) {
+    jQuery('header.header').addClass('header-onscroll-hidden');
+  }
+  else {
+    jQuery('header.header').removeClass('header-onscroll-hidden');
+  }
     
 
 
 };
+site.HEADERVISIBILITYONSCROLL();
 
 
 
@@ -127,6 +134,9 @@ jQuery( window ).on( "orientationchange", function( event ) {
           
 });
 
+jQuery(window).scroll(function() {
+  site.HEADERVISIBILITYONSCROLL();
+});
 
 
 
@@ -579,10 +589,18 @@ if ($(window).width() < 1000) {
     var RESPONSIVEMEASURECARDSLIDERELEMENT = jQuery(this).find('> .row');
     RESPONSIVEMEASURECARDSLIDERELEMENT.slick({
       infinite: false,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       dots: false,
-      arrows: false
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   });
   
@@ -782,7 +800,9 @@ jQuery(window).resize(function(){
 
 
 // image hotspot start
+var HOTSPOTMODULE = jQuery('.hotspot-module').length;
 
+if(HOTSPOTMODULE >= 1){
 // Magnet Mouse - Start
 const element = document.querySelector(".cursor");
 const target = document.querySelector(".target");
@@ -901,5 +921,7 @@ $(document).ready(function(){
     console.log($(this).position().left)
   });
 });
-// image hot spot end
 
+
+}
+// image hot spot end

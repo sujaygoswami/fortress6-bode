@@ -9,6 +9,15 @@
         top: 0px;
         z-index: 300;
         background-color: white;
+        @include transition(all 0.3s ease 0s);
+        &.header-onscroll-hidden{
+            top: -60px;
+            
+            @media screen and (min-width: $md) {
+                top: -102px;
+            }
+            
+        }
         .header-search-form{
             position: relative;
             .text-input{
@@ -86,10 +95,11 @@
             .global-centered-rounded-action-button{
                 & + .attch-row-grid{
                     overflow: auto;
+                    max-height: 80vh;
 
                     /* width */
                     &::-webkit-scrollbar {
-                        width: 5px;
+                        width: 0px;
                     }
                     
                     /* Track */

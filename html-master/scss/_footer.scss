@@ -24,6 +24,10 @@
             left: 0px;
             top: 0px;
 
+            a{
+                color: inherit;
+            }
+
             @media screen and (min-width: $xxl){
                
                 font-size: 84px;
