@@ -441,6 +441,21 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+    .curve-link-whole-hover{
+        &:hover{
+            .curve-link{
+                span{
+                    &::after{
+                        left: 0px;
+                    }
+                    &::before{
+                        background-image: url(../Images/arrow-right-solid-secondary.svg);
+                    }
+                }
+            }
+        }
+    }
     .curve-link{
         text-decoration: none;
         text-transform: uppercase;
@@ -1051,7 +1066,7 @@
                     }
                 }
 
-                @media (min-width: 1631px) and (orientation: landscape) {
+                @media (min-width: 1200px) and (orientation: landscape) {
                     height: auto;
                     width: 100%;
                 }
@@ -1158,6 +1173,12 @@
     // image-with-content-card-module start
     .image-with-content-card-module{
         position: relative;
+        &:hover{
+            .image-part{
+                transform: scale(1.05, 1.05);
+                transform-origin: center center;
+            }
+        }
         &.serial-box{
 
             .serial-number{
@@ -1210,6 +1231,7 @@
             top: 0px;
             height: 100%;
             width: 995px / 1600px * 100%;
+            @include transition(all 0.3s ease 0s);
 
             &.set-back{
                 background-size: cover;
@@ -1301,6 +1323,15 @@
     // overlay-card-module start
     .overlay-card-module{
 
+        .hover-image-scale{
+            &:hover{
+                .image-card-wrapper{
+                    transform: scale(1.05, 1.05);
+                    transform-origin: center center;
+                }
+            }
+        }
+
        
 
         &.overlay-gradient{
@@ -1377,6 +1408,7 @@
 
         .image-card-wrapper{
             height: 100%;
+            @include transition(all 0.3s ease 0s);
             &.set-back{
                 background-repeat: no-repeat;
                 background-size: cover;

@@ -620,6 +620,12 @@ if ($(window).width() < 1000) {
   
 }
 
+// curve-link-whole-hover
+// jQuery('.curve-link-whole-hover').mouseenter(function(){
+//   jQuery(this).find('.curve-link').trigger('click');
+//   console.log('hover');
+// });
+
 
 });
 
