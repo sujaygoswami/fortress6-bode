@@ -7960,8 +7960,11 @@ html, body {
   top: 0px;
   z-index: 300;
   background-color: white;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s; }
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  margin-top: 0px; }
+  .bode header.header.menu-open {
+    margin-top: 100vh; }
   .bode header.header.header-onscroll-hidden {
     top: -60px; }
     @media screen and (min-width: 1000px) {
@@ -8130,6 +8133,12 @@ html, body {
 
 .bode {
   padding-top: var(--header-height); }
+  .bode main {
+    margin-top: 0px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+    .bode main.menu-open {
+      margin-top: 100vh; }
   .bode .loader-screen {
     width: 100%;
     height: 100%;
@@ -8354,7 +8363,14 @@ html, body {
       row-gap: 56px; }
       .bode .my-row.md-grid-less > .my-col {
         padding-left: 28px;
-        padding-right: 28px; } }
+        padding-right: 28px; }
+    .bode .my-row.md-grid-mini {
+      margin-left: -15px;
+      margin-right: -15px;
+      row-gap: 30px; }
+      .bode .my-row.md-grid-mini > .my-col {
+        padding-left: 15px;
+        padding-right: 15px; } }
   .bode .my-row {
     row-gap: 40px; }
     .bode .my-row.attch-row-grid {
@@ -8812,30 +8828,29 @@ html, body {
       -ms-border-radius: 15px;
       border-radius: 15px;
       overflow: hidden; }
-    .bode .banner-module .banner-video-module {
-      height: 100%; }
-      .bode .banner-module .banner-video-module video {
-        display: none; }
-        @media (orientation: landscape) {
-          .bode .banner-module .banner-video-module video {
+    .bode .banner-module .banner-video-module, .bode .banner-module .banner-image-module {
+      height: 100%;
+      display: none; }
+      @media (orientation: landscape) {
+        .bode .banner-module .banner-video-module.landscape, .bode .banner-module .banner-video-module.no-portrait, .bode .banner-module .banner-image-module.landscape, .bode .banner-module .banner-image-module.no-portrait {
+          display: block; }
+          .bode .banner-module .banner-video-module.landscape video, .bode .banner-module .banner-video-module.no-portrait video, .bode .banner-module .banner-image-module.landscape video, .bode .banner-module .banner-image-module.no-portrait video {
             height: 100%;
-            width: auto; }
-            .bode .banner-module .banner-video-module video.landscape {
-              display: block; } }
-        @media (min-width: 1200px) and (orientation: landscape) {
-          .bode .banner-module .banner-video-module video {
-            height: auto;
-            width: 100%; } }
-        @media (orientation: portrait) {
-          .bode .banner-module .banner-video-module video {
+            width: auto; } }
+      @media (min-width: 1200px) and (orientation: landscape) {
+        .bode .banner-module .banner-video-module.landscape video, .bode .banner-module .banner-video-module.no-portrait video, .bode .banner-module .banner-image-module.landscape video, .bode .banner-module .banner-image-module.no-portrait video {
+          height: auto;
+          width: 100%; } }
+      @media (orientation: portrait) {
+        .bode .banner-module .banner-video-module.portrait, .bode .banner-module .banner-video-module.no-portrait, .bode .banner-module .banner-image-module.portrait, .bode .banner-module .banner-image-module.no-portrait {
+          display: block; }
+          .bode .banner-module .banner-video-module.portrait video, .bode .banner-module .banner-video-module.no-portrait video, .bode .banner-module .banner-image-module.portrait video, .bode .banner-module .banner-image-module.no-portrait video {
             height: 100%;
-            width: auto; }
-            .bode .banner-module .banner-video-module video.portrait {
-              display: block; } }
-        @media (min-width: 560px) and (orientation: portrait) {
-          .bode .banner-module .banner-video-module video {
-            height: auto;
-            width: 100%; } }
+            width: auto; } }
+      @media (min-width: 560px) and (orientation: portrait) {
+        .bode .banner-module .banner-video-module.portrait video, .bode .banner-module .banner-image-module.portrait video {
+          height: auto;
+          width: 100%; } }
     .bode .banner-module.start {
       height: calc(100vh - (var(--header-height)));
       min-height: 530px; }
@@ -9053,6 +9068,53 @@ html, body {
         .bode .overlay-card-module .video-card-wrapper video {
           width: auto;
           height: 100%; } }
+  .bode .news-listing-module .news-tag.position-type-1 {
+    position: absolute;
+    right: 12px;
+    top: 12px; }
+  .bode .news-listing-module .news-tag .main-wrap {
+    display: flex;
+    column-gap: 12px;
+    padding: 0px !important; }
+  .bode .news-listing-module .news-tag .the-tag {
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    min-width: 103px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    line-height: normal; }
+    .bode .news-listing-module .news-tag .the-tag.colored-type-1 {
+      background-color: var(--site-secondary-color); }
+    .bode .news-listing-module .news-tag .the-tag.colored-type-2 {
+      background-color: var(--site-primary-color-light);
+      color: white; }
+  .bode .news-listing-module .news-bild {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .bode .news-listing-module .news-bild:last-child {
+      margin-bottom: 0px; }
+    .bode .news-listing-module .news-bild img {
+      width: 100%;
+      height: auto; }
+  .bode .news-listing-module.type-with-bild-view .main-wrap {
+    border: none !important; }
+  .bode .news-listing-module.type-with-bild-view .news-date {
+    font-size: 17px; }
+  .bode .news-listing-module.type-with-bild-view .main-module .my-col {
+    border: none !important; }
+  .bode .news-listing-module.type-with-bild-view .basic-entry {
+    padding: 0px !important; }
+    .bode .news-listing-module.type-with-bild-view .basic-entry .news-excerpt p {
+      font-size: 25px;
+      line-height: 30px; }
   .bode .news-listing-module .basic-entry a, .bode .news-listing-module a {
     color: inherit;
     text-decoration: none; }

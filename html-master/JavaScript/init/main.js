@@ -683,6 +683,7 @@ jQuery('.nav-hmbg').click(function(){
   setTimeout(function() {
     DESKTOPMENU.find('.mega-menu-main-link').addClass('on-view');
   }, 300);
+  jQuery('main, header.header').addClass('menu-open');
 });
 
 jQuery('.close-mega-desktop-menu').click(function(){
@@ -691,6 +692,7 @@ jQuery('.close-mega-desktop-menu').click(function(){
   setTimeout(function() {
     DESKTOPMENU.find('.mega-menu-main-link').removeClass('on-view');
   }, 300);
+  jQuery('main, header.header').removeClass('menu-open');
 });
 
 // tab-filter-slider-module
