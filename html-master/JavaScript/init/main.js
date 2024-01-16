@@ -423,14 +423,15 @@ var controller = $.superscrollorama();
 jQuery('.paralax-pause-scroller.type-1').each(function(){
   var PARENTS = jQuery(this);
   var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
+  var APPLIEDTOTALHEIGHT = TOTALHEIGHT + 430;
   var paralaxCard = TweenMax.to( 
-    $(PARENTS).find('.slidings-tiles.type-1'), .5, {css:{top: -TOTALHEIGHT}}
+    $(PARENTS).find('.slidings-tiles.type-1'), .5, {css:{top: -APPLIEDTOTALHEIGHT}}
   );
   if ($(window).width() >= 1000) {
-    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
   if ($(window).width() < 1000) {
-    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
 });
 
@@ -439,14 +440,15 @@ jQuery('.paralax-pause-scroller.type-1').each(function(){
 jQuery('.paralax-pause-scroller.type-2').each(function(){
   var PARENTS = jQuery(this);
   var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
+  var APPLIEDTOTALHEIGHT = TOTALHEIGHT + 345;
   var paralaxCard = TweenMax.to( 
-    $(PARENTS).find('.slidings-tiles.type-2'), .5, {css:{top: -TOTALHEIGHT}}
+    $(PARENTS).find('.slidings-tiles.type-2'), .5, {css:{top: -APPLIEDTOTALHEIGHT}}
   );
   if ($(window).width() >= 1000) {
-    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
   if ($(window).width() < 1000) {
-    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
 });
 
@@ -750,14 +752,14 @@ var controller = $.superscrollorama();
       var circleProgress = TweenMax.to( 
         PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: - 730, marginTop: - TOTALHEIGHTPLUSLESS1PART}},
       );
-      controller.pin(PARENTS, 4000, {offset: -100, anim: circleProgress});
+      controller.pin(PARENTS, 4000, {offset: -30, anim: circleProgress});
     }
 
     if ($(window).width() < 1000) {
       var circleProgress = TweenMax.to( 
         PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: - 265, marginTop: - TOTALHEIGHTPLUSLESS1PART}},
       );
-      controller.pin(PARENTS, 4000, {offset: -100, anim: circleProgress});
+      controller.pin(PARENTS, 4000, {offset: -30, anim: circleProgress});
     }
 
   });
@@ -933,3 +935,5 @@ $(document).ready(function(){
 
 }
 // image hot spot end
+
+

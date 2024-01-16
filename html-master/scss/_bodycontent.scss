@@ -1047,6 +1047,11 @@
         display: inline-block;
         margin-top: 20px;
 
+        &:hover{
+            background-color: var(--site-primary-color-light);
+            color: var(--site-secondary-color);
+        }
+
         &.shadow{
             @include box-shadow(0px 3px 20px #00000029);
         }
@@ -1203,11 +1208,22 @@
     }
     // banner-module end
 
+    // product-stage-image
+    .product-stage-image{
+        .main-wrap{
+            background-image: url(../Images/global-product-stage.svg);
+            background-position: center bottom 13px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    // product-stage-image
+
     // image-with-content-card-module start
     .image-with-content-card-module{
         position: relative;
       
-        &:hover{
+        &:not(.no-hover-scale):hover{
             .image-part{
                 transform: scale(1.05, 1.05);
                 transform-origin: center center;
@@ -1267,6 +1283,32 @@
             width: 995px / 1600px * 100%;
             @include transition(all 0.3s ease 0s);
 
+            &.product-stage-image{
+                text-align: center;
+                background-color: var(--site-grey-type-1);
+                position: relative;
+                padding: 0 65px;
+
+                @media screen and (min-width: $md) {
+                    margin-right: -15px;
+                }
+
+                .main-wrap{
+                    padding: 35px 0 55px 0;
+                    display: block;
+                    background-position: center bottom 35px;
+
+                    @media screen and (min-width: $md) {
+                        background-position: center bottom 13px;
+                    }
+                }
+
+                img{
+                    display: inline-block;
+                    margin: 0 auto;
+                }
+            }
+
             &.set-back{
                 background-size: cover;
                 background-position: left top;
@@ -1308,7 +1350,7 @@
             }
         }
         .content-part{
-            width: 41%;
+            width: 42.5%;
             margin-left: auto;
             color: white;
             padding: 45px;
@@ -2394,6 +2436,7 @@
     // paralax-pause-scroller
     .paralax-pause-scroller{
         width: 100%;
+        margin-top: -30px;
     }
     // paralax-pause-scroller
 
@@ -2833,6 +2876,11 @@
 
     // radial-counter-module
     .radial-counter-module{
+        height: 100%;
+        &.set-back{
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
         .counter-text-wrap{
             overflow: hidden;
             & > .main-wrap{
