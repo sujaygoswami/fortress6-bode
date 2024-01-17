@@ -803,7 +803,6 @@ jQuery(window).resize(function(){
 
 
 
-
 });
 
 
