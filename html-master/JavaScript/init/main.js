@@ -145,7 +145,7 @@ jQuery(window).scroll(function() {
 
 jQuery('.set-back').each(function(){
 
- var SETBACK = jQuery(this).find('img').attr('src');
+ var SETBACK = jQuery(this).find('img:not(.no-set)').attr('src');
   jQuery(this).css('background-image', 'url(' + SETBACK + ')');
 
 });
@@ -748,14 +748,14 @@ var controller = $.superscrollorama();
     var TOTALHEIGHTPLUS = TOTALHEIGHT + 20;
     var TOTALHEIGHTPLUSLESS1PART = TOTALHEIGHTPLUS - SLIDERCELLMAXHEIGHT;
 
-    if ($(window).width() > 1000) {
+    if ($(window).width() >= 1700) {
       var circleProgress = TweenMax.to( 
         PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: - 730, marginTop: - TOTALHEIGHTPLUSLESS1PART}},
       );
       controller.pin(PARENTS, 4000, {offset: -30, anim: circleProgress});
     }
 
-    if ($(window).width() < 1000) {
+    if ($(window).width() < 1700) {
       var circleProgress = TweenMax.to( 
         PARENTS.find('.circle .mask.full, .circle .fill, .stepbox, .counter-text-wrap > .main-wrap'), .5, {css:{rotation: 180, top: - 265, marginTop: - TOTALHEIGHTPLUSLESS1PART}},
       );

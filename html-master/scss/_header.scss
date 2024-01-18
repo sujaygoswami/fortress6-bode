@@ -54,13 +54,38 @@
         }
 
         .nav-hmbg{
-            width: 58px;
-            height: 12px;
+            width: 57.8px;
+            height: 12.1px;
             cursor: pointer;
-            background-image: url(../Images/nav-hmbg.svg);
-            background-repeat: no-repeat;
-            background-position: left top;
-            background-size: cover;
+            position: relative;
+
+            &:hover{
+                span{
+                    transform: skew(0deg);
+                    width: 57.8px;
+                    background-color: var(--site-primary-color-light);
+                }
+            }
+
+            span{
+                width: 55px;
+                height: 3.1px;
+                position: absolute;
+                display: block;
+                background-color: var(--site-primary-color);
+                transform: skew(-30deg);
+                @include transition(all 0.2s ease 0s);
+
+                &:first-child{
+                    top: 0px;
+                    right: 0px;
+                }
+
+                &:last-child{
+                    bottom: 0px;
+                    left: 0px;
+                }
+            }
         }
     }
 

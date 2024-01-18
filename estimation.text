@@ -198,6 +198,45 @@ PENDING TASKS FROM NEW DESIGN
 
 
 
+====================
+NEW DESIGN EXTRA HRS
+====================
+
+1)The name of the page is displayed in a section of the image at the bottom left.
+Navigation bar: Should disappear when scrolling up. When scrolling up, the navigation bar should slide in again from top to bottom.
+	## Done with related paralax change [New Feature: 4hrs ]
+
+
+
+2) Header video: The video starts automatically when the page is accessed. It has no sound and cannot be stopped by the user. The video runs in a loop, meaning it automatically restarts as soon as it reaches the end. There are two video versions in landscape and portrait format adapted to the desktop and mobile versions.
+	## Done [New Feature: 3hrs]
+
+
+3) Mail-To-Link: info@ Schaltbau-bode.de
+	## done [New Feature: 1hr]
+
+
+4) The arrow should be slightly enlarged when mouseover.
+	25. When you mouse over, the yellow circle turns blue.
+	## done [New Feature: 2hr]
+
+
+5) menu hmbg animation
+   ##done [2hrs]
+
+
+6) menu animation with body
+   ##done [1hr]
+
+
+7) home page new nes listing
+
+   ## done [2hrs]
+
+
+
+
+
 
 
 

@@ -7863,7 +7863,7 @@ html, body {
   color: var(--site-primary-color); }
   .bode *:focus {
     outline: 0; }
-  .bode .set-back img {
+  .bode .set-back img:not(.no-set) {
     display: none; }
   .bode .my-partial-row {
     width: 100%;
@@ -7998,13 +7998,29 @@ html, body {
       cursor: pointer;
       padding: 0px; }
   .bode header.header .nav-hmbg {
-    width: 58px;
-    height: 12px;
+    width: 57.8px;
+    height: 12.1px;
     cursor: pointer;
-    background-image: url(../Images/nav-hmbg.svg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover; }
+    position: relative; }
+    .bode header.header .nav-hmbg:hover span {
+      transform: skew(0deg);
+      width: 57.8px;
+      background-color: var(--site-primary-color-light); }
+    .bode header.header .nav-hmbg span {
+      width: 55px;
+      height: 3.1px;
+      position: absolute;
+      display: block;
+      background-color: var(--site-primary-color);
+      transform: skew(-30deg);
+      -webkit-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s; }
+      .bode header.header .nav-hmbg span:first-child {
+        top: 0px;
+        right: 0px; }
+      .bode header.header .nav-hmbg span:last-child {
+        bottom: 0px;
+        left: 0px; }
 
 .bode .site-mega-menu {
   position: fixed;
@@ -9051,7 +9067,8 @@ html, body {
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
       -ms-border-radius: 15px;
-      border-radius: 15px; }
+      border-radius: 15px;
+      display: none; }
   .bode .overlay-card-module .overlay-context {
     position: absolute;
     z-index: 2;
@@ -9972,22 +9989,36 @@ html, body {
     .bode .fancybox__container .fancybox__content .caption-content-holder:not(:last-child) {
       display: none; }
   .bode .radial-counter-module {
-    height: 100%; }
+    min-height: 100vh; }
     .bode .radial-counter-module.set-back {
       background-repeat: no-repeat;
-      background-position: left bottom; }
+      background-position: left center; }
+      @media screen and (max-width: 1699px) {
+        .bode .radial-counter-module.set-back {
+          background-size: 320px;
+          background-position: left center;
+          padding-left: 350px; } }
+      @media screen and (max-width: 999px) {
+        .bode .radial-counter-module.set-back {
+          padding-left: 0px;
+          background-position: left bottom;
+          padding-bottom: 375px; } }
     .bode .radial-counter-module .counter-text-wrap {
-      overflow: hidden; }
+      overflow: hidden;
+      padding-left: 600px; }
+      @media screen and (max-width: 1699px) {
+        .bode .radial-counter-module .counter-text-wrap {
+          padding-left: 0px; } }
       .bode .radial-counter-module .counter-text-wrap > .main-wrap {
-        max-width: 60%;
+        max-width: inherit;
         margin-left: inherit;
         position: relative;
         top: inherit !important;
         transform: none !important; }
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1699px) {
           .bode .radial-counter-module .counter-text-wrap > .main-wrap {
             max-width: inherit; } }
-        @media screen and (min-width: 1700px) {
+        @media screen and (max-width: 1699px) {
           .bode .radial-counter-module .counter-text-wrap > .main-wrap {
             margin-left: auto; } }
       .bode .radial-counter-module .counter-text-wrap .slider-cell {
@@ -10387,9 +10418,6 @@ html, body {
           height: 40px; }
       .bode header.header .site-logo img {
         max-width: 102px; }
-      .bode header.header .nav-hmbg {
-        width: 50px;
-        height: 10px; }
     .bode .site-mega-menu {
       padding: 30px 10px 10px 10px; }
       .bode .site-mega-menu .site-menu-column-holder {
@@ -16840,7 +16868,7 @@ https://flickity.metafizzy.co
 
 .circle-wrap-container {
   padding-right: 135px; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1699px) {
     .circle-wrap-container {
       padding-right: 0px; } }
 
@@ -16852,8 +16880,9 @@ https://flickity.metafizzy.co
   border-radius: 50%;
   pointer-events: none;
   position: relative;
-  overflow: hidden; }
-  @media screen and (max-width: 1000px) {
+  overflow: hidden;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 1699px) {
     .circle-wrap {
       width: 94px;
       height: 94px;
@@ -16887,7 +16916,7 @@ https://flickity.metafizzy.co
     border-radius: 50%;
     margin-left: 5px;
     margin-top: inherit !important; }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1699px) {
       .circle-wrap .stepbox {
         width: 84px; } }
     .circle-wrap .stepbox > div {
@@ -16900,7 +16929,7 @@ https://flickity.metafizzy.co
       font-weight: var(--site-primary-font-bold);
       margin-top: 5px;
       border-radius: 50%; }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 1699px) {
         .circle-wrap .stepbox > div {
           width: 84px;
           height: 84px;
@@ -16916,7 +16945,7 @@ https://flickity.metafizzy.co
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   transform: rotate(0deg); }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1699px) {
     .circle-wrap .circle .mask,
     .circle-wrap .circle .fill {
       width: 94px;
@@ -16936,7 +16965,7 @@ https://flickity.metafizzy.co
 
 .circle-wrap .circle .mask {
   clip: rect(0px, 250px, 250px, 125px); }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1699px) {
     .circle-wrap .circle .mask {
       clip: rect(0px, 94px, 94px, 47px); } }
 
@@ -16953,7 +16982,7 @@ https://flickity.metafizzy.co
   z-index: 100;
   font-weight: 700;
   font-size: 2em; }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1699px) {
     .circle-wrap .inside-circle {
       width: 84px;
       height: 84px; } }
@@ -16963,7 +16992,7 @@ https://flickity.metafizzy.co
 .mask .fill {
   clip: rect(0px, 125px, 250px, 0px);
   background-color: var(--site-primary-color-light); }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1699px) {
     .mask .fill {
       clip: rect(0px, 47px, 94px, 0px); } }
 

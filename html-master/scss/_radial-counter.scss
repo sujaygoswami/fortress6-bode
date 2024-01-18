@@ -1,7 +1,7 @@
 
     .circle-wrap-container{
       padding-right: 135px;
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: ($xxl - 1px)) {
         padding-right: 0px;
       }
     }
@@ -14,8 +14,9 @@
       pointer-events: none;
       position: relative;
       overflow: hidden;
+      margin-bottom: 50px;
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: ($xxl - 1px)) {
         width: 94px;
         height: 94px;
         margin-bottom: 15px;
@@ -52,7 +53,7 @@
         margin-left: 5px;
         margin-top: inherit !important;
 
-        @media screen and (max-width: $md) {
+        @media screen and (max-width: ($xxl - 1px)) {
           width: 84px;
         }
 
@@ -68,7 +69,7 @@
           border-radius: 50%;
           // background-color: antiquewhite;
 
-          @media screen and (max-width: $md) {
+          @media screen and (max-width: ($xxl - 1px)) {
             width: 84px;
             height: 84px;
             line-height: 84px;
@@ -112,7 +113,7 @@
       @include transition(all 0.3s ease 0s);
       transform: rotate(0deg);
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: ($xxl - 1px)) {
         width: 94px;
         height: 94px;
       }
@@ -146,7 +147,7 @@
     
     .circle-wrap .circle .mask {
       clip: rect(0px, 250px, 250px, 125px);
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: ($xxl - 1px)) {
         clip: rect(0px, 94px, 94px, 47px);
       }
     }
@@ -165,7 +166,7 @@
       font-weight: 700;
       font-size: 2em;
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: ($xxl - 1px)) {
         width: 84px;
         height: 84px;
       }
@@ -178,7 +179,7 @@
       clip: rect(0px, 125px, 250px, 0px);
       background-color: var(--site-primary-color-light);
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: ($xxl - 1px)) {
         clip: rect(0px, 47px, 94px, 0px);
       }
     }

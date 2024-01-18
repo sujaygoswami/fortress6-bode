@@ -29,7 +29,7 @@ html, body{
 		
 
    .set-back{
-	   	img{
+	   	img:not(.no-set){
 	   		display: none;
 	   	}
    }
