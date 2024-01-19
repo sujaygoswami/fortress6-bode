@@ -463,11 +463,11 @@ jQuery('.paralax-pause-scroller.type-3').each(function(){
   );
 
   if ($(window).width() >= 1000) {
-    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
   
   if ($(window).width() < 1000) {
-    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
 });
 
@@ -481,10 +481,10 @@ jQuery('.paralax-pause-scroller.type-4').each(function(){
     $(PARENTS).find('.slidings-tiles.type-3'), .5, {css:{top: -TOTALHEIGHTPLUS}}
   );
   if ($(window).width() >= 1000) {
-    controller.pin(PARENTS, 4000, {offset: -102, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
   if ($(window).width() < 1000) {
-    controller.pin(PARENTS, 4000, {offset: -60, anim: paralaxCard});
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
   }
 });
 

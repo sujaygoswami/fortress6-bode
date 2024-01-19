@@ -169,6 +169,17 @@
         }
     }
 
+    .bg-site-global-cover-gradient-primary-color{
+        background-image: url(../Images/footer-bg.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+
+        @media screen and (max-width: ($md - 1px)){
+            background-image: url(../Images/footer-bg-mobile.svg);
+        }
+    }
+
     .bg-grey-type-1{
         background-color: var(--site-grey-type-1);
     }
