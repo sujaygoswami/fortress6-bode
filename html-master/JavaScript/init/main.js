@@ -505,12 +505,12 @@ jQuery('.serial-box-wrap .serial-box-col').each(function(){
   var int_length = (''+int_number).length;
   jQuery(this).attr('data-serial', INDEXOUTPUT);
 
-  jQuery(this).find('.serial-box').append('<span class="serial-number"></span>');
+  jQuery(this).find('.serial-box').append('<span class="serial-number"><em></em></span>');
 
   if(int_length < 2){
-    jQuery(this).find('.serial-box span').html('0' + INDEXOUTPUT);
+    jQuery(this).find('.serial-box span em').html('0' + INDEXOUTPUT);
   }else{
-    jQuery(this).find('.serial-box span').html(INDEXOUTPUT);
+    jQuery(this).find('.serial-box span em').html(INDEXOUTPUT);
   }
 
   
