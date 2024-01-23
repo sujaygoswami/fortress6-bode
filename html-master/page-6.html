@@ -30,23 +30,30 @@
                     <!-- logo col -->
                     <div class="col-auto my-col">
                         <div class="main-wrap site-logo">
-                            <a href="index.html"><img src="Images/site-logo.png" width="150"></a>
+                            <a href="index.html"><img src="Images/Logo_BODE.svg" width="150"></a>
                         </div>
                     </div>
                     <!-- logo col -->
                     <!-- header service part -->
                     <div class="col-auto my-col ms-auto">
-                        <div class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap">
+                        <div
+                            class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap responsive-mobile-deafult-column-gap">
                             <!-- search -->
                             <div class="header-search-form">
                                 <input type="text" class="text-input" placeholder="Suche…">
                                 <input type="submit" class="search-submit" value=" ">
                             </div>
                             <!-- search -->
+                            <!-- mobile search trigger -->
+                            <div class="mobile-search-trigger d-block d-md-none"></div>
+                            <!-- mobile search trigger -->
                             <!-- nav -->
                             <div class="main-nav">
                                 <!-- hamber -->
-                                <div class="nav-hmbg"></div>
+                                <div class="nav-hmbg">
+                                    <span></span>
+                                    <span></span>
+                                </div>
                                 <!-- hamber -->
                             </div>
                             <!-- nav -->
@@ -56,6 +63,76 @@
                 </div>
             </div>
         </div>
+        <!-- site mega menu -->
+        <div class="site-mega-menu animated desktop-menu">
+            <div class="main-menu-wrap">
+                <div class="global-centered-rounded-action-button">
+                    <div class="the-trigger type-1 close close-mega-desktop-menu"><span></span></div>
+                </div>
+                <div class="row my-row attch-row-grid full-height site-menu-column-holder">
+                    <!-- col -->
+                    <div class="col-md-auto my-col quick-link-col col-12">
+                        <div class="main-wrap full-height d-grid flex-grid-align-end">
+                            <div class="mega-menu-quick-link">
+                                <ul>
+                                    <li><a href="#">Unternehmen</a></li>
+                                    <li><a href="#">Messen</a></li>
+                                    <li><a href="#">Nachhaltigkeit</a></li>
+                                    <li><a href="#">Compliance</a></li>
+                                    <li><a href="#">Download-Center</a></li>
+                                    <li><a href="#">Kontakt</a></li>
+                                    <li class="site-mega-menu-lang-switcher-li d-md-block d-none">
+                                        <div class="language-switcher switcher-module inside-mega-menu">
+                                            <div class="site-tab-group-btn clearfix">
+                                                <span></span>
+                                                <div class="ball"></div>
+                                                <div class="button-wrap active"><a href="javascript:void(0)"
+                                                        class="main-button">DE</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">EN</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">PL</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="language-switcher switcher-module inside-mega-menu mobile-mega-menu-switcher d-block d-md-none">
+                                <div class="site-tab-group-btn clearfix">
+                                    <span></span>
+                                    <div class="ball"></div>
+                                    <div class="button-wrap active"><a href="javascript:void(0)"
+                                            class="main-button">DE</a></div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">EN</a>
+                                    </div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">PL</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col -->
+                    <!-- col -->
+                    <div class="col-md-auto my-col ms-auto main-link-col col-12">
+                        <div class="main-wrap">
+                            <div class="mega-menu-main-link">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Bode Vision</a></li>
+                                    <li><a href="#">Produkte</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Karriere</a></li>
+                                    <li><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col -->
+                </div>
+            </div>
+        </div>
+        <!-- site mega menu -->
     </header>
     <!-- header -->
 
@@ -65,46 +142,59 @@
     <main>
 
         <!-- section -->
-        <section class="section-row default-inset-left-right element-gap element-gap-type-5">
-            <!-- banner module -->
-            <div class="banner-module default-box-radius-all-side overflow-hidden start">
+        <section class="section-row default-inset-left-right pos-relative">
+             <!-- banner module -->
+             <div class="banner-module default-box-radius-all-side overflow-hidden start has-page-curved-header">
                 <!-- video -->
-                <!-- <div class="ratio ratio-16x9 banner-video-module">
+                <div class="ratio ratio-16x9 banner-video-module portrait">
+                    <video class="inview-video-paly-pause" muted loop>
+                        <source src="Videos/portrait-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- video -->
+
+                <!-- video -->
+                <div class="ratio ratio-16x9 banner-video-module landscape">
                     <video class="inview-video-paly-pause" muted loop>
                         <source src="Videos/banner-video-2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                        Your browser does not support the video tag.
                     </video>
-                </div> -->
+                </div>
                 <!-- video -->
 
                 <!-- image -->
-                <div class="banner-image-module set-back">
-                    <img src="Images/start-page-banner-image-1.jpeg">
-                </div>
+                <!-- <div class="banner-image-module set-back landscape">
+            <img src="Images/start-page-banner-image-1.jpeg">
+        </div> -->
                 <!-- image -->
 
+                <!-- image -->
+                <!-- <div class="banner-image-module set-back portrait">
+            <img src="Images/portrait-image-1.jpg">
+        </div> -->
+                <!-- image -->
 
+                <!-- page curved header -->
+                <div class="page-curved-header pos-type-1">
+                    <div class="main-header-part basic-entry">
+                        <h1>karrier</h1>
+                    </div>
+                </div>
+                <!-- page curved header -->
             </div>
             <!-- banner module -->
         </section>
         <!-- section -->
 
         <!-- section -->
-        <section class="section-row has-centered-container section-padding-lg">
+        <section class="section-row has-centered-container section-padding-default padding-top-only">
             <div class="container">
                 <div class="container-inset mx-auto">
                     <!-- normal text element module -->
                     <div class="normal-text-element-module basic-entry">
-                        <p class="lg-para">Wir sind ein konzerngebundenes, mittelständisches Unternehmen mit 2.000
-                            Mitarbeitern an sechs Standorten weltweit. Wir entwickeln individuelle Türsysteme für
-                            Fahrzeuge auf Schiene und Straße.</p>
-                        <p>Der Ideenreichtum unserer Ingenieure und Entwickler hat uns zum europäischen Marktführer
-                            gemacht. Unsere Mitarbeiter begreifen die Anregungen unserer Kunden als Triebfeder für die
-                            technische Weiterentwicklung. Auch die Mitarbeiter unserer Systemabteilungen kreieren
-                            ständig Ideen für neue Produkte, um die Herausforderungen anspruchsvoller Applikationen zu
-                            meistern.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                        <h2>Wir öffnen unsere Türen für deine berufliche Zukunft</h2>
+                        <p>BODE ist ein konzerngebundenes, mittelständisches Unternehmen mit 2.000 Mitarbeitern an sechs Standorten weltweit. Wir entwickeln individuelle Türsysteme für Fahrzeuge auf Schiene und Straße. Der Ideenreichtum unserer Ingenieure und Entwickler hat uns zum europäischen Marktführer gemacht.</p>
                     </div>
                     <!-- normal text element module -->
                 </div>
@@ -112,113 +202,61 @@
         </section>
         <!-- section -->
 
-        <!-- section -->
-        <section class="section-row has-centered-container section-padding-lg padding-bottom-only">
+         <!-- section -->
+         <section class="section-row has-centered-container section-padding-default padding-top-only">
             <div class="container">
-                <!-- image with content card -->
-                <div class="image-with-content-card-module default-box-radius-all-side overflow-hidden d-flex">
-                    <div class="image-part set-back"><img src="Images/content-image.jpeg"></div>
-                    <div class="image-overlay-text">
-                        <div class="text-holder">
-                            <div class="basic-entry">
-                                <h1>Wir suchen Dich!</h1>
-                            </div>
+               <!-- global text upon img content -->
+               <div class="global-text-upon-img-content pos-relative has-hanging-content-type-1">
+                    <div class="img-holder">
+                        <img src="Images/global-text-upon-img.jpg">
+                        <div class="text-upon basic-entry pull-text-center text-site-grey-type-1">
+                            <h1>Du suchst eine<br>
+                                Ausbildung</h1>
                         </div>
                     </div>
-                    <div class="content-part default-box-radius-topLeft-bottomLeft bg-site-primary">
-                        <div class="normal-text-element-module basic-entry">
-                            <p>Wir sind ständig auf der Suche nach qualifizierten und engagierten Mitarbeitern und
-                                Auszubildenden, die mit uns die Mobilität von morgen gestalten möchten.</p>
-                            <p>In unserem Karriereportal findest du alle Stellengesuche.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- image with content card -->
-            </div>
-        </section>
-        <!-- section -->
+                     <!-- measure card module -->
+                     <div class="measure-card-module type-hang-type-1 type-content-listing-view">
+                        <div class="row my-row default-grid">
 
-        <!-- section -->
-        <section class="section-row element-gap element-gap-type-1">
-            <!-- cover slider module -->
-            <div class="cover-slider-module">
-                <!-- slider element -->
-                <div class="slider-element"><img src="Images/center-mode-carousel-image-1.jpg"></div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element"><img src="Images/center-mode-carousel-image-1.jpg"></div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element"><img src="Images/center-mode-carousel-image-1.jpg"></div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element"><img src="Images/center-mode-carousel-image-1.jpg"></div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element"><img src="Images/center-mode-carousel-image-1.jpg"></div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element"><img src="Images/center-mode-carousel-image-1.jpg"></div>
-                <!-- slider element -->
-            </div>
-            <!-- cover slider module -->
-        </section>
-        <!-- section -->
-
-        <!-- section -->
-        <section
-            class="section-row element-gap element-gap-type-1-less section-padding-type-5 has-centered-container has-partly-bg">
-            <div class="partly-bg-type-1">
-                <div class="bg-grey-type-1"></div>
-            </div>
-            <div class="container">
-                <div class="container-inset-max mx-auto">
-                    <!-- partly bg content module -->
-                    <div class="global-module">
-                        <div class="row my-row">
                             <!-- col -->
-                            <div class="col-8 my-col">
-                                <div class="main-wrap">
-                                    <div
-                                        class="normal-text-element-module basic-entry element-gap element-gap-type-less-small">
-                                        <h2>Bewirb dich jetzt</h2>
-                                        <p>Wir freuen uns auch über Initiativbewerbungen und helfen dir dabei, die für
-                                            deine Kompetenzen bestgeeignete Position zu finden. Schick uns deine
-                                            Bewerbung an:</p>
-                                    </div>
-                                    <div class="special-iconic-input-box">
-                                        <div class="main-wrap d-inline-block">
-                                            <input type="text" class="text-input" placeholder="info@schaltbau-bode.de">
+                            <div class="col-6 my-col">
+                                <div class="main-wrap the-card type-bg-primary text-white has-link">
+                                        <div class="measure-card-info">
+                                            <div class="info-primary text-site-grey-type-1">TRAKO</div>
+                                            <div class="info-secondary">18. Internationale Eisenbahn Messe in Danzig, Polen</div>
+                                            <a class="curve-link type-1 position-type-1 hover-type-primary">MESSE<span></span></a>
                                         </div>
-                                    </div>
-
                                 </div>
                             </div>
                             <!-- col -->
+
                             <!-- col -->
-                            <div class="col-4 my-col">
-                                <div class="team-module type-2">
-                                    <div class="main-wrap">
-                                        <div class="team-bild default-plus-box-radius-all-side overflow-hidden"><img
-                                                src="Images/team-member-mini-1.jpg"></div>
-                                        <div class="team-info basic-entry">
-                                            <p class="sm-para"><strong class="name">Vorname Name</strong><br>
-                                                Ansprechpartner Bewerbung<br>
-                                                <a href="#">name@schaltbau-bode.de</a><br>
-                                                Tel: <a href="#">0561 / 123456</a>
-                                            </p>
+                            <div class="col-6 my-col">
+                                <div class="main-wrap the-card type-bg-primary-light text-white has-link full-height has-primary-color-gradient has-gradient pos-type-1">
+                                    <a href="#">
+                                        <div class="measure-card-header"><span class="measure-card-date">07. - 12.<br>Okt 2023</span></div>
+                                        <div class="measure-card-info">
+                                            <div class="info-primary text-site-grey-type-1">InnoTrans 2024</div>
+                                            <div class="info-secondary">BODE auf der Internationalen Fachmesse für Verkehrstechnik in Berlin</div>
+                                            <div class="curve-link type-1 position-type-1 hover-type-primary-light">MESSE<span></span></div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <!-- col -->
+                            
                         </div>
                     </div>
-                    <!-- partly bg content module -->
-                </div>
+                    <!-- measure card module -->
+               </div>
+                <!-- global text upon img content -->
             </div>
         </section>
         <!-- section -->
+
+       
+
+       
 
 
 
@@ -235,68 +273,96 @@
     </main>
     <!-- main -->
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container-fluid">
+     <!-- footer -->
+     <footer class="footer">
+        <div class="container-fluid mobile-inset-padding-sm">
             <!-- footer build -->
             <div class="footer-build default-box-radius-all-side overflow-hidden set-back">
                 <img src="Images/footer-bild.jpg">
                 <div class="footer-caption">
-                    <span>Access to Mobility</span>
+                    <span><a href="#">Access to Mobility</a></span>
                 </div>
             </div>
             <!-- footer build -->
+
             <!-- footer service part -->
-            <div class="footer-service-part default-box-radius-all-side overflow-hidden">
+            <div class="footer-service-part default-box-radius-all-side pos-relative">
+                <!-- go up -->
+                <div class="go-top-wrapper global-centered-rounded-action-button">
+                    <div class="the-trigger type-1 up-arrow go-top"><span></span></div>
+                </div>
+                <!-- go up -->
                 <!-- footer logo -->
-                <div class="footer-logo"><img src="Images/footer-logo.jpg"></div>
+                <div class="footer-logo">
+                    <div class="row my-row">
+                        <div class="site-logo col-md-auto col-12 my-col"><img src="Images/Logo_BODE_white.svg"
+                                width="154"></div>
+                        <div class="certificate-badge col-md-auto col-12 my-col ms-auto"><img src="Images/csr.svg"
+                                width="92"></div>
+                    </div>
+                </div>
                 <!-- footer logo -->
                 <!-- footer-info -->
-                <div class="footer-info row my-row justify-content-md-center">
-                    <!-- info -->
-                    <div class="col my-col basic-entry col-auto">
-                        <p>
-                            <strong>Bode – Die Tür GmbH</strong><br>
-                            Ochshäuser Str. 14<br>
-                            34123 Kassel
-                        </p>
+                <div class="footer-info">
+                    <div class="container-fluid">
+                        <div class="row my-row justify-content-md-center">
+                            <!-- info -->
+                            <div class="col my-col basic-entry col-md-auto col-12">
+                                <p>
+                                    <strong>Bode – Die Tür GmbH</strong><br>
+                                    Ochshäuser Str. 14<br>
+                                    34123 Kassel
+                                </p>
+                            </div>
+                            <!-- info -->
+                            <!-- info -->
+                            <div class="col my-col basic-entry col-md-auto col-12">
+                                <p>
+                                    <strong>Kontakt</strong><br>
+                                    <a href="#">Tel +49 561 5009-0</a><br>
+                                    Fax +49 561 54943
+                                </p>
+                            </div>
+                            <!-- info -->
+                        </div>
                     </div>
-                    <!-- info -->
-                    <!-- info -->
-                    <div class="col my-col basic-entry col-auto">
-                        <p>
-                            <strong>Kontakt</strong><br>
-                            <a href="#">Tel +49 561 5009-0</a><br>
-                            Fax +49 561 54943
-                        </p>
-                    </div>
-                    <!-- info -->
                 </div>
                 <!-- footer-info -->
                 <!-- footer mail box -->
                 <div class="footer-mail-box">
                     <div class="row my-row justify-content-md-center">
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="special-iconic-input-box">
-                                <div class="main-wrap">
-                                    <input type="text" class="text-input" placeholder="info@schaltbau-bode.de">
-                                </div>
+                                <a href="mailto: info@schaltbau-bode.de">
+                                    <div class="main-wrap button-type has-iconic-bg mail-send-input">
+                                        <div class="text-input">info@schaltbau-bode.de</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- footer mail box -->
                 <!-- footer social -->
-                <div class="footer-social">Footer Socila</div>
+                <div class="footer-social">
+                    <div class="row my-row justify-content-center md-grid-less flex-grid-align-center">
+                        <div class="col-auto my-col"><a href="#"><img src="Images/linkedin-white.svg" width="30.84"></a>
+                        </div>
+                        <div class="col-auto my-col"><a href="#"><img src="Images/instagram-white.svg"
+                                    width="30.41"></a></div>
+                        <div class="col-auto my-col"><a href="#"><img src="Images/youtube-white.svg" width="40.57"></a>
+                        </div>
+                    </div>
+                </div>
                 <!-- footer social -->
                 <!-- footer navigation -->
                 <div class="footer-navigation">
                     <div class="row my-row flex-grid-align-end">
                         <!-- col -->
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="main-wrap row my-row flex-grid-align-center">
                                 <!-- language switcher col -->
-                                <div class="col my-col col-auto">
+                                <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
                                         <div class="language-switcher switcher-module">
                                             <div class="site-tab-group-btn clearfix">
@@ -306,13 +372,15 @@
                                                         class="main-button">DE</a></div>
                                                 <div class="button-wrap"><a href="javascript:void(0)"
                                                         class="main-button">EN</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">PL</a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- language switcher col -->
                                 <!-- footer menu col -->
-                                <div class="col my-col col-auto">
+                                <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
                                         <div class="footer-menu">
                                             <ul>
@@ -327,7 +395,7 @@
                         </div>
                         <!-- col -->
                         <!-- col -->
-                        <div class="col my-col col-auto ms-auto">
+                        <div class="col my-col col-md-auto col-12 ms-auto">
                             <div class="main-wrap">
                                 <div class="copy-right-text">©2023 Bode – Die Tür GmbH</div>
                             </div>

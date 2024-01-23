@@ -1336,7 +1336,10 @@
                     min-height: inherit;
 
                     &.has-serial-number{
-                        padding-right: 135px;
+                        @media screen and (min-width: $md) {
+                            padding-right: 135px;
+                        }
+                       
                     }
                 }
 
@@ -1367,11 +1370,6 @@
 
                 .basic-entry{
                     max-width: inherit;
-
-                    p{
-                        font-size: 22px;
-                        line-height: 42px;
-                    }
                     
                     h3{
                         font-size: 40px;
@@ -1437,7 +1435,7 @@
 
                 position: relative;
                 z-index: 1;
-                width: 100%;
+                width: 96%;
                 height: 100%;
                 display: grid;
                 align-items: center;
@@ -1445,10 +1443,37 @@
                 color: var(--site-grey-type-1);
                 padding: 70px;
 
+                @media screen and (max-width: ($xxl - 1px)) and (min-width: $md){
+                    padding: 15px;
+                }
+
                 .basic-entry{
+                    
                     h1{
                         font-size: 50px;
                         line-height: 65px;
+                    }
+
+                    @media screen and (max-width: ($xxl - 1px)) and (min-width: $md){
+                        h1{
+                            font-size: 30px;
+                            line-height: normal;
+                        }
+
+                        h2{
+                            font-size: 28px;
+                            line-height: normal;
+                        }
+
+                        h3{
+                            font-size: 27px;
+                            line-height: normal;
+                        }
+
+                        h4{
+                            font-size: 26px;
+                            line-height: normal;
+                        }
                     }
                 }
 
@@ -1493,6 +1518,17 @@
                     background-position: right bottom;
                     background-size: contain;
                     background-repeat: no-repeat;
+            }
+
+            @media screen and (max-width: ($md - 1px)){
+                &.has-right-top-primary-light-gradient{
+                    background-image: url(../Images/img-with-content-card-primary-light-mobile-bg.svg);
+                }
+    
+                &.has-right-bottom-primary-gradient{
+                        background-image: url(../Images/img-with-content-card-primary-mobile-bg.svg);
+                        background-position: right top;
+                }
             }
 
             &.has-curved-linked-bottom{
@@ -1649,6 +1685,8 @@
 
     // news-listing-module start
     .news-listing-module{
+
+       
 
         .news-tag{
             &.view-2{
@@ -2333,6 +2371,22 @@
 
     // measure-card-module
     .measure-card-module{
+
+        &.type-content-listing-view{
+            
+            .measure-card-info{
+                padding-left: 40px;
+                padding-top: 55px;
+            }
+            
+        }
+
+        &.type-hang-type-1{
+            position: absolute;
+            bottom: 0px;
+            right: 130px;
+            max-width: 1062px/1600px * 100%;
+        }
 
         &.type-normal-card{
             .the-card{
@@ -3107,5 +3161,33 @@
         }
     }
     // tag-link-module
+
+    // global-text-upon-img-content
+    .global-text-upon-img-content{
+        &.has-hanging-content-type-1{
+            padding-bottom: 180px;
+        }
+        .text-upon{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: center;
+            padding: 25px;
+        }
+        .img-holder{
+            @include border-radius(15px);
+            overflow: hidden;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    // global-text-upon-img-content
 
 }

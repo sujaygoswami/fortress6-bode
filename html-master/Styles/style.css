@@ -9007,8 +9007,9 @@ html, body {
       width: 59%;
       padding: 120px 115px;
       min-height: inherit; }
-      .bode .image-with-content-card-module.view-2.new-look-type-1 .content-part.has-serial-number {
-        padding-right: 135px; }
+      @media screen and (min-width: 1000px) {
+        .bode .image-with-content-card-module.view-2.new-look-type-1 .content-part.has-serial-number {
+          padding-right: 135px; } }
     .bode .image-with-content-card-module.view-2.new-look-type-1 .image-part {
       width: 43%; }
     .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text {
@@ -9027,9 +9028,6 @@ html, body {
         background-repeat: no-repeat; }
       .bode .image-with-content-card-module.view-2 .content-part .basic-entry {
         max-width: inherit; }
-        .bode .image-with-content-card-module.view-2 .content-part .basic-entry p {
-          font-size: 22px;
-          line-height: 42px; }
         .bode .image-with-content-card-module.view-2 .content-part .basic-entry h3, .bode .image-with-content-card-module.view-2 .content-part .basic-entry .h3 {
           font-size: 40px;
           line-height: 48px; }
@@ -9075,16 +9073,32 @@ html, body {
       .bode .image-with-content-card-module .image-overlay-text .text-holder {
         position: relative;
         z-index: 1;
-        width: 100%;
+        width: 96%;
         height: 100%;
         display: grid;
         align-items: center;
         text-align: center;
         color: var(--site-grey-type-1);
         padding: 70px; }
+        @media screen and (max-width: 1699px) and (min-width: 1000px) {
+          .bode .image-with-content-card-module .image-overlay-text .text-holder {
+            padding: 15px; } }
         .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h1, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h1 {
           font-size: 50px;
           line-height: 65px; }
+        @media screen and (max-width: 1699px) and (min-width: 1000px) {
+          .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h1, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h1 {
+            font-size: 30px;
+            line-height: normal; }
+          .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h2, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h2 {
+            font-size: 28px;
+            line-height: normal; }
+          .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h3, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h3 {
+            font-size: 27px;
+            line-height: normal; }
+          .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h4, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h4 {
+            font-size: 26px;
+            line-height: normal; } }
         .bode .image-with-content-card-module .image-overlay-text .text-holder h1, .bode .image-with-content-card-module .image-overlay-text .text-holder .h1, .bode .image-with-content-card-module .image-overlay-text .text-holder h2, .bode .image-with-content-card-module .image-overlay-text .text-holder .h2, .bode .image-with-content-card-module .image-overlay-text .text-holder h3, .bode .image-with-content-card-module .image-overlay-text .text-holder .h3, .bode .image-with-content-card-module .image-overlay-text .text-holder h4, .bode .image-with-content-card-module .image-overlay-text .text-holder .h4, .bode .image-with-content-card-module .image-overlay-text .text-holder h5, .bode .image-with-content-card-module .image-overlay-text .text-holder .h5, .bode .image-with-content-card-module .image-overlay-text .text-holder h6, .bode .image-with-content-card-module .image-overlay-text .text-holder .h6 {
           text-shadow: 0px 3px 20px #00000029; }
       .bode .image-with-content-card-module .image-overlay-text:after {
@@ -9117,6 +9131,12 @@ html, body {
         background-position: right bottom;
         background-size: contain;
         background-repeat: no-repeat; }
+      @media screen and (max-width: 999px) {
+        .bode .image-with-content-card-module .content-part.has-right-top-primary-light-gradient {
+          background-image: url(../Images/img-with-content-card-primary-light-mobile-bg.svg); }
+        .bode .image-with-content-card-module .content-part.has-right-bottom-primary-gradient {
+          background-image: url(../Images/img-with-content-card-primary-mobile-bg.svg);
+          background-position: right top; } }
       .bode .image-with-content-card-module .content-part.has-curved-linked-bottom {
         padding-bottom: 155px; }
       .bode .image-with-content-card-module .content-part .basic-entry.typo-type-2 h3, .bode .image-with-content-card-module .content-part .basic-entry.typo-type-2 .h3 {
@@ -9649,6 +9669,14 @@ html, body {
     display: grid;
     align-items: center;
     height: 100%; }
+  .bode .measure-card-module.type-content-listing-view .measure-card-info {
+    padding-left: 40px;
+    padding-top: 55px; }
+  .bode .measure-card-module.type-hang-type-1 {
+    position: absolute;
+    bottom: 0px;
+    right: 130px;
+    max-width: 66.375%; }
   .bode .measure-card-module.type-normal-card .the-card.has-link > a {
     padding-top: 0px; }
   .bode .measure-card-module.type-normal-card .the-card.has-link .measure-card-info {
@@ -10139,6 +10167,27 @@ html, body {
     border-radius: 33px;
     text-decoration: none;
     color: inherit; }
+  .bode .global-text-upon-img-content.has-hanging-content-type-1 {
+    padding-bottom: 180px; }
+  .bode .global-text-upon-img-content .text-upon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    padding: 25px; }
+  .bode .global-text-upon-img-content .img-holder {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative; }
+    .bode .global-text-upon-img-content .img-holder img {
+      width: 100%;
+      height: auto; }
 
 .bode footer.footer > .container-fluid, .bode footer.footer > .container-sm, .bode footer.footer > .container-md, .bode footer.footer > .container-lg, .bode footer.footer > .container-xl, .bode footer.footer > .container-xxl {
   padding-top: 20px;
@@ -10310,6 +10359,8 @@ html, body {
       margin-bottom: 40px; }
     .bode .element-gap.element-gap-type-2 {
       margin-bottom: 65px; }
+    .bode .element-gap.element-gap-type-small {
+      margin-bottom: 60px; }
     .bode .mobile-no-uplift {
       padding-top: 0px !important;
       margin-top: 0px !important; }
@@ -10491,6 +10542,11 @@ html, body {
       font-size: 16px;
       line-height: 22px;
       margin-bottom: 20px; }
+    .bode .basic-entry ul li {
+      padding-left: 20px; }
+      .bode .basic-entry ul li:before {
+        background-size: 11.85px;
+        top: 6px; }
     .bode .basic-entry p, .bode .basic-entry li {
       font-size: 13px;
       line-height: 22px;
@@ -10668,9 +10724,33 @@ html, body {
         .bode .measure-card-module.type-mobile-slider .slick-track .slick-slide {
           padding-left: 5px;
           padding-right: 5px; }
-    .bode .image-with-content-card-module.d-flex {
+    .bode .image-with-content-card-module.serial-box .serial-number, .bode .image-with-content-card-module.view-2.new-look-type-1.serial-box .serial-number, .bode .image-with-content-card-module.view-2.serial-box .serial-number {
+      width: 59.81px;
+      height: 60px;
+      background-size: 59.81px; }
+      .bode .image-with-content-card-module.serial-box .serial-number em, .bode .image-with-content-card-module.view-2.new-look-type-1.serial-box .serial-number em, .bode .image-with-content-card-module.view-2.serial-box .serial-number em {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+        line-height: 40px; }
+    .bode .image-with-content-card-module .image-overlay-text .text-holder, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder {
+      width: 100%;
+      padding: 15px; }
+      .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h1, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h1, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry h1, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry .h1, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry h1, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry .h1 {
+        font-size: 20px;
+        line-height: normal; }
+      .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h2, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h2, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry h2, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry .h2, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry h2, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry .h2 {
+        font-size: 18px;
+        line-height: normal; }
+      .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h3, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h3, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry h3, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry .h3, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry h3, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry .h3 {
+        font-size: 16px;
+        line-height: normal; }
+      .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry h4, .bode .image-with-content-card-module .image-overlay-text .text-holder .basic-entry .h4, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry h4, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-overlay-text .text-holder .basic-entry .h4, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry h4, .bode .image-with-content-card-module.view-2 .image-overlay-text .text-holder .basic-entry .h4 {
+        font-size: 14px;
+        line-height: normal; }
+    .bode .image-with-content-card-module.d-flex, .bode .image-with-content-card-module.view-2.new-look-type-1.d-flex, .bode .image-with-content-card-module.view-2.d-flex {
       display: block !important; }
-    .bode .image-with-content-card-module .content-part {
+    .bode .image-with-content-card-module .content-part, .bode .image-with-content-card-module.view-2.new-look-type-1 .content-part, .bode .image-with-content-card-module.view-2 .content-part {
       width: 100%;
       -webkit-border-radius: 15px 15px 0 15px;
       -moz-border-radius: 15px 15px 0 15px;
@@ -10678,10 +10758,10 @@ html, body {
       border-radius: 15px 15px 0 15px;
       margin-top: -25px;
       padding: 60px 20px; }
-      .bode .image-with-content-card-module .content-part.has-curved-linked-bottom {
+      .bode .image-with-content-card-module .content-part.has-curved-linked-bottom, .bode .image-with-content-card-module.view-2.new-look-type-1 .content-part.has-curved-linked-bottom, .bode .image-with-content-card-module.view-2 .content-part.has-curved-linked-bottom {
         padding-bottom: 92px; }
-    .bode .image-with-content-card-module .image-part {
-      position: static;
+    .bode .image-with-content-card-module .image-part, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-part, .bode .image-with-content-card-module.view-2 .image-part {
+      position: relative;
       width: 100%;
       height: auto;
       -webkit-border-radius: 15px;
@@ -10689,9 +10769,9 @@ html, body {
       -ms-border-radius: 15px;
       border-radius: 15px;
       overflow: hidden; }
-      .bode .image-with-content-card-module .image-part.set-back {
+      .bode .image-with-content-card-module .image-part.set-back, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-part.set-back, .bode .image-with-content-card-module.view-2 .image-part.set-back {
         background: none !important; }
-        .bode .image-with-content-card-module .image-part.set-back > img {
+        .bode .image-with-content-card-module .image-part.set-back > img, .bode .image-with-content-card-module.view-2.new-look-type-1 .image-part.set-back > img, .bode .image-with-content-card-module.view-2 .image-part.set-back > img {
           display: block;
           width: 100%;
           height: auto; }
@@ -10712,6 +10792,17 @@ html, body {
       height: 684px; }
       .bode .overlay-card-module .my-col > .main-wrap.mobille-auto-height {
         height: auto; }
+    .bode .news-listing-module .news-bild, .bode .news-listing-module .news-bild.view-2 {
+      margin-bottom: 20px; }
+    .bode .news-listing-module.type-with-bild-view .news-date {
+      font-size: 13px; }
+    .bode .news-listing-module.type-with-bild-view .basic-entry .news-excerpt .bild-view-title {
+      font-size: 16px;
+      line-height: 22px; }
+    .bode .news-listing-module .news-tag .the-tag, .bode .news-listing-module .news-tag.view-2 .the-tag {
+      font-size: 13px;
+      padding: 7px 17px;
+      min-width: 65px; }
     .bode .news-listing-module .main-wrap {
       padding: 0 10px 35px 10px;
       border-bottom: 1px solid; }
@@ -10896,7 +10987,21 @@ html, body {
       margin-right: -5px; }
       .bode .product-listing-card-type.type-mobile-slider .slick-track .slick-slide {
         padding-left: 5px;
-        padding-right: 5px; } }
+        padding-right: 5px; }
+    .bode .tag-link-module > .main-wrap {
+      column-gap: 10px;
+      row-gap: 20px; }
+    .bode .tag-link-module .the-tag-link a {
+      font-size: 11px;
+      padding: 10px 14px;
+      letter-spacing: 2px; }
+    .bode .team-module .team-info .name {
+      font-size: 14px; }
+    .bode .team-module .my-col:nth-child(2n+1) .main-wrap {
+      margin-left: inherit; }
+    .bode .team-module .main-wrap {
+      max-width: 75%;
+      margin-left: auto; } }
 
 /*! Vendor */
 /*!

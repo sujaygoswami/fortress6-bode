@@ -113,6 +113,9 @@
             &.element-gap-type-2{
                 margin-bottom: 65px;
             }
+            &.element-gap-type-small{
+                margin-bottom: 60px;
+            }
         }
         
         .mobile-no-uplift{
@@ -467,6 +470,19 @@
                 margin-bottom: 20px;
             }
 
+            ul{
+                li{
+                    padding-left: 20px;
+    
+                    &:before{
+                        background-size: 11.85px;
+                        top: 6px;
+                    }
+                }
+            }
+
+            
+
             p, li{
                 font-size: 13px;
                 line-height: 22px;
@@ -784,7 +800,48 @@
         // measure-card-module
 
         // image-with-content-card-module
-        .image-with-content-card-module{
+        .image-with-content-card-module, .image-with-content-card-module.view-2.new-look-type-1, .image-with-content-card-module.view-2{
+            &.serial-box{
+                .serial-number{
+                    width: 59.81px;
+                    height: 60px;
+                    background-size: 59.81px;
+                    em{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 13px;
+                        line-height: 40px;
+                    }
+                }
+            }
+            .image-overlay-text{
+                .text-holder{
+                    width: 100%;
+                    padding: 15px;
+                    .basic-entry{
+                        h1{
+                            font-size: 20px;
+                            line-height: normal;
+                        }
+
+                        h2{
+                            font-size: 18px;
+                            line-height: normal;
+                        }
+
+                        h3{
+                            font-size: 16px;
+                            line-height: normal;
+                        }
+
+                        h4{
+                            font-size: 14px;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+            
             &.d-flex{
                 display: block !important;
             }
@@ -799,7 +856,7 @@
                 }
             }
             .image-part{
-                position: static;
+                position: relative;
                 width: 100%;
                 height: auto;
                 @include border-radius(15px);
@@ -860,6 +917,33 @@
 
         // news-listing-module
         .news-listing-module{
+
+            .news-bild, .news-bild.view-2{
+                margin-bottom: 20px;
+            }
+
+            &.type-with-bild-view{
+                .news-date{
+                    font-size: 13px;
+                }
+                .basic-entry{
+                    .news-excerpt{
+                        .bild-view-title{
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+
+            .news-tag, .news-tag.view-2{
+                .the-tag{
+                    font-size: 13px;
+                    padding: 7px 17px;
+                    min-width: 65px;
+                }
+            }
+
             .main-wrap{
                 padding: 0 10px 35px 10px;
                 border-bottom: 1px solid;
@@ -1234,6 +1318,44 @@
             }
         }
         // product-listing-card-type
+
+        // tag-link-module
+        .tag-link-module{
+            & > .main-wrap{
+                column-gap: 10px;
+                row-gap: 20px;
+            }
+            .the-tag-link{
+                a{
+                    font-size: 11px;
+                    padding: 10px 14px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        // tag-link-module
+
+        // team-module
+        .team-module{
+            .team-info{
+                .name{
+                    font-size: 14px;
+                }
+            }
+            .my-col{
+                &:nth-child(2n+1){
+                    .main-wrap{
+                        margin-left: inherit;
+                    }
+                    
+                }
+            }
+            .main-wrap{
+                max-width: 75%;
+                margin-left: auto;
+            }
+        }
+        // team-module
         
         
         
