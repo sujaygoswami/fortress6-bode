@@ -376,6 +376,18 @@
         // curve link
         .curve-link{
             font-size: 11px;
+
+            &.type-1{
+                &.play-icon{
+                    span{
+                        &:before{
+                            background-size: 17px;
+                            background-position: right 9px top 11px;
+                        }
+                    }
+                }
+            }
+            
             &.type-3-back{
                 min-width: 59.99px;
                 background-size: 59.99px;
@@ -483,7 +495,7 @@
 
             
 
-            p, li{
+            p, li, p.sm-para{
                 font-size: 13px;
                 line-height: 22px;
                 margin-bottom: 20px;
@@ -770,8 +782,37 @@
                     line-height: 22px;
                 }
             }
-            &.type-mobile-slider{
+            &.type-mobile-slider, &.type-mobile-slider-type-two{
                 margin-top: 0px !important;
+                .slick-dots{
+                    margin: 20px 0 0 0;
+                    padding: 0px;
+                    text-align: center;
+                    height: 5px;
+
+                    li{
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0 4px;
+                        padding: 0px;
+                        width: 33px;
+                        height: 5px;
+                        font-size: 0px;
+                        background-color: var(--site-secondary-color);
+                        opacity: 0.4;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        &.slick-active{
+                            opacity: 1;
+                        }
+                        button{
+                            width: 100%;
+                            height: 100%;
+                            background: transparent;
+                            border: none;
+                        }
+                    }
+                }
                 & > .row{
                     margin-left: 0px;
                     margin-right: 0px;
@@ -782,9 +823,9 @@
                     }
                 }
 
-                .slick-list{
-                    overflow: initial;
-                }
+                // .slick-list{
+                //     overflow: inherit;
+                // }
 
                 .slick-track{
                     margin-left: -5px;
@@ -1356,6 +1397,71 @@
             }
         }
         // team-module
+
+        // hang-type-parent
+        .hang-type-parent{
+            &.hang-type-mobile-disable-bottom-pad{
+                padding-bottom: 0px !important;
+            }
+        }
+        // hang-type-parent
+
+        // measure card module hang type
+        .measure-card-module{
+            &.type-hang-type-1{
+                position: relative;
+                left: inherit;
+                right: inherit;
+                top: inherit;
+                bottom: inherit;
+                max-width: inherit;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-top: -45px;
+            }
+
+            &.type-content-listing-view{
+                .measure-card-info{
+                    padding-top: 35px;
+                    padding-left: 20px;
+                }
+            }
+        }
+        // measure card module hang type
+
+        // paralax-card-number
+        .basic-entry{
+            h1{
+                &.paralax-card-number{
+                    font-size: 63px;
+                    line-height: 76px;
+                }
+            }
+        }
+        // paralax-card-number
+
+        // global-text-upon-img-content
+        .global-text-upon-img-content{
+            .img-holder{
+                min-height: 260px;
+            }
+            .basic-entry{
+                h1{
+                    font-size: 19px;
+                    line-height: 26px;
+                }
+            }
+        }
+        // global-text-upon-img-content
+
+        // global-text-upon-img-content
+        .global-rounded-content-box{
+            &.pad-type-2, &.pad-type-1{
+                padding: 55px 30px 80px 30px;
+            }
+        }
+        // global-text-upon-img-content
+        
         
         
         

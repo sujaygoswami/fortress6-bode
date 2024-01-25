@@ -16,7 +16,6 @@
 </head>
 
 <body class="bode">
-
     <div class="loader-screen"></div>
 
     <!--[if lt IE 10]>
@@ -38,17 +37,24 @@
                     <!-- logo col -->
                     <!-- header service part -->
                     <div class="col-auto my-col ms-auto">
-                        <div class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap">
+                        <div
+                            class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap responsive-mobile-deafult-column-gap">
                             <!-- search -->
                             <div class="header-search-form">
                                 <input type="text" class="text-input" placeholder="Suche…">
                                 <input type="submit" class="search-submit" value=" ">
                             </div>
                             <!-- search -->
+                            <!-- mobile search trigger -->
+                            <div class="mobile-search-trigger d-block d-md-none"></div>
+                            <!-- mobile search trigger -->
                             <!-- nav -->
                             <div class="main-nav">
                                 <!-- hamber -->
-                                <div class="nav-hmbg"></div>
+                                <div class="nav-hmbg">
+                                    <span></span>
+                                    <span></span>
+                                </div>
                                 <!-- hamber -->
                             </div>
                             <!-- nav -->
@@ -64,9 +70,9 @@
                 <div class="global-centered-rounded-action-button">
                     <div class="the-trigger type-1 close close-mega-desktop-menu"><span></span></div>
                 </div>
-                <div class="row my-row attch-row-grid full-height">
+                <div class="row my-row attch-row-grid full-height site-menu-column-holder">
                     <!-- col -->
-                    <div class="col-auto my-col">
+                    <div class="col-md-auto my-col quick-link-col col-12">
                         <div class="main-wrap full-height d-grid flex-grid-align-end">
                             <div class="mega-menu-quick-link">
                                 <ul>
@@ -76,7 +82,7 @@
                                     <li><a href="#">Compliance</a></li>
                                     <li><a href="#">Download-Center</a></li>
                                     <li><a href="#">Kontakt</a></li>
-                                    <li>
+                                    <li class="site-mega-menu-lang-switcher-li d-md-block d-none">
                                         <div class="language-switcher switcher-module inside-mega-menu">
                                             <div class="site-tab-group-btn clearfix">
                                                 <span></span>
@@ -85,16 +91,31 @@
                                                         class="main-button">DE</a></div>
                                                 <div class="button-wrap"><a href="javascript:void(0)"
                                                         class="main-button">EN</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">PL</a></div>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
+                            <div
+                                class="language-switcher switcher-module inside-mega-menu mobile-mega-menu-switcher d-block d-md-none">
+                                <div class="site-tab-group-btn clearfix">
+                                    <span></span>
+                                    <div class="ball"></div>
+                                    <div class="button-wrap active"><a href="javascript:void(0)"
+                                            class="main-button">DE</a></div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">EN</a>
+                                    </div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">PL</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- col -->
                     <!-- col -->
-                    <div class="col-auto my-col ms-auto">
+                    <div class="col-md-auto my-col ms-auto main-link-col col-12">
                         <div class="main-wrap">
                             <div class="mega-menu-main-link">
                                 <ul>
@@ -126,24 +147,39 @@
             <!-- banner module -->
             <div class="banner-module default-box-radius-all-side overflow-hidden start has-page-curved-header">
                 <!-- video -->
-                <!-- <div class="ratio ratio-16x9 banner-video-module">
-                <video class="inview-video-paly-pause" muted loop>
-                    <source src="Videos/banner-video-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-            </div> -->
+                <div class="ratio ratio-16x9 banner-video-module portrait">
+                    <video class="inview-video-paly-pause" muted loop>
+                        <source src="Videos/portrait-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- video -->
+
+                <!-- video -->
+                <div class="ratio ratio-16x9 banner-video-module landscape">
+                    <video class="inview-video-paly-pause" muted loop>
+                        <source src="Videos/banner-video-2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 <!-- video -->
 
                 <!-- image -->
-                <div class="banner-image-module set-back">
-                    <img src="Images/start-page-banner-image-1.jpeg">
-                </div>
+                <!-- <div class="banner-image-module set-back landscape">
+            <img src="Images/start-page-banner-image-1.jpeg">
+        </div> -->
+                <!-- image -->
+
+                <!-- image -->
+                <!-- <div class="banner-image-module set-back portrait">
+            <img src="Images/portrait-image-1.jpg">
+        </div> -->
                 <!-- image -->
 
                 <!-- page curved header -->
                 <div class="page-curved-header pos-type-1">
                     <div class="main-header-part basic-entry">
-                        <h1>Messen</h1>
+                        <h1>News</h1>
                     </div>
                 </div>
                 <!-- page curved header -->
@@ -152,231 +188,215 @@
         </section>
         <!-- section -->
 
-        <!-- section -->
-        <section class="section-row has-centered-container section-padding-lg">
-            <div class="container">
-                <div class="container-inset mx-auto">
-                    <!-- normal text element module -->
-                    <div class="normal-text-element-module basic-entry">
-                        <p class="lg-para">Wir freuen uns, wenn wir uns auf den kommenden Messen persönlich mit Ihnen
-                            auszutauschen können!</p>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <!-- normal text element module -->
-                </div>
-            </div>
-        </section>
-        <!-- section -->
+
 
         <!-- section -->
-        <section class="section-row section-padding-default bg-grey-type-1 has-centered-container">
+        <section class="section-row section-padding-default has-centered-container">
             <div class="container">
-                <div class="container-inset-min-less mx-auto">
-                    <!-- normal text element module -->
-                    <div
-                        class="normal-text-element-module basic-entry module-header group-header groip-header-type-2 group-header-with-attach-sub element-gap element-gap-tiny-plus">
-                        <h3>Seien Sie dabei!</h3>
-                        <p>Die nächsten Messeauftritte von BODE stehen vor der Tür.</p>
-                    </div>
-                    <!-- normal text element module -->
-                    <!-- measure card module -->
-                    <div class="measure-card-module element-gap element-gap-type-1">
-                        <div class="row my-row sm-grid">
+                <div class="container-inset-max-plus mx-auto">
+                    <!-- latest news module -->
+                    <div class="latest-news-module">
+                        <!-- row -->
+                        <div class="row default-grid flex-grid-align-center">
                             <!-- col -->
-                            <div class="col-12 my-col">
-                                <div
-                                    class="main-wrap the-card type-bg-primary-light text-white has-link full-height has-primary-color-gradient has-gradient pos-type-1">
-                                    <a href="#">
-                                        <div class="measure-card-header"><span class="measure-card-date">07. -
-                                                12.<br>Okt 2023</span></div>
-                                        <div class="measure-card-info">
-                                            <div class="info-primary text-site-grey-type-1">InnoTrans 2024</div>
-                                            <div class="info-secondary">BODE auf der Internationalen Fachmesse für
-                                                <br>Verkehrstechnik in Berlin
+                            <div class="col-8 my-col">
+                                <div class="main-wrap">
+                                    <!-- image with content card -->
+                                    <div
+                                        class="image-with-content-card-module default-box-radius-all-side overflow-hidden d-flex no-radius-right-bottom type-img-overlap no-hover-scale">
+                                        <div class="image-part set-back"><img src="Images/content-image.jpeg"></div>
+                                        <div
+                                            class="content-part default-box-radius-topLeft-bottomLeft bg-grey-type-1 pos-relative has-curved-linked-bottom text-site-primary">
+                                            <div class="normal-text-element-module basic-entry">
+                                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy.</h5>
+                                                <p class="sm-para">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                                    magna aliquyam erat, sed diam voluptua.</p>
                                             </div>
-                                            <div
-                                                class="curve-link type-1 position-type-1 hover-type-primary-light over-grey-bg">
-                                                Mehr<span></span></div>
+                                            <a href="#"
+                                                class="curve-link type-2 position-type-1 hover-type-primary-light link-text-primary">Mehr<span></span></a>
                                         </div>
-                                    </a>
+                                    </div>
+                                    <!-- image with content card -->
                                 </div>
                             </div>
                             <!-- col -->
                             <!-- col -->
-                            <div class="col-6 my-col">
-                                <div class="main-wrap the-card type-bg-primary text-white has-link full-height">
-                                    <a href="#">
-                                        <div class="measure-card-header"><span class="measure-card-date">07. -
-                                                12.<br>Okt 2023</span></div>
-                                        <div class="measure-card-info">
-                                            <div class="info-primary text-site-grey-type-1">TRAKO</div>
-                                            <div class="info-secondary">18. Internationale Eisenbahn Messe in Danzig,
-                                                Polen</div>
-                                            <div
-                                                class="curve-link type-1 position-type-1 hover-type-primary over-grey-bg">
-                                                Mehr<span></span></div>
+                            <div class="col-4 my-col">
+                                <div class="main-wrap">
+                                    <!-- row listing content module -->
+                                    <div class="row-listing-content-module">
+                                        <!-- row -->
+                                        <div class="the-row">
+                                            <a href="#">
+                                                <div class="normal-text-element-module basic-entry">
+                                                    <p class="sm-para">12.10.23</p>
+                                                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                                        diam nonumy.</h6>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- col -->
-                            <!-- col -->
-                            <div class="col-6 my-col">
-                                <div class="main-wrap the-card type-bg-primary text-white has-link full-height">
-                                    <a href="#">
-                                        <div class="measure-card-header"><span class="measure-card-date">24. -
-                                                27.<br>Sep 2024</span></div>
-                                        <div class="measure-card-info">
-                                            <div class="info-primary text-site-grey-type-1">APTA</div>
-                                            <div class="info-secondary">Messe für ÖPNV<br>in Nordamerika</div>
-                                            <div
-                                                class="curve-link type-1 position-type-1 hover-type-primary over-grey-bg">
-                                                Mehr<span></span></div>
+                                        <!-- row -->
+                                        <!-- row -->
+                                        <div class="the-row">
+                                            <a href="#">
+                                                <div class="normal-text-element-module basic-entry">
+                                                    <p class="sm-para">12.10.23</p>
+                                                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                                        diam nonumy.</h6>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- col -->
-                        </div>
-                    </div>
-                    <!-- measure card module -->
-                    <!-- normal text element module -->
-                    <div
-                        class="normal-text-element-module basic-entry module-header group-header groip-header-type-2 group-header-with-attach-sub element-gap element-gap-tiny-plus">
-                        <h3>Ausbildungsmessen</h3>
-                        <p>Informiere dich über Ausbildungs- und Praktikumsmöglichkeiten bei BODE.</p>
-                    </div>
-                    <!-- normal text element module -->
-                    <!-- measure card module -->
-                    <div class="measure-card-module">
-                        <div class="row my-row sm-grid">
-                            <!-- col -->
-                            <div class="col-12 my-col">
-                                <div
-                                    class="main-wrap the-card type-bg-primary-light text-white has-link full-height has-primary-color-gradient has-gradient pos-type-1">
-                                    <a href="#">
-                                        <div class="measure-card-header"><span class="measure-card-date">07. -
-                                                12.<br>Okt 2023</span></div>
-                                        <div class="measure-card-info">
-                                            <div class="info-primary text-site-grey-type-1">Vocatium Kassel 24</div>
-                                            <div class="info-secondary">Kongress Palais Kassel</div>
-                                            <div
-                                                class="curve-link type-1 position-type-1 hover-type-primary-light over-grey-bg">
-                                                Mehr<span></span></div>
+                                        <!-- row -->
+                                        <!-- row -->
+                                        <div class="the-row">
+                                            <a href="#">
+                                                <div class="normal-text-element-module basic-entry">
+                                                    <p class="sm-para">12.10.23</p>
+                                                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                                        diam nonumy.</h6>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- col -->
-                            <!-- col -->
-                            <div class="col-6 my-col">
-                                <div class="main-wrap the-card type-bg-primary text-white has-link full-height">
-                                    <a href="#">
-                                        <div class="measure-card-header"><span class="measure-card-date">Datum
-                                                folgt</span></div>
-                                        <div class="measure-card-info">
-                                            <div class="info-primary text-site-grey-type-1">Ausbildungsbörse</div>
-                                            <div class="info-secondary">Borken Parkhotel</div>
-                                            <div
-                                                class="curve-link type-1 position-type-1 hover-type-primary over-grey-bg">
-                                                Mehr<span></span></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- col -->
-                            <!-- col -->
-                            <div class="col-6 my-col">
-                                <div class="main-wrap the-card type-bg-primary text-white has-link full-height">
-                                    <a href="#">
-                                        <div class="measure-card-header"><span class="measure-card-date">24. -
-                                                27.<br>Sep 2024</span></div>
-                                        <div class="measure-card-info">
-                                            <div class="info-primary text-site-grey-type-1">Perspektiven</div>
-                                            <div class="info-secondary">Berufliche Schulen Eschwege</div>
-                                            <div
-                                                class="curve-link type-1 position-type-1 hover-type-primary over-grey-bg">
-                                                Mehr<span></span></div>
-                                        </div>
-                                    </a>
+                                        <!-- row -->
+                                    </div>
+                                    <!-- row listing content module -->
                                 </div>
                             </div>
                             <!-- col -->
                         </div>
+                        <!-- row -->
                     </div>
-                    <!-- measure card module -->
+                    <!-- latest news module -->
                 </div>
             </div>
         </section>
         <!-- section -->
 
-
-
         <!-- section -->
-        <section class="section-row section-padding-default">
-            <div class="module-header basic-entry element-gap element-gap-type-less-small">
+        <section class="section-row bg-grey-type-1 section-padding-default">
+            <!-- news listing module -->
+            <div class="news-listing-module type-with-bild-view">
+
                 <div class="container">
-                    <h3>Eindrücke der diesjährigen Messeauftritte von BODE</h3>
+                    <div class="container-inset-max-plus mx-auto">
+
+                        <!-- news filter module -->
+                        <div class="news-filter-module">
+                            <!-- news filter header -->
+                            <div class="news-filter-header element-gap element-gap-type-less-small">
+                                <div class="row sm-grid">
+                                    <!-- col -->
+                                    <div class="col-auto my-col">
+                                        <div class="main-wrap">
+                                            <!-- module header -->
+                                            <div class="basic-entry module-header">
+                                                <h2>Alle News</h2>
+                                            </div>
+                                            <!-- module header -->
+                                        </div>
+                                    </div>
+                                    <!-- col -->
+                                    <!-- col -->
+                                    <div class="col-auto my-col ms-auto">
+                                        <div class="main-wrap">
+                                        </div>
+                                    </div>
+                                    <!-- col -->
+                                </div>
+                            </div>
+                            <!-- news filter header -->
+                        </div>
+                        <!-- news filter module -->
+
+
+                        <!-- main module -->
+                        <div class="main-module">
+                            <div class="row my-row md-grid-mini">
+                                <!-- col -->
+                                <div class="col-12 col-md-4 my-col">
+                                    <a href="#">
+                                        <div class="main-wrap basic-entry">
+                                            <div class="news-bild">
+                                                <div class="news-tag position-type-1">
+                                                    <div class="main-wrap">
+                                                        <div class="the-tag colored-type-1">Kategorie</div>
+                                                        <div class="the-tag colored-type-2">Standort</div>
+                                                    </div>
+                                                </div>
+                                                <img src="Images/newslisting-bild.jpg">
+                                            </div>
+                                            <div class="news-date"><span>12.09.23</span></div>
+                                            <div class="news-excerpt">
+                                                <p class="bild-view-title"><strong>Lorem ipsum dolor sit amet,
+                                                        consetetur sadipscing elitr, sed</strong></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <!-- col -->
+                                <div class="col-12 col-md-4 my-col">
+                                    <a href="#">
+                                        <div class="main-wrap basic-entry">
+                                            <div class="news-bild">
+                                                <div class="news-tag position-type-1">
+                                                    <div class="main-wrap">
+                                                        <div class="the-tag colored-type-1">Kategorie</div>
+                                                        <div class="the-tag colored-type-2">Standort</div>
+                                                    </div>
+                                                </div>
+                                                <img src="Images/newslisting-bild.jpg">
+                                            </div>
+                                            <div class="news-date"><span>12.09.23</span></div>
+                                            <div class="news-excerpt">
+                                                <p class="bild-view-title"><strong>Lorem ipsum dolor sit amet,
+                                                        consetetur sadipscing elitr, sed</strong></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <!-- col -->
+                                <div class="col-12 col-md-4 my-col">
+                                    <a href="#">
+                                        <div class="main-wrap basic-entry">
+                                            <div class="news-bild">
+                                                <div class="news-tag position-type-1">
+                                                    <div class="main-wrap">
+                                                        <div class="the-tag colored-type-1">Kategorie</div>
+                                                        <div class="the-tag colored-type-2">Standort</div>
+                                                    </div>
+                                                </div>
+                                                <img src="Images/newslisting-bild.jpg">
+                                            </div>
+                                            <div class="news-date"><span>12.09.23</span></div>
+                                            <div class="news-excerpt">
+                                                <p class="bild-view-title"><strong>Lorem ipsum dolor sit amet,
+                                                        consetetur sadipscing elitr, sed</strong></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                            </div>
+                        </div>
+                        <!-- main module -->
+                    </div>
                 </div>
+
+
+                <!-- module footer -->
+                <div class="curved-module-footer pull-text-right"><a href="#"
+                        class="curve-link type-2 position-type-2 hover-type-primary-light typo-2 link-text-primary">ALLE
+                        NEWS<span></span></a></div>
+                <!-- module footer -->
             </div>
-            <!-- cover slider module -->
-            <div class="cover-slider-module">
-                <!-- slider element -->
-                <div class="slider-element">
-                    <a href="Images/center-mode-carousel-image-1.jpg" data-fancybox="gallery"
-                        data-caption="Hier steht eine Bildunterschrift">
-                        <img src="Images/center-mode-carousel-image-1.jpg">
-                    </a>
-                </div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element">
-                    <a href="Images/center-mode-carousel-image-1.jpg" data-fancybox="gallery"
-                        data-caption="Wow">
-                        <img src="Images/center-mode-carousel-image-1.jpg">
-                    </a>
-                </div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element">
-                    <a href="Images/center-mode-carousel-image-1.jpg" data-fancybox="gallery"
-                        data-caption="Hier steht eine Bildunterschrift">
-                        <img src="Images/center-mode-carousel-image-1.jpg">
-                    </a>
-                </div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element">
-                    <a href="Images/center-mode-carousel-image-1.jpg" data-fancybox="gallery"
-                        data-caption="Hier steht eine Bildunterschrift">
-                        <img src="Images/center-mode-carousel-image-1.jpg">
-                    </a>
-                </div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element">
-                    <a href="Images/center-mode-carousel-image-1.jpg" data-fancybox="gallery"
-                        data-caption="Hier steht eine Bildunterschrift">
-                        <img src="Images/center-mode-carousel-image-1.jpg">
-                    </a>
-                </div>
-                <!-- slider element -->
-                <!-- slider element -->
-                <div class="slider-element">
-                    <a href="Images/center-mode-carousel-image-1.jpg" data-fancybox="gallery"
-                        data-caption="Hier steht eine Bildunterschrift">
-                        <img src="Images/center-mode-carousel-image-1.jpg">
-                    </a>
-                </div>
-                <!-- slider element -->
-            </div>
-            <!-- cover slider module -->
+            <!-- news listing module -->
+
         </section>
         <!-- section -->
-
 
 
 
@@ -398,12 +418,12 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container-fluid mobile-inset-padding-sm">
             <!-- footer build -->
             <div class="footer-build default-box-radius-all-side overflow-hidden set-back">
                 <img src="Images/footer-bild.jpg">
                 <div class="footer-caption">
-                    <span>Access to Mobility</span>
+                    <span><a href="#">Access to Mobility</a></span>
                 </div>
             </div>
             <!-- footer build -->
@@ -418,9 +438,10 @@
                 <!-- footer logo -->
                 <div class="footer-logo">
                     <div class="row my-row">
-                        <div class="site-logo col-auto my-col"><img src="Images/Logo_BODE_white.svg" width="154"></div>
-                        <div class="certificate-badge col-auto my-col ms-auto"><img src="Images/csr.svg" width="92">
-                        </div>
+                        <div class="site-logo col-md-auto col-12 my-col"><img src="Images/Logo_BODE_white.svg"
+                                width="154"></div>
+                        <div class="certificate-badge col-md-auto col-12 my-col ms-auto"><img src="Images/csr.svg"
+                                width="92"></div>
                     </div>
                 </div>
                 <!-- footer logo -->
@@ -429,7 +450,7 @@
                     <div class="container-fluid">
                         <div class="row my-row justify-content-md-center">
                             <!-- info -->
-                            <div class="col my-col basic-entry col-auto">
+                            <div class="col my-col basic-entry col-md-auto col-12">
                                 <p>
                                     <strong>Bode – Die Tür GmbH</strong><br>
                                     Ochshäuser Str. 14<br>
@@ -438,7 +459,7 @@
                             </div>
                             <!-- info -->
                             <!-- info -->
-                            <div class="col my-col basic-entry col-auto">
+                            <div class="col my-col basic-entry col-md-auto col-12">
                                 <p>
                                     <strong>Kontakt</strong><br>
                                     <a href="#">Tel +49 561 5009-0</a><br>
@@ -453,12 +474,13 @@
                 <!-- footer mail box -->
                 <div class="footer-mail-box">
                     <div class="row my-row justify-content-md-center">
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="special-iconic-input-box">
-                                <div class="main-wrap">
-                                    <input type="text" class="text-input" placeholder="info@schaltbau-bode.de">
-                                    <input type="submit" class="iconic-submit" value=" ">
-                                </div>
+                                <a href="mailto: info@schaltbau-bode.de">
+                                    <div class="main-wrap button-type has-iconic-bg mail-send-input">
+                                        <div class="text-input">info@schaltbau-bode.de</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -480,10 +502,10 @@
                 <div class="footer-navigation">
                     <div class="row my-row flex-grid-align-end">
                         <!-- col -->
-                        <div class="col my-col col-auto">
+                        <div class="col my-col col-md-auto col-12">
                             <div class="main-wrap row my-row flex-grid-align-center">
                                 <!-- language switcher col -->
-                                <div class="col my-col col-auto">
+                                <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
                                         <div class="language-switcher switcher-module">
                                             <div class="site-tab-group-btn clearfix">
@@ -493,13 +515,15 @@
                                                         class="main-button">DE</a></div>
                                                 <div class="button-wrap"><a href="javascript:void(0)"
                                                         class="main-button">EN</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">PL</a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- language switcher col -->
                                 <!-- footer menu col -->
-                                <div class="col my-col col-auto">
+                                <div class="col my-col col-md-auto col-12">
                                     <div class="main-wrap">
                                         <div class="footer-menu">
                                             <ul>
@@ -514,7 +538,7 @@
                         </div>
                         <!-- col -->
                         <!-- col -->
-                        <div class="col my-col col-auto ms-auto">
+                        <div class="col my-col col-md-auto col-12 ms-auto">
                             <div class="main-wrap">
                                 <div class="copy-right-text">©2023 Bode – Die Tür GmbH</div>
                             </div>
@@ -554,4 +578,3 @@
 </body>
 
 </html>
-
