@@ -68,6 +68,12 @@
 
         // basic
 
+        .mobile-negetive-margin-type-1{
+            margin-left: -20px;
+            margin-right: -20px;
+            overflow-x: hidden;
+        }
+
         .section-padding-tiny{
             &.mobile-tiny{
                 padding-top: 10px;
@@ -482,6 +488,12 @@
                 margin-bottom: 20px;
             }
 
+            h6{
+                font-size: 13px;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+
             ul{
                 li{
                     padding-left: 20px;
@@ -494,7 +506,9 @@
             }
 
             
-
+            p.sm-para{
+                margin-bottom: 10px !important;
+            }
             p, li, p.sm-para{
                 font-size: 13px;
                 line-height: 22px;
@@ -891,6 +905,10 @@
                 @include border-radius(15px 15px 0 15px);
                 margin-top: -25px;
                 padding: 60px 20px;
+
+                &.mobile-pad-top-type-two{
+                    padding-top: 30px;
+                }
 
                 &.has-curved-linked-bottom{
                     padding-bottom: 92px;

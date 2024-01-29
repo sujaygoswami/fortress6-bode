@@ -653,6 +653,13 @@ jQuery('.hang-type').each(function(){
   jQuery(this).parent('.hang-type-parent').css('padding-bottom', HEIGHT - 136);
 });
 
+
+// developer point
+jQuery('.team-module .mobile-no-uplift .team-info').addClass('pull-text-right');
+
+
+
+
 });
 
 
