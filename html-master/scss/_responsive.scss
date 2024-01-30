@@ -116,6 +116,9 @@
             &.element-gap-type-1{
                 margin-bottom: 40px;
             }
+            &.element-gap-type-1-less{
+                margin-bottom: 40px;
+            }
             &.element-gap-type-2{
                 margin-bottom: 65px;
             }
@@ -163,6 +166,9 @@
         .my-row{
             &.sm-grid{
                 row-gap: 15px;
+                &.mobile-type-row-gap-plus{
+                    row-gap: 20px;
+                }
             }
         }
         .section-padding-lg{
@@ -1410,7 +1416,7 @@
                 }
             }
             .main-wrap{
-                max-width: 75%;
+                max-width: 78%;
                 margin-left: auto;
             }
         }

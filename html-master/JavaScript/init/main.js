@@ -751,7 +751,7 @@ jQuery('.close-mega-desktop-menu').click(function(){
 
 
   jQuery('.measure-card-module').each(function(){
-    jQuery(this).find('.measure-card-info').matchHeight({byRow: false});
+    jQuery(this).find('.measure-card-info').matchHeight();
     jQuery(this).find('.measure-card-header').matchHeight();
   });
 
