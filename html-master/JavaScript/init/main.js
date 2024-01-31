@@ -508,9 +508,11 @@ jQuery('.serial-box-wrap .serial-box-col').each(function(){
   jQuery(this).find('.serial-box').append('<span class="serial-number"><em></em></span>');
 
   if(int_length < 2){
-    jQuery(this).find('.serial-box span em').html('0' + INDEXOUTPUT);
+    jQuery(this).find('.serial-box:not(.number-no-prefix-zero) span em').html('0' + INDEXOUTPUT);
+    jQuery(this).find('.serial-box.number-no-prefix-zero span em').html(INDEXOUTPUT);
   }else{
-    jQuery(this).find('.serial-box span em').html(INDEXOUTPUT);
+    jQuery(this).find('.serial-box:not(.number-no-prefix-zero) span em').html(INDEXOUTPUT);
+    jQuery(this).find('.serial-box.number-no-prefix-zero span em').html(INDEXOUTPUT);
   }
 
   
@@ -754,6 +756,9 @@ jQuery('.close-mega-desktop-menu').click(function(){
     jQuery(this).find('.measure-card-info').matchHeight();
     jQuery(this).find('.measure-card-header').matchHeight();
   });
+
+  jQuery('.equal-description').matchHeight();
+  jQuery('.equal-heading').matchHeight();
 
 
 // paralax

@@ -1,0 +1,857 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Title</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <!-- endbuild -->
+    <script src="JavaScript/lib/jquery.js"></script>
+    <script src="JavaScript/lib/modernizr.js"></script>
+</head>
+
+<body class="bode">
+
+    <div class="loader-screen"></div>
+
+    <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <!-- header -->
+    <header class="header d-grid flex-grid-align-center">
+        <div class="main-wrap default-inset-left-right">
+            <div class="container-fluid">
+                <div class="row my-row flex-grid-align-center default-grid">
+                    <!-- logo col -->
+                    <div class="col-auto my-col">
+                        <div class="main-wrap site-logo">
+                            <a href="index.html"><img src="Images/Logo_BODE.svg" width="150"></a>
+                        </div>
+                    </div>
+                    <!-- logo col -->
+                    <!-- header service part -->
+                    <div class="col-auto my-col ms-auto">
+                        <div
+                            class="main-wrap header-service-part d-flex flex-grid-align-center default-coumn-gap responsive-mobile-deafult-column-gap">
+                            <!-- search -->
+                            <div class="header-search-form">
+                                <input type="text" class="text-input" placeholder="Suche…">
+                                <input type="submit" class="search-submit" value=" ">
+                            </div>
+                            <!-- search -->
+                            <!-- mobile search trigger -->
+                            <div class="mobile-search-trigger d-block d-md-none"></div>
+                            <!-- mobile search trigger -->
+                            <!-- nav -->
+                            <div class="main-nav">
+                                <!-- hamber -->
+                                <div class="nav-hmbg">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <!-- hamber -->
+                            </div>
+                            <!-- nav -->
+                        </div>
+                    </div>
+                    <!-- header service part -->
+                </div>
+            </div>
+        </div>
+        <!-- site mega menu -->
+        <div class="site-mega-menu animated desktop-menu">
+            <div class="main-menu-wrap">
+                <div class="global-centered-rounded-action-button">
+                    <div class="the-trigger type-1 close close-mega-desktop-menu"><span></span></div>
+                </div>
+                <div class="row my-row attch-row-grid full-height site-menu-column-holder">
+                    <!-- col -->
+                    <div class="col-md-auto my-col quick-link-col col-12">
+                        <div class="main-wrap full-height d-grid flex-grid-align-end">
+                            <div class="mega-menu-quick-link">
+                                <ul>
+                                    <li><a href="#">Unternehmen</a></li>
+                                    <li><a href="#">Messen</a></li>
+                                    <li><a href="#">Nachhaltigkeit</a></li>
+                                    <li><a href="#">Compliance</a></li>
+                                    <li><a href="#">Download-Center</a></li>
+                                    <li><a href="#">Kontakt</a></li>
+                                    <li class="site-mega-menu-lang-switcher-li d-md-block d-none">
+                                        <div class="language-switcher switcher-module inside-mega-menu">
+                                            <div class="site-tab-group-btn clearfix">
+                                                <span></span>
+                                                <div class="ball"></div>
+                                                <div class="button-wrap active"><a href="javascript:void(0)"
+                                                        class="main-button">DE</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">EN</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">PL</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="language-switcher switcher-module inside-mega-menu mobile-mega-menu-switcher d-block d-md-none">
+                                <div class="site-tab-group-btn clearfix">
+                                    <span></span>
+                                    <div class="ball"></div>
+                                    <div class="button-wrap active"><a href="javascript:void(0)"
+                                            class="main-button">DE</a></div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">EN</a>
+                                    </div>
+                                    <div class="button-wrap"><a href="javascript:void(0)" class="main-button">PL</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col -->
+                    <!-- col -->
+                    <div class="col-md-auto my-col ms-auto main-link-col col-12">
+                        <div class="main-wrap">
+                            <div class="mega-menu-main-link">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Bode Vision</a></li>
+                                    <li><a href="#">Produkte</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Karriere</a></li>
+                                    <li><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col -->
+                </div>
+            </div>
+        </div>
+        <!-- site mega menu -->
+    </header>
+    <!-- header -->
+
+
+
+    <!-- main -->
+    <main>
+
+        <!-- section -->
+        <section class="section-row default-inset-left-right pos-relative responsive-mobile-view">
+            <a href="#"
+                class="curve-link type-3-back position-type-3 hover-type-primary-light">Karriere<span></span></a>
+            <!-- banner module -->
+            <div class="banner-module default-box-radius-all-side overflow-hidden start has-page-curved-header">
+                <!-- video -->
+                <div class="ratio ratio-16x9 banner-video-module portrait">
+                    <video class="inview-video-paly-pause" muted loop>
+                        <source src="Videos/portrait-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- video -->
+
+                <!-- video -->
+                <div class="ratio ratio-16x9 banner-video-module landscape">
+                    <video class="inview-video-paly-pause" muted loop>
+                        <source src="Videos/banner-video-2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- video -->
+
+                <!-- image -->
+                <!-- <div class="banner-image-module set-back landscape">
+            <img src="Images/start-page-banner-image-1.jpeg">
+        </div> -->
+                <!-- image -->
+
+                <!-- image -->
+                <!-- <div class="banner-image-module set-back portrait">
+            <img src="Images/portrait-image-1.jpg">
+        </div> -->
+                <!-- image -->
+
+                <!-- page curved header -->
+                <div class="page-curved-header pos-type-1">
+                    <div class="main-header-part basic-entry">
+                        <h1>BIDS®</h1>
+                    </div>
+                </div>
+                <!-- page curved header -->
+            </div>
+            <!-- banner module -->
+        </section>
+        <!-- section -->
+
+        <!-- section -->
+        <section class="section-row has-centered-container section-padding-default">
+            <div class="container">
+                <div class="container-inset mx-auto">
+                    <!-- normal text element module -->
+                    <div class="normal-text-element-module basic-entry">
+                        <h2>Ausbildung in Deutschland</h2>
+                        <p>Wir leben die Zusammenarbeit mit jungen Menschen – ob in der Ausbildung oder im Studium!
+                            Wir sind Dein Einstieg in die Mobilität. Sowohl klassische Ausbildungsberufe als auch
+                            zukunftsorientierten Fachrichtungen bieten wir Dir an.</p>
+                        <p>Gestalte Deine Zukunft!</p>
+                        <p><a class="site-btn" href="#">Aubildungsangebot 2024</a></p>
+                    </div>
+                    <!-- normal text element module -->
+                </div>
+            </div>
+        </section>
+        <!-- section -->
+
+        <!-- section -->
+        <section class="section-row has-centered-container section-padding-default padding-bottom-only">
+            <div class="container mobile-inset-padding-sm">
+                <!-- image with content card -->
+                <div
+                    class="image-with-content-card-module default-box-radius-all-side overflow-hidden d-flex no-hover-scale">
+                    <div class="image-part set-back"><img src="Images/content-image.jpeg"></div>
+                    <div
+                        class="content-part default-box-radius-topLeft-bottomLeft bg-site-primary-light pos-relative has-right-top-primary-light-gradient">
+                        <div class="normal-text-element-module basic-entry group-header">
+                            <h2>Das Wichtigste in Kürze</h2>
+                            <p><strong>Ausbildungsbeginn</strong><br>
+                                1. September eines jeden Jahres
+                            </p>
+                            <p><strong>Bewerbungsphase</strong><br>
+                                1.April - 30. Juli eines jeden Jahres
+                            </p>
+                            <p><strong>Ausbildungsdauer</strong><br>
+                                2,5 - 3 Jahre
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- image with content card -->
+            </div>
+        </section>
+        <!-- section -->
+
+        <!-- section -->
+        <section class="section-row has-centered-container section-padding-default padding-bottom-only">
+            <div class="container">
+                <div class="container-inset mx-auto">
+                    <!-- normal text element module -->
+                    <div class="normal-text-element-module basic-entry">
+                        <h2>Welche Anforderungen sollte ich erfüllen?</h2>
+                        <p>Bei BODE schätzen wir die unterschiedlichen Hintergründe, Perspektiven und Talente, die jede
+                            einzelne Person mitbringt. Die Tür zu deiner beruflichen Zukunft steht offen, unabhängig von
+                            Geschlecht, Herkunft, Religion, Alter oder anderen individuellen Merkmalen. Wir glauben
+                            daran, dass unser Team dann am stärksten ist, wenn es so bunt und vielfältig wie die Welt um
+                            uns herum ist.</p>
+                        <p>Um Teil der Ausbildungsprogramme bei BODE zu werden, suchen wir engagierte und motivierte
+                            Personen, die ihre berufliche Reise mit uns starten möchten. Die folgenden Anforderungen
+                            bilden die Grundlage für eine erfolgreiche Bewerbung bei BODE:</p>
+                    </div>
+                    <!-- normal text element module -->
+                </div>
+            </div>
+        </section>
+        <!-- section -->
+
+         <!-- section -->
+         <section class="section-row has-centered-container section-padding-default padding-bottom-only">
+            <div class="container">
+                <div class="container-inset-max-lg mx-auto">
+                    <!-- serial-box wrap -->
+                    <div class="serial-box-wrap">
+                        <div class="row my-row sm-grid">
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary has-left-bottom-primary-gradient">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Gute schulische Leistungen</h6>
+                                            <p class="sm-para">Du solltest mindestens die allgemeine Hochschulreife erfolgreich abgeschlossen haben.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Interesse am Fachgebiet</h6>
+                                            <p class="sm-para">Du solltest mindestens die allgemeine Hochschulreife erfolgreich abgeschlossen haben.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Teamgeist und Kommunikationsfähigkeiten</h6>
+                                            <p class="sm-para">Du solltest mindestens die allgemeine Hochschulreife erfolgreich abgeschlossen haben.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Lernbereitschaft</h6>
+                                            <p class="sm-para">Ein ausgeprägter Wunsch, ständig dazuzulernen und neue Fähigkeiten zu entwickeln. Die Bereitschaft, aktiv an Schulungen und Weiterbildungen teilzunehmen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Selbstständigkeit und Eigeninitiative</h6>
+                                            <p class="sm-para">Fähigkeit, eigenverantwortlich zu arbeiten und eigenständige Lösungen für Aufgaben zu finden. Proaktive Herangehensweise an Aufgaben und die Bereitschaft, Verantwortung zu übernehmen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary has-right-bottom-primary-gradient">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Flexibilität</h6>
+                                            <p class="sm-para">Anpassungsfähigkeit an wechselnde Anforderungen und Aufgaben. Bereitschaft, in verschiedenen Abteilungen und Projekten zu arbeiten.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary has-left-bottom-primary-gradient">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Gute schulische Leistungen</h6>
+                                            <p class="sm-para">Du solltest mindestens die allgemeine Hochschulreife erfolgreich abgeschlossen haben.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Interesse am Fachgebiet</h6>
+                                            <p class="sm-para">Du solltest mindestens die allgemeine Hochschulreife erfolgreich abgeschlossen haben.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Teamgeist und Kommunikationsfähigkeiten</h6>
+                                            <p class="sm-para">Du solltest mindestens die allgemeine Hochschulreife erfolgreich abgeschlossen haben.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Lernbereitschaft</h6>
+                                            <p class="sm-para">Ein ausgeprägter Wunsch, ständig dazuzulernen und neue Fähigkeiten zu entwickeln. Die Bereitschaft, aktiv an Schulungen und Weiterbildungen teilzunehmen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Selbstständigkeit und Eigeninitiative</h6>
+                                            <p class="sm-para">Fähigkeit, eigenverantwortlich zu arbeiten und eigenständige Lösungen für Aufgaben zu finden. Proaktive Herangehensweise an Aufgaben und die Bereitschaft, Verantwortung zu übernehmen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            <!-- image with content card -->
+                            <div class="col-4 my-col serial-box-col">
+                                <div class="full-height image-with-content-card-module default-plus-box-radius-all-side overflow-hidden d-flex view-2 new-look-type-1 serial-box sm-serial-number has-only-content-part type-group-listing number-no-prefix-zero">
+                                    
+                                    
+                                    <div class="content-part default-plus-box-radius-topLeft-bottomLeft has-serial-number bg-site-primary has-right-bottom-primary-gradient">
+                                        <div class="normal-text-element-module basic-entry text-white">
+                                            <h6 class="text-site-grey-type-1">Flexibilität</h6>
+                                            <p class="sm-para">Anpassungsfähigkeit an wechselnde Anforderungen und Aufgaben. Bereitschaft, in verschiedenen Abteilungen und Projekten zu arbeiten.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- image with content card -->
+
+                            
+                            
+                        
+                        </div>
+                    </div>
+                    <!-- serial-box wrap -->
+                </div>
+            </div>
+        </section>
+        <!-- section -->
+
+        <!-- section -->
+        <section class="section-row has-centered-container section-padding-default padding-bottom-only">
+            <div class="container">
+                <div class="container-inset mx-auto">
+                    <!-- normal text element module -->
+                    <div class="normal-text-element-module basic-entry">
+                        <h2>Das bieten wir Dir bei BODE:</h2>
+                        <p>Gut ausgestattete, moderne Arbeitsplätze sowie eine lernfeldbezogene und praxisorientierte Ausbildung in den kaufmännischen und gewerblich-technischen Berufen sind für uns selbstverständlich.</p>
+                        <p>Und: Wir geben unsere guten Auszubildenden nicht mehr her. Bei uns hast du hervorragende Übernahmechancen bei entsprechender Leistung. Außerdem belohnen wir dich bei sehr gutem bzw. gutem Abschluss mit einer Abschlussprämie in voller bzw. halber Höhe der monatlichen Ausbildungsvergütung.</p>
+                        <br>
+                        <ul>
+                            <li><strong>Qualifizierte Ausbilder und Ausbildungsbeauftragte mit Leidenschaft</strong></li>
+                            <li><strong>Ein internes einwöchiges Seminar „Office-Anwendungen“ bei Ausbildungsbeginn</strong></li>
+                            <li><strong>Ein tolles TEAM und viele gemeinsame Events</strong></li>
+                            <li><strong>Viele Möglichkeiten, um selber Themen zu gestalten</strong></li>
+                            <li><strong>Eine super PERSPEKTIVE in einer Wachstumsbranche</strong></li>
+                            <li><strong>Innerbetrieblicher Unterricht, um Dich zu unterstützen</strong></li>
+                            <li><strong>Eine eigene Ausbildungswerkstatt als Ort des Zusammenarbeitens</strong></li>
+                            <li><strong>Fundierte Prüfungsvorbereitungen als Sicherheit für Deinen erfolgreichen Abschluss</strong></li>
+                            <li><strong>Altersvorsorgewirksame Leistungen und ein Firmenzuschuss zur Altersvorsorge</strong></li>
+                        </ul>
+                    </div>
+                    <!-- normal text element module -->
+                </div>
+            </div>
+        </section>
+        <!-- section -->
+
+         <!-- section -->
+         <section class="section-row paralax-pause-scroller type-3">
+            <!-- cover bg content module -->
+            <div class="cover-bg-content-module set-back">
+                <img src="Images/cover-bg-content-bild-3.jpg">
+                <div class="the-content">
+                    <div class="main-wrap basic-entry text-site-grey-type-1">
+                        <h1>Noch mehr Vorteile</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- cover bg content module -->
+            <!-- sliding card module -->
+            <div class="sliding-card-module-text-tile-view no-height">
+                <div class="container">
+                    <div class="container-inset-max mx-auto">
+                        <!-- sliding tiles -->
+                        <div class="slidings-tiles global-isotop type-3 view-2">
+                            <div class="row my-row md-grid-max grid">
+                                <!-- col -->
+                                <div class="col-md-4 col-12 my-col grid-item">
+                                    <div class="main-wrap bg-type-1">
+                                        <div class="basic-entry text-site-grey-type-1">
+                                            <h1 class="paralax-card-number"><strong>1A</strong></h1>
+                                            <h4>Ausbildungsvergütung</h4>
+                                            <p>nach den Tarifen der Metall-und Elektroindustrie Hessen</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <!-- col -->
+                                <div class="col-md-4 col-12 my-col grid-item">
+                                    <div class="main-wrap bg-type-1">
+                                        <div class="basic-entry text-site-grey-type-1">
+                                            <h1 class="paralax-card-number"><strong>30</strong></h1>
+                                            <h4>Urlaubstage pro Jahr</h4>
+                                            <p>plus 8 Tage tariflicher<br> 
+                                                Zusatzurlaub
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <!-- col -->
+                                <div class="col-md-4 col-12 my-col grid-item">
+                                    <div class="main-wrap bg-type-2">
+                                        <div class="basic-entry text-site-grey-type-1">
+                                            <h4>Jobticket/<br>
+                                                Vergünstigte<br>
+                                                ÖPNV-Tickets</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <!-- col -->
+                                <div class="col-md-4 col-12 my-col grid-item">
+                                    <div class="main-wrap bg-type-1">
+                                        <div class="basic-entry text-site-grey-type-1">
+                                            <h4>Bike-Leasing</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <!-- col -->
+                                <div class="col-md-4 col-12 my-col grid-item">
+                                    <div class="main-wrap bg-type-1">
+                                        <div class="basic-entry text-site-grey-type-1">
+                                            <h4>Weihnachts- und<br>
+                                                Urlaubsgeld</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <!-- col -->
+                                <div class="col-md-4 col-12 my-col grid-item">
+                                    <div class="main-wrap bg-type-1">
+                                        <div class="basic-entry text-site-grey-type-1">
+                                            <h4>Eigene Kantine</h4>
+                                            <p>mit einem<br> arbeitgeberbezuschussten<br> Kantinenangebot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                            </div>
+                        </div>
+                        <!-- sliding tiles -->
+                    </div>
+                </div>
+            </div>
+            <!-- sliding card module -->
+        </section>
+        <!-- section -->
+
+        <!-- section -->
+        <section class="section-row has-centered-container section-padding-default">
+            <div class="container">
+                <!-- module header -->
+                <div class="normal-text-element-module basic-entry module-header element-gap element-gap-tiny-plus">
+                    <h2>Ausbildungsablauf</h2>
+                </div>
+                <!-- module header -->
+               <!-- cover stripped content module -->
+               <div class="cover-stripped-module">
+                    <div class="main-wrap bg-site-primary text-white">
+                        <div class="row my-row attch-row-grid cover-stripped-main-row">
+                            <!-- col -->
+                            <div class="col-4 my-col">
+                                <div class="main-wrap cover-stripped-main-box">
+
+                                    <!-- global radial -->
+                                    <div class="global-radial clearfix">
+                                        <div class="main-holder">
+                                            <div class="pie-wrapper progress-1 style-2">
+                                                <span class="label">01</span>
+                                                <div class="pie">
+                                                  <div class="left-side half-circle"></div>
+                                                  <div class="right-side half-circle"></div>
+                                                </div>
+                                                <div class="shadow"></div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <!-- global radial -->
+                                    <div class="normal-text-element-module basic-entry">
+                                        <h6>Die Grundlagen legen</h6>
+                                        <p class="sm-para">
+                                            Im ersten Jahr deiner Ausbildung bei BODE liegt der Fokus darauf, die Grundlagen deines gewählten Berufsfeldes zu erlernen. Du wirst in alle relevanten Abteilungen eingeführt, lernst die Abläufe und Strukturen des Unternehmens kennen und entwickelst die ersten praktischen Fähigkeiten.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col -->
+                            <!-- col -->
+                            <div class="col-4 my-col">
+                                <div class="main-wrap cover-stripped-main-box">
+
+                                    <!-- global radial -->
+                                    <div class="global-radial clearfix">
+                                        <div class="main-holder">
+                                            <div class="pie-wrapper progress-2 style-2">
+                                                <span class="label">02</span>
+                                                <div class="pie">
+                                                  <div class="left-side half-circle"></div>
+                                                  <div class="right-side half-circle"></div>
+                                                </div>
+                                                <div class="shadow"></div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <!-- global radial -->
+                                    <div class="normal-text-element-module basic-entry">
+                                        <h6>Vertiefung und Praxis</h6>
+                                        <p class="sm-para">
+                                            Im ersten Jahr deiner Ausbildung bei BODE liegt der Fokus darauf, die Grundlagen deines gewählten Berufsfeldes zu erlernen. Du wirst in alle relevanten Abteilungen eingeführt, lernst die Abläufe und Strukturen des Unternehmens kennen und entwickelst die ersten praktischen Fähigkeiten.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col -->
+                             <!-- col -->
+                             <div class="col-4 my-col">
+                                <div class="main-wrap cover-stripped-main-box">
+
+                                    <!-- global radial -->
+                                    <div class="global-radial clearfix">
+                                        <div class="main-holder">
+                                            <div class="pie-wrapper progress-3 style-2">
+                                                <span class="label">03</span>
+                                                <div class="pie">
+                                                  <div class="left-side half-circle"></div>
+                                                  <div class="right-side half-circle"></div>
+                                                </div>
+                                                <div class="shadow"></div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <!-- global radial -->
+                                    <div class="normal-text-element-module basic-entry">
+                                        <h6>Spezialisierung und Abschlussprüfung</h6>
+                                        <p class="sm-para">
+                                            Im ersten Jahr deiner Ausbildung bei BODE liegt der Fokus darauf, die Grundlagen deines gewählten Berufsfeldes zu erlernen. Du wirst in alle relevanten Abteilungen eingeführt, lernst die Abläufe und Strukturen des Unternehmens kennen und entwickelst die ersten praktischen Fähigkeiten.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col -->
+                        </div>   
+                    </div>
+               </div>
+               <!-- cover stripped content module -->
+            </div>
+        </section>
+        <!-- section -->
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-fluid mobile-inset-padding-sm">
+            <!-- footer build -->
+            <div class="footer-build default-box-radius-all-side overflow-hidden set-back">
+                <img src="Images/footer-bild.jpg">
+                <div class="footer-caption">
+                    <span><a href="#">Access to Mobility</a></span>
+                </div>
+            </div>
+            <!-- footer build -->
+
+            <!-- footer service part -->
+            <div class="footer-service-part default-box-radius-all-side pos-relative">
+                <!-- go up -->
+                <div class="go-top-wrapper global-centered-rounded-action-button">
+                    <div class="the-trigger type-1 up-arrow go-top"><span></span></div>
+                </div>
+                <!-- go up -->
+                <!-- footer logo -->
+                <div class="footer-logo">
+                    <div class="row my-row">
+                        <div class="site-logo col-md-auto col-12 my-col"><img src="Images/Logo_BODE_white.svg"
+                                width="154"></div>
+                        <div class="certificate-badge col-md-auto col-12 my-col ms-auto"><img src="Images/csr.svg"
+                                width="92"></div>
+                    </div>
+                </div>
+                <!-- footer logo -->
+                <!-- footer-info -->
+                <div class="footer-info">
+                    <div class="container-fluid">
+                        <div class="row my-row justify-content-md-center">
+                            <!-- info -->
+                            <div class="col my-col basic-entry col-md-auto col-12">
+                                <p>
+                                    <strong>Bode – Die Tür GmbH</strong><br>
+                                    Ochshäuser Str. 14<br>
+                                    34123 Kassel
+                                </p>
+                            </div>
+                            <!-- info -->
+                            <!-- info -->
+                            <div class="col my-col basic-entry col-md-auto col-12">
+                                <p>
+                                    <strong>Kontakt</strong><br>
+                                    <a href="#">Tel +49 561 5009-0</a><br>
+                                    Fax +49 561 54943
+                                </p>
+                            </div>
+                            <!-- info -->
+                        </div>
+                    </div>
+                </div>
+                <!-- footer-info -->
+                <!-- footer mail box -->
+                <div class="footer-mail-box">
+                    <div class="row my-row justify-content-md-center">
+                        <div class="col my-col col-md-auto col-12">
+                            <div class="special-iconic-input-box">
+                                <a href="mailto: info@schaltbau-bode.de">
+                                    <div class="main-wrap button-type has-iconic-bg mail-send-input">
+                                        <div class="text-input">info@schaltbau-bode.de</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer mail box -->
+                <!-- footer social -->
+                <div class="footer-social">
+                    <div class="row my-row justify-content-center md-grid-less flex-grid-align-center">
+                        <div class="col-auto my-col"><a href="#"><img src="Images/linkedin-white.svg" width="30.84"></a>
+                        </div>
+                        <div class="col-auto my-col"><a href="#"><img src="Images/instagram-white.svg"
+                                    width="30.41"></a></div>
+                        <div class="col-auto my-col"><a href="#"><img src="Images/youtube-white.svg" width="40.57"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer social -->
+                <!-- footer navigation -->
+                <div class="footer-navigation">
+                    <div class="row my-row flex-grid-align-end">
+                        <!-- col -->
+                        <div class="col my-col col-md-auto col-12">
+                            <div class="main-wrap row my-row flex-grid-align-center">
+                                <!-- language switcher col -->
+                                <div class="col my-col col-md-auto col-12">
+                                    <div class="main-wrap">
+                                        <div class="language-switcher switcher-module">
+                                            <div class="site-tab-group-btn clearfix">
+                                                <span></span>
+                                                <div class="ball"></div>
+                                                <div class="button-wrap active"><a href="javascript:void(0)"
+                                                        class="main-button">DE</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">EN</a></div>
+                                                <div class="button-wrap"><a href="javascript:void(0)"
+                                                        class="main-button">PL</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- language switcher col -->
+                                <!-- footer menu col -->
+                                <div class="col my-col col-md-auto col-12">
+                                    <div class="main-wrap">
+                                        <div class="footer-menu">
+                                            <ul>
+                                                <li><a href="#">Datenschutz</a></li>
+                                                <li><a href="#">Impressum</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- footer menu col -->
+                            </div>
+                        </div>
+                        <!-- col -->
+                        <!-- col -->
+                        <div class="col my-col col-md-auto col-12 ms-auto">
+                            <div class="main-wrap">
+                                <div class="copy-right-text">©2023 Bode – Die Tür GmbH</div>
+                            </div>
+                        </div>
+                        <!-- col -->
+                    </div>
+                </div>
+                <!-- footer navigation -->
+            </div>
+            <!-- footer service part -->
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+    <!-- build:vendorjs -->
+    <script src="JavaScript/lib/bootstrap.js"></script>
+    <script src="JavaScript/lib/jquery.matchHeight-min.js"></script>
+    <script src="JavaScript/lib/jquery.viewportchecker.js"></script>
+    <script src="JavaScript/lib/slick.js"></script>
+    <script src="JavaScript/lib/jquery.superscrollorama.js"></script>
+    <script src="JavaScript/lib/TweenMax.min.js"></script>
+    <script src="JavaScript/lib/isotope.pkgd.js"></script>
+    <script src="JavaScript/lib/splide.min.js"></script>
+    <script src="JavaScript/lib/splide-extension-auto-scroll.min.js"></script>
+    <script src="JavaScript/lib/fancybox.umd.js"></script>
+    <script src="JavaScript/lib/flickity.pkgd.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js -->
+    <script src="JavaScript/init/main.js"></script>
+    <!-- endbuild -->
+
+
+
+</body>
+
+</html>

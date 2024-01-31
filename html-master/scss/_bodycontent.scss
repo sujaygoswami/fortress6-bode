@@ -309,6 +309,10 @@
         .container-inset-max-plus{
             max-width: 1340px / 1600px * 100%;
         }
+
+        .container-inset-max-lg{
+            max-width: 1390px / 1600px * 100%;
+        }
     
         .container-inset-lg{
             max-width: 1532px / 1600px * 100%;
@@ -1419,6 +1423,20 @@
     .image-with-content-card-module{
         position: relative;
 
+        &.has-only-content-part{
+            .content-part{
+                width: 100% !important;
+            }
+        }
+
+        &.type-group-listing{
+            .content-part{
+                padding: 85px 45px 40px 45px !important;
+                align-items: flex-start !important;
+            }
+            
+        }
+
         
 
         &.type-img-overlap{
@@ -1503,6 +1521,19 @@
         }
         &.serial-box{
             border-top-right-radius: 0px;
+            &.sm-serial-number{
+                .serial-number{
+                    width: 93.72px;
+                    height: 94.98px;
+
+                    em{
+                        width: 56px;
+                        height: 56px;
+                        line-height: 56px;
+                        font-size: 22px;
+                    }
+                }
+            }
             .serial-number{
                 position: absolute;
                 display: inline-block;
@@ -1730,6 +1761,13 @@
                     background-size: contain;
                     background-repeat: no-repeat;
             }
+
+            &.has-left-bottom-primary-gradient{
+                background-image: url(../Images/img-with-content-card-primary-bg-left-bottom.svg);
+                background-position: left bottom;
+                background-size: contain;
+                background-repeat: no-repeat;
+        }
 
             @media screen and (max-width: ($md - 1px)){
                 &.has-right-top-primary-light-gradient{
@@ -2921,6 +2959,7 @@
 
     // sliding-card-module-text-tile-view
     .sliding-card-module-text-tile-view{
+        word-wrap: normal;
         
         &.no-height{
             height: 0px;
@@ -3803,5 +3842,32 @@
         }
     }
     // download module
+
+    // cover-stripped-module
+    .cover-stripped-module{
+        .global-radial{
+            margin-bottom: 40px;
+        }
+        & > .main-wrap{
+            @include border-radius(15px);
+            padding: 65px 0;
+        }
+
+        .cover-stripped-main-box{
+            padding: 40px 75px;
+            border-left: 1px solid;
+        }
+
+        .cover-stripped-main-row{
+            & > .my-col{
+                &:first-child{
+                    .cover-stripped-main-box{
+                        border-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+    // cover-stripped-module
 
 }
