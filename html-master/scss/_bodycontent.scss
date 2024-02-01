@@ -233,7 +233,7 @@
         background-image: url(../Images/global-light-blue-gradient-bg-right-top.svg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right top -5px;
+        background-position: right top -10px;
     }
 
     .bg-site-primary-3d-hall{
@@ -300,7 +300,10 @@
         .container-inset{
             max-width: 1060px / 1600px * 100%;
         }
-    
+        
+        .container-inset-plus{
+            max-width: 1200px / 1600px * 100%;
+        }
     
         .container-inset-max{
             max-width: 1330px / 1600px * 100%;
@@ -476,6 +479,14 @@
 
             @media screen and (min-width: $md) {
                 row-gap: 60px;
+            }
+        }
+
+        &.special-row-gap-semi-lg{
+            row-gap: 47px;
+
+            @media screen and (min-width: $md) {
+                row-gap: 47px;
             }
         }
 
@@ -972,6 +983,23 @@
     }
     .basic-entry{
 
+        &.link-white{
+            a{
+                color: white !important;
+            }
+            
+         }
+
+        &.link-underline{
+
+            a{
+                text-decoration: underline !important;
+            }
+            
+        }
+
+            
+
         &.module-header{
             h3{
                 font-size: 40px;
@@ -1087,7 +1115,7 @@
             }
         }
 
-        ul{
+        ul:not(.normal-listing){
             list-style: none;
             margin: 0px;
             padding: 0px;
@@ -1117,7 +1145,30 @@
             }
         }
 
-        p, li{
+        ul{
+            &.normal-listing{
+                list-style: none;
+
+                li{
+                    position: relative;
+                    &:before{
+                        content: ' ';
+                        display: block;
+                        width: 20.13px;
+                        height: 17.83px;
+                        background-image: url(../Images/ul-listing-tick-primary-light.svg);
+                        background-repeat: no-repeat;
+                        background-position: left top;
+                        background-size: 20.13px;
+                        position: absolute;
+                        left: 0px;
+                        top: 10px;
+                    }
+                }
+            }
+        }
+
+        p, ul{
             font-size: 22px;
             line-height: 42px;
             margin-bottom: 40px;
@@ -1137,6 +1188,11 @@
             &.normal-lg{
                 font-size: 30px;
                 line-height: 50px;
+            }
+
+            &.md-para{
+                font-size: 20px;
+                line-height: 30px;
             }
 
             &.sm-para{
@@ -1430,6 +1486,9 @@
         }
 
         &.type-group-listing{
+            &.adpt-min-height-type-1{
+                min-height: 347px;
+            }
             .content-part{
                 padding: 85px 45px 40px 45px !important;
                 align-items: flex-start !important;
@@ -2491,6 +2550,25 @@
     // cover-slider-module
     .cover-slider-module{
 
+        .slider-caption{
+            position: absolute;
+            display: inline-block;
+            left: 45px;
+            bottom: 30px;
+            z-index: 1;
+            pointer-events: none;
+
+            span{
+                display: inline-block;
+                padding: 12px 32px 12px 32px;
+                border-radius: 30px;
+                line-height: normal;
+                font-size: 22px;
+                color: white;
+                background-color: var(--site-primary-color-light);
+            }
+        }
+
        
         .slider-element{
             width: 70%;
@@ -2520,7 +2598,7 @@
                 margin: 0 7px;
                 padding: 0px;
                 display: inline-block;
-                width: 94px;
+                width: 88px;
                 height: 6px;
                 @include border-radius(15px);
                 background-color: var(--site-primary-color);
@@ -2635,6 +2713,16 @@
     .measure-card-module{
 
         &.type-content-listing-view{
+         
+         &.adapt-all-height-row-false{
+            .measure-card-info{
+                min-height: 303px;
+            }
+         }   
+           
+          .measure-card-top-info{
+            padding: 20px;
+          }
             
             .measure-card-info{
                 padding-left: 40px;
@@ -2645,6 +2733,10 @@
                 &.has-link{
                     .measure-card-info{
                         padding-right: 74px;
+
+                        &.pad-bottom-lg{
+                            padding-bottom: 98px;
+                        }
                     }
                 }
             }
@@ -2706,6 +2798,10 @@
             padding-bottom: 25px;
             margin-bottom: 40px;
 
+            &.has-no-link{
+                @include border-radius(20px);
+            }
+
             &:last-child{
                 margin-bottom: 0px;
             }
@@ -2713,6 +2809,14 @@
             &.has-gradient{
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                &.bg-cover{
+                    background-size: cover;
+
+                    &.has-primary-color-gradient-left-bottom{
+                        background-position: left -10px bottom;
+                    }
+                }
 
                 &.pos-type-1{
                     background-position: left bottom;
@@ -2726,8 +2830,16 @@
                     background-image: url(../Images/measure-card-primary-light-gradient-bg.svg);
                 }
 
+                &.has-primary-color-gradient-left-bottom-type-2{
+                    background-image: url(../Images/measure-card-primary-light-gradient-left-bottom-bg-type-2.svg);
+                }
+
                 &.has-primary-color-gradient-right-top{
                     background-image: url(../Images/measure-card-primary-light-gradient-right-top-bg.svg);
+                }
+
+                &.has-primary-color-gradient-right-top-type-2{
+                    background-image: url(../Images/measure-card-primary-light-gradient-right-top-bg-type-2.svg);
                 }
             }
 
@@ -3385,46 +3497,56 @@
             background-color: transparent;
         }
         .global-centered-rounded-action-button{
-            top: 80px;
+            top: 51px;
         }
         .fancybox__backdrop{
             background-color: white;
         }
 
         .fancybox__caption{
-            font-size: 22px;
-            color: var(--site-primary-color);
-            align-self: normal;
-            padding: 0px;
-            max-width: 80%;
+                padding: 16px 34px;
+                border-radius: 30px;
+                line-height: normal;
+                font-size: 17px;
+                color: white;
+                background-color: var(--site-primary-color-light);
+                position: absolute;
+                left: 58px;
+                bottom: 0px;
+                margin-bottom: 27px;
+                pointer-events: none;
         }
 
         .fancybox__slide{
-            padding: 104px 0 50px 0;
+            padding: 100px 0;
         }
 
         .fancybox__infobar{
             margin: 0px;
             padding: 0px;
-            max-width: 20%;
+            // max-width: 20%;
             font-size: 22px;
             font-weight: var(--site-primary-font-bold);
             line-height: normal;
         }
 
         .fancybox__content{
-            max-width: 1600px / 1920px * 100%;
+            // max-width: 1600px / 1920px * 100%;
             & > img{
                 @include border-radius(15px);
                 margin: 0px;
                 min-height: inherit;
                 object-fit: cover;
-                margin-bottom: 20px;
+                // margin-bottom: 20px;
             }
 
             .caption-content-holder{
-                display: flex;
+                display: block;
                 align-items: center;
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                bottom: -46px;
 
                 & > div{
                     flex-grow: 1;
@@ -3856,6 +3978,7 @@
         .cover-stripped-main-box{
             padding: 40px 75px;
             border-left: 1px solid;
+            height: 100%;
         }
 
         .cover-stripped-main-row{

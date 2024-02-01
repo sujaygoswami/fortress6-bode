@@ -550,6 +550,7 @@ Fancybox.bind("[data-fancybox]", {
         var CONTENT = jQuery(this).find('.fancybox__content');
         var CAPTION = jQuery(this).find('.fancybox__caption');
         var INFOBAR = jQuery(this).find('.fancybox__infobar');
+        var CAPTIONCONTENTHOLDER = jQuery(this).find('.caption-content-holder');
 
         jQuery(CAPTION).detach().appendTo(CONTENT);
 
@@ -560,6 +561,7 @@ Fancybox.bind("[data-fancybox]", {
       jQuery('.fancybox__content').each(function(){
         jQuery(this).find('.fancybox__caption, .fancybox__infobar').wrapAll('<div class="caption-content-holder"></div>');
         jQuery(this).find('.caption-content-holder:not(:last-child)').remove();
+        jQuery(this).find('.fancybox__caption').detach().prependTo(this);
       });
       
     },
@@ -752,10 +754,16 @@ jQuery('.close-mega-desktop-menu').click(function(){
   jQuery('.product-listing-card-type .product-bild').matchHeight();
 
 
-  jQuery('.measure-card-module').each(function(){
+  jQuery('.measure-card-module:not(.adapt-all-height-row-false)').each(function(){
     jQuery(this).find('.measure-card-info').matchHeight();
     jQuery(this).find('.measure-card-header').matchHeight();
   });
+  jQuery('.measure-card-module.adapt-all-height-row-false').each(function(){
+    jQuery(this).find('.measure-card-info').matchHeight({byRow: false});
+    jQuery(this).find('.measure-card-header').matchHeight({byRow: false});
+  });
+
+  jQuery('.image-with-content-card-module.adapt-all-height-row-false').matchHeight({byRow: false});
 
   jQuery('.equal-description').matchHeight();
   jQuery('.equal-heading').matchHeight();
