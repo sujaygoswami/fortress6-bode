@@ -3,8 +3,11 @@
 
 $bg-color: #34495e;
 $default-size: 86px;
+$default-size-mobile: 70px;
 $label-font-size: 40px;
+$label-font-size-mobile: 32px;
 $label-font-size-redo: $default-size * 4;
+
 
 
 @mixin size($width, $height) {
@@ -68,6 +71,10 @@ $label-font-size-redo: $default-size * 4;
   float: left;
   margin: 0px;
   position: relative;
+
+  @media screen and (max-width: ($md - 1px)){
+    @include size($default-size-mobile, $default-size-mobile);
+  }
   
   &:nth-child(3n + 1) {
     clear: both;
@@ -80,6 +87,10 @@ $label-font-size-redo: $default-size * 4;
     position: absolute;
     top: 0;
 
+    @media screen and (max-width: ($md - 1px)){
+      clip: rect(0, $default-size-mobile, $default-size-mobile, $default-size-mobile / 2);
+    }
+
     .half-circle {
       @include size(100%, 100%);
       border: 5px solid var(--site-secondary-color);
@@ -88,6 +99,9 @@ $label-font-size-redo: $default-size * 4;
       left: 0;
       position: absolute;
       top: 0;
+      @media screen and (max-width: ($md - 1px)){
+        clip: rect(0, $default-size-mobile / 2, $default-size-mobile, 0);
+      }
     }
   }
 
@@ -108,6 +122,11 @@ $label-font-size-redo: $default-size * 4;
     @include size(100%, 100%);
     font-weight: var(--site-primary-font-bold);
     color: var(--site-secondary-color);
+
+    @media screen and (max-width: ($md - 1px)){
+      line-height: $default-size-mobile;
+      font-size: $label-font-size-mobile;
+    }
 
     .smaller {
       color: #bdc3c7;

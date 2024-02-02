@@ -802,65 +802,121 @@
                     line-height: 22px;
                 }
             }
-            &.type-mobile-slider, &.type-mobile-slider-type-two{
-                margin-top: 0px !important;
-                .slick-dots{
-                    margin: 20px 0 0 0;
-                    padding: 0px;
-                    text-align: center;
-                    height: 5px;
+            
+        }
+        // measure-card-module
 
+        // type-mobile-slider
+        .type-mobile-slider-type-two{
+            &.mobile-slider-dots-type-2{
+                .slick-dots{
                     li{
-                        display: inline-block;
-                        vertical-align: top;
-                        margin: 0 4px;
-                        padding: 0px;
-                        width: 33px;
-                        height: 5px;
-                        font-size: 0px;
-                        background-color: var(--site-secondary-color);
-                        opacity: 0.4;
-                        overflow: hidden;
-                        border-radius: 10px;
-                        &.slick-active{
-                            opacity: 1;
-                        }
-                        button{
-                            width: 100%;
-                            height: 100%;
-                            background: transparent;
-                            border: none;
-                        }
+                        background-color: var(--site-primary-color);
                     }
                 }
-                & > .row{
+            }
+            &.view-2{
+                .slick-track{
+                    margin-left: -7.5px;
+                    margin-right: -7.5px;
+    
+                    .slick-slide{
+                        padding-left: 7.5px;
+                        padding-right: 7.5px;
+                    }
+                }
+            }
+
+            &.view-3{
+                .slick-dots{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+                .slick-list{
+                    // overflow-x: hidden !important;
+                    // overflow-y: hidden !important;
+                }
+                .slick-track{
                     margin-left: 0px;
                     margin-right: 0px;
-
-                    & > .my-col{
+    
+                    .slick-slide{
                         padding-left: 0px;
                         padding-right: 0px;
                     }
                 }
+            }
+        }
+        .type-mobile-slider, .type-mobile-slider-type-two{
+            margin-top: 0px !important;
+            .slick-dots{
+                margin: 20px 0 0 0;
+                padding: 0px;
+                text-align: center;
+                height: 5px;
 
-                // .slick-list{
-                //     overflow: inherit;
-                // }
+                li{
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 0 4px;
+                    padding: 0px;
+                    width: 33px;
+                    height: 5px;
+                    font-size: 0px;
+                    background-color: var(--site-secondary-color);
+                    opacity: 0.4;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    &.slick-active{
+                        opacity: 1;
+                    }
+                    button{
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        border: none;
+                    }
+                }
+            }
+            & > .row{
+                margin-left: 0px;
+                margin-right: 0px;
 
-                .slick-track{
-                    margin-left: -5px;
-                    margin-right: -5px;
+                & > .my-col{
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
 
-                    .slick-slide{
-                        padding-left: 5px;
-                        padding-right: 5px;
+            // .slick-list{
+            //     overflow: inherit;
+            // }
+
+            .slick-track{
+                margin-left: -5px;
+                margin-right: -5px;
+
+                .slick-slide{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+        // type-mobile-slider
+
+        // image-with-content-card-module
+        .image-with-content-card-module{
+            &.serial-box{
+                &.has-only-content-part{
+                    &.type-group-listing{
+                        & > .content-part{
+                            border-radius: 15px;
+                            margin-top: 0px;
+                        }
                     }
                 }
             }
         }
-        // measure-card-module
-
-        // image-with-content-card-module
         .image-with-content-card-module, .image-with-content-card-module.view-2.new-look-type-1, .image-with-content-card-module.view-2{
             &.serial-box{
                 .serial-number{

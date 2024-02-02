@@ -50,12 +50,32 @@
                 height: 100%;
             }
         }
+
+        .partly-bg-type-2{
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            bottom: 0px;
+            height: 100%;
+            padding-top: 90px;
+
+            & + div{
+                padding-bottom: 70px;
+            }
+
+            & > div{
+                height: 100%;
+            }
+        }
     }
     .lift-from-top-type-1{
         padding-top: 117px;
     }
     .lift-from-top-type-2{
         padding-top: 140px;
+    }
+    .lift-from-top-type-3{
+        padding-top: 200px;
     }
     .flex-grid-align-center{
         align-items: center;
@@ -498,6 +518,10 @@
             }
         }
     }
+
+    .column-lift-from-top-type-1{
+        padding-top: 200px;
+    }
     
 
 
@@ -877,6 +901,9 @@
         &.width-type-1{
             max-width: 414px;
         }
+        &.width-type-2{
+            max-width: 360px;
+        }
         .main-wrap{
             height: 70px;
             @include border-radius(50px);
@@ -1068,6 +1095,13 @@
             line-height: 60px;
             font-weight: var(--site-primary-font-Semibold);
             margin-bottom: 40px;
+
+            &.lg-heading{
+                @media screen and (min-width: $xxl){
+                    font-size: 89px;
+                    line-height: 119px;
+                }
+            }
         }
 
         h3{
@@ -1148,18 +1182,20 @@
         ul{
             &.normal-listing{
                 list-style: none;
+                padding: 0px;
 
                 li{
                     position: relative;
+                    padding: 0 0 0 26px;
                     &:before{
                         content: ' ';
                         display: block;
-                        width: 20.13px;
-                        height: 17.83px;
-                        background-image: url(../Images/ul-listing-tick-primary-light.svg);
+                        width: 10px;
+                        height: 10px;
+                        background-image: url(../Images/normal-listing-dot.svg);
                         background-repeat: no-repeat;
                         background-position: left top;
-                        background-size: 20.13px;
+                        background-size: 10px;
                         position: absolute;
                         left: 0px;
                         top: 10px;
@@ -1486,12 +1522,19 @@
         }
 
         &.type-group-listing{
+            
             &.adpt-min-height-type-1{
-                min-height: 347px;
+                @media screen and (min-width: $xxl){
+                    min-height: 347px;
+                }
             }
             .content-part{
-                padding: 85px 45px 40px 45px !important;
-                align-items: flex-start !important;
+                padding: 70px 30px 60px 30px;
+                @media screen and (min-width: $xxl){
+                    padding: 85px 45px 40px 45px !important;
+                    align-items: flex-start !important;
+                }
+                
             }
             
         }
@@ -2808,7 +2851,7 @@
 
             &.has-gradient{
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
 
                 &.bg-cover{
                     background-size: cover;
@@ -3969,16 +4012,34 @@
     .cover-stripped-module{
         .global-radial{
             margin-bottom: 40px;
+
+            @media screen and (max-width: ($md - 1px)){
+                margin-bottom: 30px;
+            }
         }
         & > .main-wrap{
             @include border-radius(15px);
             padding: 65px 0;
+            @media screen and (max-width: ($md - 1px)){
+                padding: 0 0 20px 0;
+            }
         }
 
         .cover-stripped-main-box{
-            padding: 40px 75px;
+            padding: 40px 25px;
             border-left: 1px solid;
             height: 100%;
+
+            
+
+            @media scree and (min-width:$xxl){
+                padding: 40px 75px;
+            }
+
+            @media screen and (max-width: ($md - 1px)){
+                border: none;
+                padding: 40px 20px;
+            }
         }
 
         .cover-stripped-main-row{
@@ -3992,5 +4053,53 @@
         }
     }
     // cover-stripped-module
+
+    // site-accordion-module
+    .site-accordion-module{
+        .accordion-item{
+            border: none;
+            background: transparent;
+            margin-top: 20px;
+            &:first-child{
+                margin-top: 0px;
+            }
+        }
+        .accordion-header{
+            @include border-radius(40px);
+            overflow: hidden;
+        }
+        .accordion-button{
+            border-radius: 0px;
+            border: none;
+            line-height: normal;
+            padding: 30px 75px 30px 40px;
+            font-size: 17px;
+            color: inherit;
+            background-color: var(--site-grey-type-1);
+            box-shadow: none;
+            position: relative;
+
+            &:not(.collapsed)::after{
+                transform: rotate(-45deg);
+            }
+
+            &:after{
+                position: absolute;
+                content: ' ';
+                right: 12px;
+                top: 50%;
+                margin-top: -27.5px;
+                width: 55px;
+                height: 55px;
+                border-radius: 100%;
+                background-color: var(--site-secondary-color);
+                background-image: url(../Images/accordion-plus-primary.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 15.42px;
+            }
+        }
+    }
+    // site-accordion-module
 
 }
