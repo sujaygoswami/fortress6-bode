@@ -49,6 +49,7 @@
             & > div{
                 height: 100%;
             }
+            
         }
 
         .partly-bg-type-2{
@@ -58,6 +59,8 @@
             bottom: 0px;
             height: 100%;
             padding-top: 90px;
+            
+            
 
             & + div{
                 padding-bottom: 70px;
@@ -65,6 +68,36 @@
 
             & > div{
                 height: 100%;
+            }
+
+            @media screen and (max-width: ($md - 1px)){
+                padding-top: 0px;
+                padding-bottom: 140px;
+
+                
+
+                & + div{
+                    padding-top: 60px;
+                    padding-bottom: 0px;
+                }
+            }
+        }
+
+        @media screen and (max-width: ($md - 1px)){
+            .team-module.type-2{
+                & > .main-wrap{
+                    max-width: inherit;
+                    margin-left: inherit;
+                    display: flex;
+                    column-gap: 12px;
+                    align-items: flex-end;
+
+                    .team-bild{
+                        margin-bottom: 0px;
+                        max-width: 120px / 300px * 100%;
+                        border-radius: 15px !important;
+                    }
+                }
             }
         }
     }
@@ -1159,6 +1192,8 @@
                 padding: 0 0 0 36px;
                 position: relative;
 
+                
+
                 &:first-child{
                     margin-top: 0px;
                 }
@@ -1175,6 +1210,8 @@
                     position: absolute;
                     left: 0px;
                     top: 10px;
+
+                    
                 }
             }
         }
@@ -1187,6 +1224,11 @@
                 li{
                     position: relative;
                     padding: 0 0 0 26px;
+                    margin: 0px;
+                    @media screen and (max-width: ($md - 1px)){
+                        padding-left: 15px;
+                        margin-top: 5px;
+                    }
                     &:before{
                         content: ' ';
                         display: block;
@@ -1199,19 +1241,26 @@
                         position: absolute;
                         left: 0px;
                         top: 10px;
+
+                        @media screen and (max-width: ($md - 1px)){
+                            width: 5px;
+                            height: 5px;
+                            background-size: 5px;
+                            top: 8px;
+                        }
                     }
                 }
             }
         }
 
         p, ul{
-            font-size: 22px;
-            line-height: 42px;
+            font-size: 18px;
+            line-height: 2em;
             margin-bottom: 40px;
 
             &.lg-para{
-                font-size: 30px;
-                line-height: 50px;
+                font-size: 22px;
+                line-height: 1.8em;
                 letter-spacing: 0.3px;
                 margin-bottom: 30px;
             }
@@ -1529,7 +1578,7 @@
                 }
             }
             .content-part{
-                padding: 70px 30px 60px 30px;
+                padding: 100px 30px 60px 30px;
                 @media screen and (min-width: $xxl){
                     padding: 85px 45px 40px 45px !important;
                     align-items: flex-start !important;
@@ -2601,6 +2650,10 @@
             z-index: 1;
             pointer-events: none;
 
+            @media screen and (max-width: ($md - 1px)){
+                display: none;
+            }
+
             span{
                 display: inline-block;
                 padding: 12px 32px 12px 32px;
@@ -2759,12 +2812,21 @@
          
          &.adapt-all-height-row-false{
             .measure-card-info{
-                min-height: 303px;
+                @media screen and (min-width: $md) {
+                    min-height: 303px;
+                }
+                // @media screen and (max-width: ($md - 1px)){
+                //     height: auto !important;
+                // }
+                
             }
          }   
            
           .measure-card-top-info{
             padding: 20px;
+            @media screen and (max-width: ($md - 1px)){
+                padding: 10px 13px;
+            }
           }
             
             .measure-card-info{
@@ -2778,7 +2840,10 @@
                         padding-right: 74px;
 
                         &.pad-bottom-lg{
-                            padding-bottom: 98px;
+                            padding-bottom: 90px;
+                            @media screen and (min-width: $md) {
+                                padding-bottom: 98px;
+                            }
                         }
                     }
                 }
@@ -2862,7 +2927,7 @@
                 }
 
                 &.pos-type-1{
-                    background-position: left bottom;
+                    background-position: left -10px bottom;
                 }
 
                 &.pos-type-2{
@@ -3041,6 +3106,10 @@
                 span{
                     &:before{
                         background-image: url(../Images/close-primary.svg);
+
+                        @media screen and (max-width: ($md - 1px)){
+                            background-size: 13px;
+                        }
                     }
                 }
 
@@ -3071,6 +3140,11 @@
                 position: relative;
                 overflow: hidden;
                 @include transition(all 0.4s ease 0s);
+
+                @media screen and (max-width: ($md - 1px)){
+                    width: 40px;
+                    height: 40px;
+                }
 
                 &:before{
                     width: 100%;
@@ -3514,6 +3588,22 @@
 
     // fancy
     .fancybox__container{
+        @media screen and (max-width: ($md - 1px)){
+            .fancybox__footer{
+                background-color: white;
+                text-align: center;
+                padding-bottom: 50px;
+
+                .fancybox__caption{
+                    position: static;
+                    display: inline-block;
+                    width: auto;
+                    font-size: 12px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        
         .fancybox__nav{
             button{
                 background-color: transparent;
@@ -3557,7 +3647,7 @@
                 left: 58px;
                 bottom: 0px;
                 margin-bottom: 27px;
-                pointer-events: none;
+                // pointer-events: none;
         }
 
         .fancybox__slide{
@@ -3571,6 +3661,10 @@
             font-size: 22px;
             font-weight: var(--site-primary-font-bold);
             line-height: normal;
+
+            @media screen and (max-width: ($md - 1px)){
+                font-size: 14px;
+            }
         }
 
         .fancybox__content{
