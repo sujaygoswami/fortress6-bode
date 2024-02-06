@@ -1,6 +1,10 @@
-// from lg to all lower
-@media screen and (max-width: $lg){
-  
+// from xxl - 1px to all lower
+@media screen and (max-width: ($xxl - 1px)){
+  .bode{
+    .mobile-no-bg-gradient{
+        background-image: none !important;
+    }
+  }
 }
 
 // from lg to md
@@ -67,6 +71,8 @@
         padding-top: var(--header-height-mobile);
 
         // basic
+
+        
 
         .mobile-text-center{
             text-align: center;

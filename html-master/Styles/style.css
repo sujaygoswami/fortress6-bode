@@ -8957,6 +8957,9 @@ html, body {
     .bode .container.container-sm {
       max-width: 1410px;
       margin: 0 auto; }
+    .bode .container.container-lg {
+      max-width: 1800px;
+      margin: 0 auto; }
     .bode .my-row.lg-grid {
       margin-left: -60px;
       margin-right: -60px;
@@ -9093,6 +9096,32 @@ html, body {
     left: 0px; }
   .bode .curve-link-whole-hover:hover .curve-link span::before {
     background-image: url(../Images/arrow-right-solid-secondary.svg); }
+  .bode .has-transparent-curve-link-bottom {
+    padding-bottom: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important; }
+  .bode .transparent-link-wrap {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    justify-content: right;
+    display: flex; }
+    .bode .transparent-link-wrap .blank-holder {
+      position: absolute;
+      height: 100%;
+      left: 0px;
+      top: 0px; }
+      .bode .transparent-link-wrap .blank-holder > div {
+        width: 100%;
+        height: 100%; }
+        .bode .transparent-link-wrap .blank-holder > div.radius-type-1 {
+          border-bottom-left-radius: 15px; }
+    .bode .transparent-link-wrap .curve-link {
+      position: relative !important;
+      display: inline-block; }
+      .bode .transparent-link-wrap .curve-link em {
+        font-style: normal; }
   .bode .curve-link {
     text-decoration: none;
     text-transform: uppercase;
@@ -9109,6 +9138,10 @@ html, body {
     text-decoration: none;
     border: none;
     font-weight: var(--site-primary-font-Semibold); }
+    .bode .curve-link.transparent-link {
+      height: auto !important; }
+    .bode .curve-link.transparent-primary-light {
+      background-image: url(../Images/corner_blue_inverted.svg) !important; }
     .bode .curve-link.play-icon:hover span::before {
       background-image: url(../Images/play-icon-secondary-small.svg); }
     .bode .curve-link.play-icon span::before {
@@ -11510,6 +11543,10 @@ html, body {
 
 .bode footer.footer .copy-right-text {
   font-size: 17px; }
+
+@media screen and (max-width: 1699px) {
+  .bode .mobile-no-bg-gradient {
+    background-image: none !important; } }
 
 @media screen and (max-width: 1199px) and (min-width: 1000px) {
   .bode .box-left-right-responsive-pad-from-lg-to-md {

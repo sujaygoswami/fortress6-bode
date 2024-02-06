@@ -396,6 +396,11 @@
                 max-width: 1370px + $grid-gutter-width;
                 margin: 0 auto;
             }
+
+            &.container-lg{
+                max-width: 1760px + $grid-gutter-width;
+                margin: 0 auto;
+            }
         }
         
 
@@ -564,6 +569,9 @@
     .curved-module-header{
         display: inline-block;
         position: relative;
+
+        
+
         .main-part{
             padding: 23px 35px 23px 45px;
             background-color: white;
@@ -620,6 +628,47 @@
             }
         }
     }
+
+    .has-transparent-curve-link-bottom{
+        padding-bottom: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+    .transparent-link-wrap{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        justify-content: right;
+        display: flex;
+
+        .blank-holder{
+            position: absolute;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+
+            & > div{
+                width: 100%;
+                height: 100%;
+
+                &.radius-type-1{
+                    border-bottom-left-radius: 15px;
+                }
+                
+            }
+        }
+
+        .curve-link{
+            position: relative !important;
+            display: inline-block;
+
+            em{
+                font-style: normal;
+            }
+            
+        }
+    }
     .curve-link{
         text-decoration: none;
         text-transform: uppercase;
@@ -636,6 +685,12 @@
         text-decoration: none;
         border: none;
         font-weight: var(--site-primary-font-Semibold);
+        &.transparent-link{
+            height: auto !important;
+        }
+        &.transparent-primary-light{
+            background-image: url(../Images/corner_blue_inverted.svg) !important;
+        }
         &.play-icon{
             &:hover{
                 span{
@@ -744,6 +799,8 @@
             padding-bottom: 20px;
             background-image: url(../Images/button-curve-type-1.svg);
             background-size: contain;
+
+            
 
             &.play-icon{
                 span{

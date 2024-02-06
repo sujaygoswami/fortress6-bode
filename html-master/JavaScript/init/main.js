@@ -96,7 +96,24 @@ checkMobile();
 
 // object notation
 var site = {}
-
+site.TRANSPARENTLINKFUNCTION = function() {
+  // transparent-link
+  jQuery('.transparent-link').each(function(){
+    var HEIGHT = jQuery(this).outerHeight();
+    var LEFTPAD = jQuery(this).parents('.my-col').css('padding-left');
+    var RIGHTPAD = jQuery(this).parents('.my-col').css('padding-left');
+    var WIDTH = jQuery(this).outerWidth();
+    var TEXTWIDTH = jQuery(this).find('em').width();
+    var TOTALMEASUREWIDTH = jQuery(this).parents('.my-col').find('.transparent-link-upper-part').outerWidth();
+    var RESULTEDSUBSTRACTWIDTH = WIDTH - TEXTWIDTH;
+    jQuery(this).height(HEIGHT);
+    jQuery(this).parents('.my-col').find('.transparent-link-upper-part').css('margin-bottom', HEIGHT - 2);
+    jQuery(this).parents('.my-col').find('.transparent-link-wrap, .blank-holder').css('padding-left', LEFTPAD);
+    jQuery(this).parents('.my-col').find('.transparent-link-wrap, .blank-holder').css('padding-right', RIGHTPAD);
+    jQuery(this).parents('.my-col').find('.blank-holder > div').css('width', TOTALMEASUREWIDTH - RESULTEDSUBSTRACTWIDTH);
+    console.log(WIDTH, TEXTWIDTH, RESULTEDSUBSTRACTWIDTH);
+  });
+};
 
 
 site.HEADERVISIBILITYONSCROLL = function() {
@@ -115,14 +132,17 @@ site.HEADERVISIBILITYONSCROLL = function() {
 
 };
 site.HEADERVISIBILITYONSCROLL();
-
+site.TRANSPARENTLINKFUNCTION();
 
 
 
 
 
 jQuery(window).resize(function(){
-
+  
+  setTimeout(function() {
+    site.TRANSPARENTLINKFUNCTION();
+  }, 200);
 
 });
 
@@ -130,7 +150,7 @@ jQuery(window).resize(function(){
 
 jQuery( window ).on( "orientationchange", function( event ) {
 
-   
+
           
 });
 
@@ -660,6 +680,51 @@ jQuery('.hang-type').each(function(){
 
 // developer point
 jQuery('.team-module .mobile-no-uplift .team-info').addClass('pull-text-right');
+
+
+// map-slider-module
+jQuery('.map-slider-module').each(function(){
+
+  jQuery(this).slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+  });
+
+  jQuery(this).find('.slick-dots').wrap('<div class="the-point-dots slick-dots-wrap map-dots"></div>');
+
+  var DOTS = jQuery(this).find('.slick-dots-wrap').html();
+  jQuery(this).prepend(DOTS);
+  jQuery(this).find('> .slick-dots').wrap('<div class="the-point-dots slick-dots-clone-wrap nav-dots"></div>');
+  
+  jQuery(this).find('.the-point-dots li').each(function(){
+    var DOTSSERIAL = jQuery(this).index();
+    var DOTSSERIALPLUS = DOTSSERIAL + 1;
+    jQuery(this).attr('data-dot', 'data-dot' + DOTSSERIALPLUS);
+    var ATTR = jQuery(this).attr('data-dot');
+    jQuery(this).addClass(ATTR);
+  });
+
+  jQuery('.slick-dots-clone-wrap li').click(function(e){
+    jQuery('.slick-dots-clone-wrap li').removeClass('current');
+    var ATTR = jQuery(this).attr('data-dot');
+    jQuery(this).parents('.map-slider-module').find('.slick-dots-wrap').find('.' + ATTR).trigger('click');
+    jQuery(this).addClass('current');
+    e.stopPropagation();
+  });
+
+  jQuery('.slick-dots-wrap li').click(function(e){
+    jQuery('.slick-dots-clone-wrap li').removeClass('current');
+    var ATTR = jQuery(this).attr('data-dot');
+    jQuery(this).parents('.map-slider-module').find('.slick-dots-clone-wrap').find('.' + ATTR).addClass('current');
+    e.stopPropagation();
+  });
+  
+
+});
+
 
 
 
