@@ -685,12 +685,16 @@ jQuery('.team-module .mobile-no-uplift .team-info').addClass('pull-text-right');
 // map-slider-module
 jQuery('.map-slider-module').each(function(){
 
+  var MAPIMG = jQuery(this).parents('.main-map-module-wrap').find('.map-img').html();
+
   jQuery(this).slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    dots: true
+    dots: true,
+    fade: true,
+    cssEase: 'linear'
   });
 
   jQuery(this).find('.slick-dots').wrap('<div class="the-point-dots slick-dots-wrap map-dots"></div>');
@@ -707,6 +711,18 @@ jQuery('.map-slider-module').each(function(){
     jQuery(this).addClass(ATTR);
   });
 
+  jQuery(this).parents('.main-map-module-wrap').find('.map-objects .map-hidden-nav .nav-text').each(function(){
+    var DOTSSERIAL = jQuery(this).index();
+    var DOTSSERIALPLUS = DOTSSERIAL + 1;
+    var HTML = jQuery(this).html();
+    var POSITION = jQuery(this).attr('data-position');
+    jQuery(this).attr('data-dot', 'data-dot' + DOTSSERIALPLUS);
+    var ATTR = jQuery(this).attr('data-dot');
+    jQuery(this).addClass(ATTR);
+    jQuery(this).parents('.main-map-module-wrap').find('.slick-dots-wrap').find('.' + ATTR).find('button').html(HTML);
+    jQuery(this).parents('.main-map-module-wrap').find('.slick-dots-clone-wrap').find('.' + ATTR).attr('style', POSITION);
+  });
+
   jQuery('.slick-dots-clone-wrap li').click(function(e){
     jQuery('.slick-dots-clone-wrap li').removeClass('current');
     var ATTR = jQuery(this).attr('data-dot');
@@ -721,6 +737,23 @@ jQuery('.map-slider-module').each(function(){
     jQuery(this).parents('.map-slider-module').find('.slick-dots-clone-wrap').find('.' + ATTR).addClass('current');
     e.stopPropagation();
   });
+
+  jQuery(this).find('.slick-dots-clone-wrap').detach().appendTo(this);
+
+  jQuery(this).find('.slick-dots-wrap').detach().prependTo(this);
+
+  jQuery(this).find('.slick-list').detach().appendTo(this);
+
+  jQuery(this).find('.slick-dots-clone-wrap, .slick-list').wrapAll('<div class="row my-row default-row main-map-action-wrap"></div>');
+
+  jQuery(this).find('.main-map-action-wrap .slick-dots-clone-wrap').wrap('<div class="col-9 my-col"><div class="main-wrap"></div></div>');
+
+  jQuery(this).find('.main-map-action-wrap .slick-list').wrap('<div class="col-3 my-col"><div class="main-wrap"></div></div>');
+
+  
+  jQuery(this).find('.main-map-action-wrap .slick-dots-clone-wrap').prepend(MAPIMG);
+
+  jQuery('.nav-dots .slick-dots li:first-child').addClass('current');
   
 
 });
