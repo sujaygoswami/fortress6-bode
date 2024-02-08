@@ -11441,6 +11441,17 @@ html, body {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 15.42px; }
+  @media screen and (max-width: 999px) {
+    .bode .map-slider-module {
+      padding-bottom: 45px; }
+      .bode .map-slider-module .slick-list {
+        overflow: inherit; }
+        .bode .map-slider-module .slick-list .slick-track {
+          margin-left: -5px;
+          margin-right: -5px; }
+          .bode .map-slider-module .slick-list .slick-track .slick-slide {
+            padding-left: 5px;
+            padding-right: 5px; } }
   .bode .map-slider-module .sliding-item .map-social {
     display: flex;
     align-items: center;
@@ -11476,17 +11487,23 @@ html, body {
     list-style: none; }
     .bode .map-slider-module .nav-dots ul li {
       margin: 0px;
-      padding: 4px;
+      padding: 3px;
       display: inline-block;
       position: absolute;
       left: 0px;
       top: 0px;
-      width: 44px;
-      height: 44px;
-      border: 3px solid transparent;
+      width: 25px;
+      height: 25px;
+      border: 2px solid transparent;
       border-radius: 100%;
       -webkit-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s; }
+      @media screen and (min-width: 1700px) {
+        .bode .map-slider-module .nav-dots ul li {
+          width: 44px;
+          height: 44px;
+          border: 3px solid transparent;
+          padding: 4px; } }
       .bode .map-slider-module .nav-dots ul li.current {
         border-color: var(--site-secondary-color); }
       .bode .map-slider-module .nav-dots ul li button {
@@ -11506,8 +11523,11 @@ html, body {
       margin: 0px;
       padding: 0px;
       display: flex !important;
-      column-gap: 70px;
+      column-gap: 15px;
       justify-content: center; }
+      @media screen and (min-width: 1700px) {
+        .bode .map-slider-module .map-dots ul {
+          column-gap: 70px; } }
       .bode .map-slider-module .map-dots ul li {
         margin: 0px;
         padding: 0px; }
@@ -11521,14 +11541,40 @@ html, body {
           color: var(--site-grey-type-1);
           opacity: 0.55;
           font-weight: var(--site-primary-font-bold);
-          font-size: 20px;
-          line-height: 30px;
-          padding: 0 20px 20px 20px;
+          font-size: 14px;
+          line-height: 22px;
+          padding: 0 10px 10px 10px;
           border-bottom: 4px solid transparent;
           -webkit-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s; }
+          @media screen and (min-width: 1700px) {
+            .bode .map-slider-module .map-dots ul li button {
+              font-size: 20px;
+              line-height: 30px;
+              padding: 0 20px 20px 20px; } }
           .bode .map-slider-module .map-dots ul li button span {
             font-weight: var(--site-primary-font-regular); }
+    @media screen and (max-width: 999px) {
+      .bode .map-slider-module .map-dots {
+        margin-bottom: 0px;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 0px; }
+        .bode .map-slider-module .map-dots ul {
+          column-gap: 8px; }
+          .bode .map-slider-module .map-dots ul li.slick-active button {
+            opacity: 1; }
+          .bode .map-slider-module .map-dots ul li button {
+            font-size: 0px;
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            width: 33px;
+            height: 5px;
+            background-color: var(--site-secondary-color);
+            opacity: 0.4;
+            border-radius: 10px; } }
   .bode .map-slider-module .my-col {
     border: none !important; }
   .bode .map-slider-module .slick-dots-clone-wrap {

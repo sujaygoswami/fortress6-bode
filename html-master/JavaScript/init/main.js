@@ -694,7 +694,18 @@ jQuery('.map-slider-module').each(function(){
     arrows: false,
     dots: true,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    draggable: false,
+    swipe: false,
+    responsive: [
+      {
+        breakpoint: 999,
+        settings: {
+          fade: false,
+          infinite: false
+        }
+      }
+    ]
   });
 
   jQuery(this).find('.slick-dots').wrap('<div class="the-point-dots slick-dots-wrap map-dots"></div>');
@@ -746,14 +757,15 @@ jQuery('.map-slider-module').each(function(){
 
   jQuery(this).find('.slick-dots-clone-wrap, .slick-list').wrapAll('<div class="row my-row default-row main-map-action-wrap"></div>');
 
-  jQuery(this).find('.main-map-action-wrap .slick-dots-clone-wrap').wrap('<div class="col-9 my-col"><div class="main-wrap"></div></div>');
+  jQuery(this).find('.main-map-action-wrap .slick-dots-clone-wrap').wrap('<div class="col-xxl-9 col-md-8 col-12 my-col"><div class="main-wrap"></div></div>');
 
-  jQuery(this).find('.main-map-action-wrap .slick-list').wrap('<div class="col-3 my-col"><div class="main-wrap"></div></div>');
+  jQuery(this).find('.main-map-action-wrap .slick-list').wrap('<div class="col-xxl-3 col-md-4 col-12 my-col"><div class="main-wrap"></div></div>');
 
   
   jQuery(this).find('.main-map-action-wrap .slick-dots-clone-wrap').prepend(MAPIMG);
 
   jQuery('.nav-dots .slick-dots li:first-child').addClass('current');
+
   
 
 });

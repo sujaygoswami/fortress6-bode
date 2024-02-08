@@ -4296,6 +4296,25 @@
 
     // map-slider-module
     .map-slider-module{
+
+        @media screen and (max-width: ($md - 1px)){
+            padding-bottom: 45px;
+
+            .slick-list{
+                overflow: inherit;
+
+                .slick-track{
+                    margin-left: -5px;
+                    margin-right: -5px;
+
+                    .slick-slide{
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+
         .sliding-item{
             .map-social{
                 display: flex;
@@ -4353,16 +4372,23 @@
 
                 li{
                     margin: 0px;
-                    padding: 4px;
+                    padding: 3px;
                     display: inline-block;
                     position: absolute;
                     left: 0px;
                     top: 0px;
-                    width: 44px;
-                    height: 44px;
-                    border: 3px solid transparent;
+                    width: 25px;
+                    height: 25px;
+                    border: 2px solid transparent;
                     border-radius: 100%;
                     @include transition(all 0.3s ease 0s);
+
+                    @media screen and (min-width: $xxl) {
+                        width: 44px;
+                        height: 44px;
+                        border: 3px solid transparent;
+                        padding: 4px;
+                    }
 
                     &.current{
                         border-color: var(--site-secondary-color);
@@ -4389,8 +4415,12 @@
                 margin: 0px;
                 padding: 0px;
                 display: flex !important;
-                column-gap: 70px;
+                column-gap: 15px;
                 justify-content: center;
+
+                @media screen and (min-width: $xxl) {
+                    column-gap: 70px;
+                }
 
                 li{
                     margin: 0px;
@@ -4410,14 +4440,49 @@
                         color: var(--site-grey-type-1);
                         opacity: 0.55;
                         font-weight: var(--site-primary-font-bold);
-                        font-size: 20px;
-                        line-height: 30px;
-                        padding: 0 20px 20px 20px;
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding: 0 10px 10px 10px;
                         border-bottom: 4px solid transparent;
                         @include transition(all 0.3s ease 0s);
 
+                        @media screen and (min-width: $xxl) {
+                            font-size: 20px;
+                            line-height: 30px;
+                            padding: 0 20px 20px 20px;
+                        }
+
                         span{
                             font-weight: var(--site-primary-font-regular);
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: ($md - 1px)){
+                margin-bottom: 0px;
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                bottom: 0px;
+
+                ul{
+                    column-gap: 8px;
+                    li{
+                        &.slick-active{
+                            button{
+                                opacity: 1;
+                            }
+                        }
+                        button{
+                            font-size: 0px;
+                            border: none;
+                            margin: 0px;
+                            padding: 0px;
+                            width: 33px;
+                            height: 5px;
+                            background-color: var(--site-secondary-color);
+                            opacity: 0.4;
+                            border-radius: 10px;
                         }
                     }
                 }
