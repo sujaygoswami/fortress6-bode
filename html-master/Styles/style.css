@@ -10802,9 +10802,8 @@ html, body {
     .bode .sliding-card-module-text-tile-view .slidings-tiles .my-row {
       row-gap: 0px; }
     .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 {
-      position: relative;
-      left: inherit;
-      top: 17%; }
+      position: static;
+      left: inherit; }
       .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col {
         margin-top: 20px; }
         .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col:nth-child(2) {

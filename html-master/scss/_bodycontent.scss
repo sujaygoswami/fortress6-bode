@@ -3337,9 +3337,9 @@
             
 
             &.type-2{
-                position: relative;
+                position: static;
                 left: inherit;
-                top: 17%;
+                // top: 17%;
                 .my-col{
                     margin-top: 20px;
                     &:nth-child(2){
