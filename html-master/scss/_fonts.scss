@@ -27,11 +27,28 @@
 
 
 
+// @font-face {
+//     font-family: 'Brigends Expanded Regular';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: local('../Fonts/Brigends Expanded Regular'), url('../Fonts/BrigendsExpanded-nReK1.woff') format('woff');
+// }
+
 @font-face {
-    font-family: 'Brigends Expanded Regular';
-    font-style: normal;
+    font-family: 'Brigends Expanded';
+    src: url('../Fonts/BrigendsExpanded.woff2') format('woff2'),
+        url('../Fonts/BrigendsExpanded.woff') format('woff');
     font-weight: normal;
-    src: local('../Fonts/Brigends Expanded Regular'), url('../Fonts/BrigendsExpanded-nReK1.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
 }
+
+// @font-face {
+//     font-family: 'Brigends Expanded';
+//     src: url('../Fonts/BrigendsExpanded.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
 

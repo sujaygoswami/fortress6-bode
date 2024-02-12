@@ -443,9 +443,11 @@ var controller = $.superscrollorama();
 jQuery('.paralax-pause-scroller.type-1').each(function(){
   var PARENTS = jQuery(this);
   var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
-  var APPLIEDTOTALHEIGHT = TOTALHEIGHT + 430;
+  // var APPLIEDTOTALHEIGHT = TOTALHEIGHT + 430;
+  var APPLIEDTOTALHEIGHT = TOTALHEIGHT / 2;
+  var APPLIEDTOTALHEIGHTPLUS = APPLIEDTOTALHEIGHT + 100;
   var paralaxCard = TweenMax.to( 
-    $(PARENTS).find('.slidings-tiles.type-1'), .5, {css:{top: -APPLIEDTOTALHEIGHT}}
+    $(PARENTS).find('.slidings-tiles.type-1'), .5, {css:{top: -APPLIEDTOTALHEIGHTPLUS}}
   );
   if ($(window).width() >= 1000) {
     controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});

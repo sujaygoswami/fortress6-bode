@@ -8374,7 +8374,7 @@ textarea.form-control-lg {
   --site-primary-font-regular: normal;
   --site-primary-font-Semibold: 600;
   --site-primary-font-bold: bold;
-  --site-secondary-font: 'Brigends Expanded Regular';
+  --site-secondary-font: 'Brigends Expanded';
   --site-secondary-font-normal: normal; }
 
 :root {
@@ -8410,10 +8410,11 @@ textarea.form-control-lg {
   font-display: swap; }
 
 @font-face {
-  font-family: 'Brigends Expanded Regular';
-  font-style: normal;
+  font-family: 'Brigends Expanded';
+  src: url("../Fonts/BrigendsExpanded.woff2") format("woff2"), url("../Fonts/BrigendsExpanded.woff") format("woff");
   font-weight: normal;
-  src: local("../Fonts/Brigends Expanded Regular"), url("../Fonts/BrigendsExpanded-nReK1.woff") format("woff"); }
+  font-style: normal;
+  font-display: swap; }
 
 html, body {
   min-height: 100%; }
@@ -9867,9 +9868,6 @@ html, body {
         background-repeat: no-repeat; }
       .bode .image-with-content-card-module.view-2 .content-part .basic-entry {
         max-width: inherit; }
-        .bode .image-with-content-card-module.view-2 .content-part .basic-entry h3, .bode .image-with-content-card-module.view-2 .content-part .basic-entry .h3 {
-          font-size: 40px;
-          line-height: 48px; }
     .bode .image-with-content-card-module.view-2 .image-part {
       width: 31.25%; }
     .bode .image-with-content-card-module .image-part {
@@ -12378,14 +12376,14 @@ html, body {
         width: 55.18px;
         height: 55.18px; }
     .bode .switcher-module.tab-switcher-style-main .site-tab-group-btn .main-button {
-      font-size: 11px;
+      font-size: 9px;
       line-height: 16px;
       padding: 7px;
       -webkit-border-radius: 30px;
       -moz-border-radius: 30px;
       -ms-border-radius: 30px;
       border-radius: 30px;
-      letter-spacing: 3px; }
+      letter-spacing: 2px; }
     .bode .tab-filter-slider-module .product-first-view {
       padding-bottom: 20px; }
       .bode .tab-filter-slider-module .product-first-view .product-bild {

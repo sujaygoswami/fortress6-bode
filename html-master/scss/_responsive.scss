@@ -1306,11 +1306,11 @@
             &.tab-switcher-style-main{
                 .site-tab-group-btn{
                     .main-button{
-                        font-size: 11px;
+                        font-size: 9px;
                         line-height: 16px;
                         padding: 7px;
                         @include border-radius(30px);
-                        letter-spacing: 3px;
+                        letter-spacing: 2px;
                     }
                 }
             }
