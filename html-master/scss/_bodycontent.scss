@@ -2944,17 +2944,25 @@
             
         }
 
-        &.type-hang-type-1{
-            position: absolute;
-            bottom: 0px;
-            right: 50px;
-            max-width: 80%;
+        // &.type-hang-type-1{
+        //     position: absolute;
+        //     bottom: 0px;
+        //     width: 100%;
+        //     // right: 50px;
+        //     // max-width: 80%;
 
-            @media screen and (min-width: $xxl){
-                max-width: 1062px/1600px * 100%;
-                right: 130px;
-            }
+        //     @media screen and (min-width: $xxl){
+        //         // max-width: 1062px/1600px * 100%;
+        //         // right: 130px;
+        //     }
             
+        // }
+
+        &.type-hang{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
         }
 
         &.type-normal-card{

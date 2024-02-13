@@ -10561,15 +10561,11 @@ html, body {
       @media screen and (min-width: 1000px) {
         .bode .measure-card-module.type-content-listing-view .the-card.has-link .measure-card-info.pad-bottom-lg {
           padding-bottom: 98px; } }
-  .bode .measure-card-module.type-hang-type-1 {
+  .bode .measure-card-module.type-hang {
     position: absolute;
+    left: 0px;
     bottom: 0px;
-    right: 50px;
-    max-width: 80%; }
-    @media screen and (min-width: 1700px) {
-      .bode .measure-card-module.type-hang-type-1 {
-        max-width: 66.375%;
-        right: 130px; } }
+    width: 100%; }
   .bode .measure-card-module.type-normal-card .the-card.has-link > a {
     padding-top: 0px; }
   .bode .measure-card-module.type-normal-card .the-card.has-link .measure-card-info {
@@ -11727,6 +11723,9 @@ html, body {
 @media screen and (max-width: 999px) {
   .bode {
     padding-top: var(--header-height-mobile); }
+    .bode .container.mobile-pad-none-left-right {
+      padding-left: 0px !important;
+      padding-right: 0px !important; }
     .bode .mobile-text-center {
       text-align: center; }
     .bode .mobile-negetive-margin-type-1 {
@@ -12469,7 +12468,7 @@ html, body {
       margin-left: auto; }
     .bode .hang-type-parent.hang-type-mobile-disable-bottom-pad {
       padding-bottom: 0px !important; }
-    .bode .measure-card-module.type-hang-type-1 {
+    .bode .measure-card-module.type-hang {
       position: relative;
       left: inherit;
       right: inherit;
