@@ -510,6 +510,25 @@ jQuery('.paralax-pause-scroller.type-4').each(function(){
   }
 });
 
+// type 6
+jQuery('.paralax-pause-scroller.type-6').each(function(){
+  var PARENTS = jQuery(this);
+  var TOTALHEIGHT = jQuery(this).find('.slidings-tiles').height();
+  var TOTALHEIGHTPLUS = TOTALHEIGHT - 350;
+  var ASPERHEIGHT = jQuery(this).find('.as-per-height').height();
+  var ADAPTASPERHEIGHT = TOTALHEIGHT - ASPERHEIGHT;
+  var APPLIEDASPERHEIGHT = ADAPTASPERHEIGHT - 20;
+  var paralaxCard = TweenMax.to( 
+    $(PARENTS).find('.slidings-tiles.type-3'), .5, {css:{top: -APPLIEDASPERHEIGHT}}
+  );
+  if ($(window).width() >= 1000) {
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
+  }
+  if ($(window).width() < 1000) {
+    controller.pin(PARENTS, 4000, {offset: -30, anim: paralaxCard});
+  }
+});
+
 
 
 

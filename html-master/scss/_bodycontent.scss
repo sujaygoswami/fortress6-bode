@@ -1,3 +1,26 @@
+html:lang(de) {
+    body.bode{
+        hyphens: auto;
+        word-break: inherit;
+
+        *{
+            word-break: inherit !important;
+        }
+
+        .sliding-card-module-text-tile-view{
+            .slidings-tiles{
+                &.type-1{
+                    .my-col{
+                        & > .main-wrap{
+                            word-break: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
 .bode {
     padding-top: var(--header-height);
     // overflow: hidden;

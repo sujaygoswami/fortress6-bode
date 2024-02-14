@@ -8713,6 +8713,14 @@ html, body {
         left: 50px;
         opacity: 0; }
 
+html:lang(de) body.bode {
+  hyphens: auto;
+  word-break: inherit; }
+  html:lang(de) body.bode * {
+    word-break: inherit !important; }
+  html:lang(de) body.bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap {
+    word-break: inherit; }
+
 .bode {
   padding-top: var(--header-height); }
   @media screen and (min-width: 1700px) {
