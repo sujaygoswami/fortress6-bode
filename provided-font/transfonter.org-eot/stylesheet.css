@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Brigends Expanded';
+    src: url('BrigendsExpanded.eot');
+    src: url('BrigendsExpanded.eot?#iefix') format('embedded-opentype'),
+        url('BrigendsExpanded.woff2') format('woff2'),
+        url('BrigendsExpanded.woff') format('woff'),
+        url('BrigendsExpanded.svg#BrigendsExpanded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
