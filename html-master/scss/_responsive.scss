@@ -521,9 +521,10 @@
                 margin-bottom: 20px;
             }
 
-            ul{
+            ul, ul:not(.normal-listing){
                 li{
                     padding-left: 20px;
+                    margin-top: 15px;
     
                     &:before{
                         background-size: 11.85px;
@@ -1474,6 +1475,7 @@
                     font-size: 11px;
                     padding: 10px 14px;
                     letter-spacing: 2px;
+                    border-radius: 15px;
                 }
             }
         }

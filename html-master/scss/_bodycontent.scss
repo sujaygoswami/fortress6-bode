@@ -743,6 +743,7 @@ html:lang(de) {
         }
         &.transparent-primary-light{
             background-image: url(../Images/corner_blue_inverted.svg) !important;
+            background-position: right bottom !important;
         }
         &.play-icon{
             &:hover{
@@ -844,6 +845,40 @@ html:lang(de) {
             }
 
             
+        }
+        &.type-right-attach{
+            min-width: 69.99px;
+            padding-right: 75px;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            background-image: url(../Images/curve-lick-type-right-attached-mobile.svg);
+            background-size: 69.99px;
+            span{
+                right: 10px;
+            }
+            @media screen and (min-width: $md) {
+                min-width: 140.16px;
+                padding-right: 150px;
+                padding-top: 70px;
+                padding-bottom: 35px;
+                background-image: url(../Images/curve-lick-type-right-attached.svg);
+                background-size: 140.16px;
+            }
+
+            span{
+                @media screen and (min-width: $md) {
+                    
+                
+                        width: 75px;
+                        height: 75px;
+                        right: 16px;
+
+                    &::before{
+                        background-size: 25px;
+                    }
+
+                }
+            }
         }
         &.type-1{
             min-width: 93.7px;
@@ -960,10 +995,16 @@ html:lang(de) {
             right: 0px;
             bottom: 0px;
             z-index: 10;
+            background-position: right -1px bottom -1px;
+
+            // @media screen and (max-width: ($md - 1px)){
+            //     background-position: right -1px bottom -1px;
+            // }
         }
 
         &.position-type-2{
             position: relative;
+            background-position: right -1px bottom -1px;
         }
 
         &.position-type-3{

@@ -8529,6 +8529,10 @@ html, body {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   margin-top: 0px; }
+  @media screen and (max-width: 999px) {
+    .bode header.header > .main-wrap > .container-fluid, .bode header.header > .main-wrap > .container-sm, .bode header.header > .main-wrap > .container-md, .bode header.header > .main-wrap > .container-lg, .bode header.header > .main-wrap > .container-xl, .bode header.header > .main-wrap > .container-xxl {
+      padding-left: 0px;
+      padding-right: 0px; } }
   .bode header.header.menu-open {
     margin-top: 100vh; }
   .bode header.header.header-onscroll-hidden {
@@ -9164,7 +9168,8 @@ html:lang(de) body.bode {
     .bode .curve-link.transparent-link {
       height: auto !important; }
     .bode .curve-link.transparent-primary-light {
-      background-image: url(../Images/corner_blue_inverted.svg) !important; }
+      background-image: url(../Images/corner_blue_inverted.svg) !important;
+      background-position: right bottom !important; }
     .bode .curve-link.play-icon:hover span::before {
       background-image: url(../Images/play-icon-secondary-small.svg); }
     .bode .curve-link.play-icon span::before {
@@ -9228,6 +9233,30 @@ html:lang(de) body.bode {
           padding-top: 30px; }
           .bode .curve-link.type-small span {
             right: 2px; } }
+    .bode .curve-link.type-right-attach {
+      min-width: 69.99px;
+      padding-right: 75px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      background-image: url(../Images/curve-lick-type-right-attached-mobile.svg);
+      background-size: 69.99px; }
+      .bode .curve-link.type-right-attach span {
+        right: 10px; }
+      @media screen and (min-width: 1000px) {
+        .bode .curve-link.type-right-attach {
+          min-width: 140.16px;
+          padding-right: 150px;
+          padding-top: 70px;
+          padding-bottom: 35px;
+          background-image: url(../Images/curve-lick-type-right-attached.svg);
+          background-size: 140.16px; } }
+      @media screen and (min-width: 1000px) {
+        .bode .curve-link.type-right-attach span {
+          width: 75px;
+          height: 75px;
+          right: 16px; }
+          .bode .curve-link.type-right-attach span::before {
+            background-size: 25px; } }
     .bode .curve-link.type-1 {
       min-width: 93.7px;
       padding-right: 93.7px;
@@ -9295,9 +9324,11 @@ html:lang(de) body.bode {
       position: absolute;
       right: 0px;
       bottom: 0px;
-      z-index: 10; }
+      z-index: 10;
+      background-position: right -1px bottom -1px; }
     .bode .curve-link.position-type-2 {
-      position: relative; }
+      position: relative;
+      background-position: right -1px bottom -1px; }
     .bode .curve-link.position-type-3 {
       position: absolute;
       left: 20px;
@@ -11963,9 +11994,10 @@ html:lang(de) body.bode {
       font-size: 13px;
       line-height: 22px;
       margin-bottom: 20px; }
-    .bode .basic-entry ul li {
-      padding-left: 20px; }
-      .bode .basic-entry ul li:before {
+    .bode .basic-entry ul li, .bode .basic-entry ul:not(.normal-listing) li {
+      padding-left: 20px;
+      margin-top: 15px; }
+      .bode .basic-entry ul li:before, .bode .basic-entry ul:not(.normal-listing) li:before {
         background-size: 11.85px;
         top: 6px; }
     .bode .basic-entry p.sm-para {
@@ -12464,7 +12496,8 @@ html:lang(de) body.bode {
     .bode .tag-link-module .the-tag-link a {
       font-size: 11px;
       padding: 10px 14px;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      border-radius: 15px; }
     .bode .team-module .team-info .name {
       font-size: 14px; }
     .bode .team-module .my-col:nth-child(2n+1) .main-wrap {
