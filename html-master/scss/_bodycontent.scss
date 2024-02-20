@@ -1878,8 +1878,13 @@ html:lang(de) {
 
                 .content-part{
                     width: 59%;
-                    padding: 120px 115px;
+                    padding: 60px;
                     min-height: inherit;
+
+                    @media screen and (max-width: ($md - 1px)){
+                        padding-top: 30px !important;
+                        padding-bottom: 30px !important;
+                    }
 
                     &.has-serial-number{
                         @media screen and (min-width: $md) {

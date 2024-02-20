@@ -8411,7 +8411,8 @@ textarea.form-control-lg {
 
 @font-face {
   font-family: 'Brigends Expanded';
-  src: url("../Fonts/BrigendsExpanded.woff2") format("woff2"), url("../Fonts/BrigendsExpanded.woff") format("woff");
+  src: url("../Fonts/Brigends Expanded.eot");
+  src: url("../Fonts/Brigends Expanded.eot?#iefix") format("embedded-opentype"), url("../Fonts/Brigends Expanded.woff2") format("woff2"), url("../Fonts/Brigends Expanded.woff") format("woff"), url("../Fonts/Brigends Expanded.svg#BrigendsExpanded") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -9884,8 +9885,12 @@ html:lang(de) body.bode {
           text-align: center; }
     .bode .image-with-content-card-module.view-2.new-look-type-1 .content-part {
       width: 59%;
-      padding: 120px 115px;
+      padding: 60px;
       min-height: inherit; }
+      @media screen and (max-width: 999px) {
+        .bode .image-with-content-card-module.view-2.new-look-type-1 .content-part {
+          padding-top: 30px !important;
+          padding-bottom: 30px !important; } }
       @media screen and (min-width: 1000px) {
         .bode .image-with-content-card-module.view-2.new-look-type-1 .content-part.has-serial-number {
           padding-right: 135px; } }

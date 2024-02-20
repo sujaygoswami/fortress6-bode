@@ -398,6 +398,13 @@ date: 19.02.2024 [hours not given yet]
 17) https://app.asana.com/0/1205756026608526/1206620992040887
 ## design cr adjustment [30min]
 
+date: 20.02.2024 [hours not given yet]
+18) https://app.asana.com/0/1205756026608526/1206632882357764
+## design cr adjustment [15min]
+
+19) https://app.asana.com/0/1205756026608526/1206431115498637
+## design cr [30min]
+
 
 STATUS OF NEW 95% COMPLETE DESIGN
 
@@ -405,6 +412,28 @@ page 1 to 6 desktop with responsive done
 
 
 page 8,9,10,12,13,14,7, 11 desktop with responsive done
+
+
+
+====================
+BODE PUSH LIVE METHOD
+====================
+
+mittwald push
+----
+ssh p657043@p657043.webspaceconfig.de
+yes
+c1i5+wKuvhfru#
+commit
+pull
+push
+ATBBjAV46rCK7mvCrRksfxXByfTUEFAC0A00
+
+live pull migrate
+================
+ssh bodtvete@37.228.154.195
+yes
+ATBBjAV46rCK7mvCrRksfxXByfTUEFAC0A00
 
 
 

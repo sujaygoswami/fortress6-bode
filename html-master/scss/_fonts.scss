@@ -34,14 +34,14 @@
 //     src: local('../Fonts/Brigends Expanded Regular'), url('../Fonts/BrigendsExpanded-nReK1.woff') format('woff');
 // }
 
-@font-face {
-    font-family: 'Brigends Expanded';
-    src: url('../Fonts/BrigendsExpanded.woff2') format('woff2'),
-        url('../Fonts/BrigendsExpanded.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'Brigends Expanded';
+//     src: url('../Fonts/BrigendsExpanded.woff2') format('woff2'),
+//         url('../Fonts/BrigendsExpanded.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
 // @font-face {
 //     font-family: 'Brigends Expanded';
@@ -50,5 +50,17 @@
 //     font-style: normal;
 //     font-display: swap;
 // }
+
+@font-face {
+    font-family: 'Brigends Expanded';
+    src: url('../Fonts/Brigends Expanded.eot');
+    src: url('../Fonts/Brigends Expanded.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Brigends Expanded.woff2') format('woff2'),
+        url('../Fonts/Brigends Expanded.woff') format('woff'),
+        url('../Fonts/Brigends Expanded.svg#BrigendsExpanded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 
