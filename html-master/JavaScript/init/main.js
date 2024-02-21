@@ -197,7 +197,12 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
   
 });
 
-
+// ios video
+for (video of document.getElementsByTagName("video")) {
+  video.setAttribute("playsinline", "");
+  video.setAttribute("muted", "");
+  video.play();
+}
 // startpage banner video
 jQuery('.inview-video-paly-pause').viewportChecker({
   classToAdd: 'play',

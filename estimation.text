@@ -405,6 +405,10 @@ date: 20.02.2024 [hours not given yet]
 19) https://app.asana.com/0/1205756026608526/1206431115498637
 ## design cr [30min]
 
+date: 21.02.2024 [hours not given yet]
+20) https://app.asana.com/0/1205756026608526/1206648828821713
+## design bug fixed
+
 
 STATUS OF NEW 95% COMPLETE DESIGN
 
@@ -424,6 +428,7 @@ mittwald push
 ssh p657043@p657043.webspaceconfig.de
 yes
 c1i5+wKuvhfru#
+cd html/typo3-composer/
 commit
 pull
 push
@@ -433,12 +438,9 @@ live pull migrate
 ================
 ssh bodtvete@37.228.154.195
 yes
-ATBBjAV46rCK7mvCrRksfxXByfTUEFAC0A00
-
-
-
-
-
+LpS$f80D1bOT
+cd www.bode-global.com/
+pull
 
 
 
