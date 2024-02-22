@@ -47,9 +47,9 @@
                 margin-bottom: 0px;
             }
             &.set-back{
-                background-size: cover;
+                background-position: top center;
                 background-repeat: no-repeat;
-                background-position: left top;
+                background-size: cover;
                 & > img{
                     display: block;
                     visibility: hidden;

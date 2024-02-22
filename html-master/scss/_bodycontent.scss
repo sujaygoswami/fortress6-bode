@@ -1174,7 +1174,7 @@ html:lang(de) {
             
             font-size: 55px;
             line-height: 65px;
-            letter-spacing: 3.36px;
+            // letter-spacing: 3.36px;
             font-family: var(--site-secondary-font);
             font-weight: var( --site-secondary-font-normal);
 
@@ -1261,7 +1261,7 @@ html:lang(de) {
         h1{
             font-size: 50px;
             line-height: 65px;
-            letter-spacing: 2.1px;
+            // letter-spacing: 2.1px;
             font-family: var(--site-secondary-font);
             font-weight: var(--site-secondary-font-normal);
             text-transform: uppercase;
@@ -1322,7 +1322,7 @@ html:lang(de) {
             &.focused{
                 font-family: var(--site-secondary-font);
                 font-weight: var(--site-secondary-font-normal);
-                letter-spacing: 0.3px;
+                // letter-spacing: 0.3px;
             }
         }
 
@@ -1339,7 +1339,7 @@ html:lang(de) {
             padding: 0px;
 
             li{
-                margin: 30px 0 0 0;
+                margin: 15px 0 0 0;
                 padding: 0 0 0 36px;
                 position: relative;
 
@@ -1522,7 +1522,7 @@ html:lang(de) {
             h1{
                 font-size: 61px;
                 line-height: 70px;
-                letter-spacing: 2.13px;
+                // letter-spacing: 2.13px;
                 font-family: var(--site-secondary-font);
                 font-weight: var(--site-secondary-font-normal);
             }
@@ -1969,7 +1969,7 @@ html:lang(de) {
 
             &.set-back{
                 background-size: cover;
-                background-position: left top;
+                background-position: center top;
                 background-repeat: no-repeat;
             }
 
@@ -2456,6 +2456,13 @@ html:lang(de) {
     .tab-filter-slider-module{
             overflow-x: hidden;
 
+        .product-tab-contents{
+            &.normal-height{
+                height: auto !important;
+                overflow: inherit !important;
+            }
+        }    
+
         .tab-nav-group{
             margin-bottom: 65px;
             &:last-child{
@@ -2464,16 +2471,16 @@ html:lang(de) {
         }
 
         .the-slider{
-            
+        
 
             &.inactive{
-                position: fixed;
+                // position: fixed;
                 pointer-events: none;
                 opacity: 0;
                 // @include transition(all 0.3s ease 0s);
 
                  &.active{
-                    position: static;
+                    position: static !important;
                     pointer-events: auto;
                     opacity: 1;
                 }
@@ -2556,7 +2563,7 @@ html:lang(de) {
             .product-title{
                 font-size: 60px;
                 line-height: 70px;
-                letter-spacing: 2.1px;
+                // letter-spacing: 2.1px;
                 font-family: var(--site-secondary-font);
                 font-weight: var(--site-secondary-font-normal);
                 margin-bottom: 18px;
@@ -2739,9 +2746,37 @@ html:lang(de) {
     // product-detail-with-slider-module
     
     // cover-video-content-module
+    &.no-touch{
+        .cover-video-content-module{
+            video{
+                &::-webkit-media-controls-panel {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+
+                &.playing{
+                    &::-webkit-media-controls-panel {
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+    }
+    &.touch{
+        .cover-video-content-module{
+            .play-pause-trigger{
+                display: none;
+            }
+        }
+    }
     .cover-video-content-module{
+        
         video{
             cursor: pointer;
+            
+
+            
         }
         .the-video{
             position: relative;
@@ -2759,6 +2794,7 @@ html:lang(de) {
             align-items: center;
             pointer-events: none;
             background-color: rgba($color: #000000, $alpha: 0.26);
+            pointer-events: none;
 
             .the-trigger{
                 display: inline-block;
@@ -3384,6 +3420,7 @@ html:lang(de) {
                     & > .main-wrap{
                         border-radius: 15px;
                         min-height: 180px;
+                        -webkit-backdrop-filter: blur(30px);
                         backdrop-filter: blur(30px);
                         background-color: rgba($color: #ffffff, $alpha: 0.15);
                         padding: 20px;

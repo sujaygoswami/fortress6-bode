@@ -9447,7 +9447,6 @@ html:lang(de) body.bode {
   .bode .special-header h1, .bode .special-header .h1 {
     font-size: 55px;
     line-height: 65px;
-    letter-spacing: 3.36px;
     font-family: var(--site-secondary-font);
     font-weight: var(--site-secondary-font-normal); }
     @media screen and (min-width: 1700px) {
@@ -9483,7 +9482,6 @@ html:lang(de) body.bode {
   .bode .basic-entry h1, .bode .basic-entry .h1 {
     font-size: 50px;
     line-height: 65px;
-    letter-spacing: 2.1px;
     font-family: var(--site-secondary-font);
     font-weight: var(--site-secondary-font-normal);
     text-transform: uppercase;
@@ -9525,8 +9523,7 @@ html:lang(de) body.bode {
     font-weight: var(--site-primary-font-Semibold); }
     .bode .basic-entry strong.focused {
       font-family: var(--site-secondary-font);
-      font-weight: var(--site-secondary-font-normal);
-      letter-spacing: 0.3px; }
+      font-weight: var(--site-secondary-font-normal); }
   .bode .basic-entry ul, .bode .basic-entry ol {
     margin-bottom: 40px; }
     .bode .basic-entry ul:last-child, .bode .basic-entry ol:last-child {
@@ -9536,7 +9533,7 @@ html:lang(de) body.bode {
     margin: 0px;
     padding: 0px; }
     .bode .basic-entry ul:not(.normal-listing) li {
-      margin: 30px 0 0 0;
+      margin: 15px 0 0 0;
       padding: 0 0 0 36px;
       position: relative; }
       .bode .basic-entry ul:not(.normal-listing) li:first-child {
@@ -9661,7 +9658,6 @@ html:lang(de) body.bode {
     .bode .page-curved-header .basic-entry h1, .bode .page-curved-header .basic-entry .h1 {
       font-size: 61px;
       line-height: 70px;
-      letter-spacing: 2.13px;
       font-family: var(--site-secondary-font);
       font-weight: var(--site-secondary-font-normal); }
   .bode .site-btn {
@@ -9942,7 +9938,7 @@ html:lang(de) body.bode {
           margin: 0 auto; }
       .bode .image-with-content-card-module .image-part.set-back {
         background-size: cover;
-        background-position: left top;
+        background-position: center top;
         background-repeat: no-repeat; }
     .bode .image-with-content-card-module .image-overlay-text {
       width: 100%;
@@ -10248,16 +10244,18 @@ html:lang(de) body.bode {
       font-weight: var(--site-primary-font-regular); }
   .bode .tab-filter-slider-module {
     overflow-x: hidden; }
+    .bode .tab-filter-slider-module .product-tab-contents.normal-height {
+      height: auto !important;
+      overflow: inherit !important; }
     .bode .tab-filter-slider-module .tab-nav-group {
       margin-bottom: 65px; }
       .bode .tab-filter-slider-module .tab-nav-group:last-child {
         margin-bottom: 0px; }
     .bode .tab-filter-slider-module .the-slider.inactive {
-      position: fixed;
       pointer-events: none;
       opacity: 0; }
       .bode .tab-filter-slider-module .the-slider.inactive.active {
-        position: static;
+        position: static !important;
         pointer-events: auto;
         opacity: 1; }
     .bode .tab-filter-slider-module .the-slider .counter {
@@ -10313,7 +10311,6 @@ html:lang(de) body.bode {
       .bode .tab-filter-slider-module .product-first-view .product-title {
         font-size: 60px;
         line-height: 70px;
-        letter-spacing: 2.1px;
         font-family: var(--site-secondary-font);
         font-weight: var(--site-secondary-font-normal);
         margin-bottom: 18px; }
@@ -10425,6 +10422,14 @@ html:lang(de) body.bode {
             max-height: 94px; } }
     .bode .product-detail-with-slider-module .product-detail-sync-slider .slider-nav .slick-slide {
       padding: 0 10px; }
+  .bode.no-touch .cover-video-content-module video::-webkit-media-controls-panel {
+    opacity: 0;
+    pointer-events: none; }
+  .bode.no-touch .cover-video-content-module video.playing::-webkit-media-controls-panel {
+    opacity: 1;
+    pointer-events: auto; }
+  .bode.touch .cover-video-content-module .play-pause-trigger {
+    display: none; }
   .bode .cover-video-content-module video {
     cursor: pointer; }
   .bode .cover-video-content-module .the-video {
@@ -10440,7 +10445,8 @@ html:lang(de) body.bode {
     display: grid;
     align-items: center;
     pointer-events: none;
-    background-color: rgba(0, 0, 0, 0.26); }
+    background-color: rgba(0, 0, 0, 0.26);
+    pointer-events: none; }
     .bode .cover-video-content-module .play-pause-trigger .the-trigger {
       display: inline-block;
       cursor: pointer;
@@ -10821,6 +10827,7 @@ html:lang(de) body.bode {
         .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap {
           border-radius: 15px;
           min-height: 180px;
+          -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
           background-color: rgba(255, 255, 255, 0.15);
           padding: 20px;
@@ -11655,9 +11662,9 @@ html:lang(de) body.bode {
   .bode footer.footer .footer-build:last-child {
     margin-bottom: 0px; }
   .bode footer.footer .footer-build.set-back {
-    background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-position: left top; }
+    background-size: cover; }
     .bode footer.footer .footer-build.set-back > img {
       display: block;
       visibility: hidden;
@@ -12473,9 +12480,6 @@ html:lang(de) body.bode {
       background-size: 20px; }
     .bode .cover-video-content-module .ratio {
       min-height: 664px; }
-      .bode .cover-video-content-module .ratio > video {
-        width: auto;
-        height: 100%; }
     .bode .product-listing-card-type.type-mobile-slider > .row {
       display: block;
       margin: 0px !important; }
