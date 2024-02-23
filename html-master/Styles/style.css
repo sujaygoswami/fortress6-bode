@@ -8718,13 +8718,12 @@ html, body {
         left: 50px;
         opacity: 0; }
 
-html:lang(de) body.bode {
+html body.bode {
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
   hyphens: auto;
-  word-break: inherit; }
-  html:lang(de) body.bode * {
-    word-break: inherit !important; }
-  html:lang(de) body.bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap {
-    word-break: inherit; }
+  word-wrap: anywhere; }
 
 .bode {
   padding-top: var(--header-height); }
@@ -9080,6 +9079,15 @@ html:lang(de) body.bode {
           row-gap: 30px; } }
   .bode .column-lift-from-top-type-1 {
     padding-top: 200px; }
+  .bode #matomo-opt-out {
+    margin-bottom: 40px; }
+    .bode #matomo-opt-out label {
+      padding-left: 10px;
+      max-width: 95%;
+      vertical-align: top;
+      line-height: normal; }
+    .bode #matomo-opt-out:last-child {
+      margin-bottom: 0px; }
   .bode .curved-module-header {
     display: inline-block;
     position: relative; }
@@ -9530,7 +9538,6 @@ html:lang(de) body.bode {
       margin-bottom: 0px; }
   .bode .basic-entry ul:not(.normal-listing) {
     list-style: none;
-    margin: 0px;
     padding: 0px; }
     .bode .basic-entry ul:not(.normal-listing) li {
       margin: 15px 0 0 0;
@@ -10158,8 +10165,8 @@ html:lang(de) body.bode {
       line-height: 30px;
       margin-bottom: 30px; }
   .bode .news-listing-module .basic-entry a, .bode .news-listing-module a {
-    color: inherit;
-    text-decoration: none; }
+    color: inherit !important;
+    text-decoration: none !important; }
   .bode .news-listing-module .main-module .my-col {
     border-left: 1px solid; }
     .bode .news-listing-module .main-module .my-col:first-child {
@@ -10812,187 +10819,184 @@ html:lang(de) body.bode {
   .bode .paralax-pause-scroller {
     width: 100%;
     margin-top: -30px; }
-  .bode .sliding-card-module-text-tile-view {
-    word-wrap: normal; }
-    .bode .sliding-card-module-text-tile-view.no-height {
-      height: 0px; }
-    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 {
-      position: relative;
-      left: -65px;
-      top: 17%; }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col {
-        margin-top: 20px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col:nth-child(2) {
-          margin-top: 80px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap {
-          border-radius: 15px;
-          min-height: 180px;
-          -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-          background-color: rgba(255, 255, 255, 0.15);
-          padding: 20px;
-          text-align: center;
-          color: white;
-          display: grid;
-          align-items: center;
-          font-size: 25px;
-          line-height: 30px;
-          font-weight: var(--site-primary-font-Semibold);
-          word-break: break-all; }
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap span {
-            display: inline-block;
-            margin: 0 auto; }
-    .bode .sliding-card-module-text-tile-view .slidings-tiles .my-row {
-      row-gap: 0px; }
-    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 {
-      position: static;
-      left: inherit; }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col {
-        margin-top: 20px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col:nth-child(2) {
-          margin-top: 80px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap {
-          -webkit-border-radius: 15px;
-          -moz-border-radius: 15px;
-          -ms-border-radius: 15px;
-          border-radius: 15px;
-          overflow: hidden;
-          position: relative;
-          min-height: inherit;
-          backdrop-filter: none;
-          padding: 0px;
-          background-color: transparent; }
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            z-index: 1;
-            text-align: center;
-            display: grid;
-            align-items: center; }
-            .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1 {
-              font-size: 39px;
-              line-height: 47px;
-              letter-spacing: 1.36px; }
-            .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h2 {
-              font-size: 37px;
-              line-height: 45px; }
-            .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h6 {
-              text-shadow: 0px 3px 20px #00000029; }
-            .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content .text-holder {
-              padding: 50px; }
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap:before {
-            content: ' ';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            background-color: rgba(0, 0, 0, 0.2); }
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap.set-back {
-            background-repeat: no-repeat;
-            background-position: left top;
-            background-size: cover; }
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap > img {
-            display: block;
-            visibility: hidden;
-            width: 100%;
-            height: auto; }
-    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 {
-      position: relative;
-      left: inherit; }
-      @media screen and (min-width: 1000px) {
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:first-child {
-          margin-top: 80px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:nth-child(2) {
-          margin-top: 0px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:nth-child(3) {
-          margin-top: 170px; } }
-      @media screen and (min-width: 1000px) {
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:first-child {
-          margin-top: 110px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:nth-child(2) {
-          margin-top: 170px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:nth-child(3) {
-          margin-top: 0px; } }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col {
-        margin-top: 20px; }
-        @media screen and (min-width: 1000px) {
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col {
-            margin-top: 56px; }
-            .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col:first-child {
-              margin-top: 45px; }
-            .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col:nth-child(2) {
-              margin-top: 120px; } }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col {
-        margin-top: 15px; }
-        @media screen and (min-width: 1000px) {
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col {
-            margin-top: 80px; } }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:first-child {
-          margin-top: 0px; }
-        @media screen and (min-width: 1000px) {
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:nth-child(2) {
-            margin-top: 200px; } }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild {
+  .bode .sliding-card-module-text-tile-view.no-height {
+    height: 0px; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 {
+    position: relative;
+    left: -65px;
+    top: 17%; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col {
+      margin-top: 20px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col:nth-child(2) {
+        margin-top: 80px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap {
+        border-radius: 15px;
+        min-height: 180px;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 20px;
         text-align: center;
-        margin-bottom: 20px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild:last-child {
-          margin-bottom: 0px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild img {
-          display: inline-block; }
-      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap {
+        color: white;
+        display: grid;
+        align-items: center;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: var(--site-primary-font-Semibold); }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 .my-col > .main-wrap span {
+          display: inline-block;
+          margin: 0 auto; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles .my-row {
+    row-gap: 0px; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 {
+    position: static;
+    left: inherit; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col {
+      margin-top: 20px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col:nth-child(2) {
+        margin-top: 80px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap {
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         border-radius: 15px;
         overflow: hidden;
-        padding: 70px 25px 40px 25px;
-        color: white;
+        position: relative;
+        min-height: inherit;
+        backdrop-filter: none;
+        padding: 0px;
+        background-color: transparent; }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          z-index: 1;
+          text-align: center;
+          display: grid;
+          align-items: center; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1 {
+            font-size: 39px;
+            line-height: 47px;
+            letter-spacing: 1.36px; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h2 {
+            font-size: 37px;
+            line-height: 45px; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content.basic-entry .h6 {
+            text-shadow: 0px 3px 20px #00000029; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap .overlay-content .text-holder {
+            padding: 50px; }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap:before {
+          content: ' ';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          background-color: rgba(0, 0, 0, 0.2); }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap.set-back {
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-size: cover; }
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-2 .my-col > .main-wrap > img {
+          display: block;
+          visibility: hidden;
+          width: 100%;
+          height: auto; }
+  .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 {
+    position: relative;
+    left: inherit; }
+    @media screen and (min-width: 1000px) {
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:first-child {
+        margin-top: 80px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:nth-child(2) {
+        margin-top: 0px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-2 .my-col:nth-child(3) {
+        margin-top: 170px; } }
+    @media screen and (min-width: 1000px) {
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:first-child {
+        margin-top: 110px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:nth-child(2) {
+        margin-top: 170px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-3 .my-col:nth-child(3) {
+        margin-top: 0px; } }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col {
+      margin-top: 20px; }
+      @media screen and (min-width: 1000px) {
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col {
+          margin-top: 56px; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col:first-child {
+            margin-top: 45px; }
+          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3.view-4 .my-col:nth-child(2) {
+            margin-top: 120px; } }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col {
+      margin-top: 15px; }
+      @media screen and (min-width: 1000px) {
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col {
+          margin-top: 80px; } }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:first-child {
+        margin-top: 0px; }
+      @media screen and (min-width: 1000px) {
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .my-col:nth-child(2) {
+          margin-top: 200px; } }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild {
+      text-align: center;
+      margin-bottom: 20px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild:last-child {
+        margin-bottom: 0px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .product-bild img {
+        display: inline-block; }
+    .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 70px 25px 40px 25px;
+      color: white;
+      background-color: var(--site-primary-color-light); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.view-two {
+        padding: 0px 30px 20px 30px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h6 {
+        color: inherit; }
+      @media screen and (min-width: 1700px) {
+        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap {
+          padding: 126px 35px 40px 35px; } }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.has-bottom-link {
+        padding-bottom: 100px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h1 {
+        font-family: var(--site-primary-font);
+        font-weight: var(--site-primary-font-bold); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h6 {
+        color: var(--site-grey-type-1);
+        margin-bottom: 15px; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-1 {
         background-color: var(--site-primary-color-light); }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.view-two {
-          padding: 0px 30px 20px 30px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey .basic-entry .h6 {
-          color: inherit; }
-        @media screen and (min-width: 1700px) {
-          .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap {
-            padding: 126px 35px 40px 35px; } }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.has-bottom-link {
-          padding-bottom: 100px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h1 {
-          font-family: var(--site-primary-font);
-          font-weight: var(--site-primary-font-bold); }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h1, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h2, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h3, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h4, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h5, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry h6, .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap .basic-entry .h6 {
-          color: var(--site-grey-type-1);
-          margin-bottom: 15px; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-1 {
-          background-color: var(--site-primary-color-light); }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey {
-          background-color: var(--site-grey-type-1); }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-2 {
-          background-image: url(../Images/blue-light-sliding-tile-gradient-bg-1.svg);
-          background-repeat: no-repeat;
-          background-position: right top -5px;
-          background-size: cover; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-3 {
-          background-image: url(../Images/blue-light-sliding-tile-gradient-bg-2.svg);
-          background-repeat: no-repeat;
-          background-position: right -10px bottom;
-          background-size: cover; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-4 {
-          background-image: url(../Images/blue-light-sliding-tile-gradient-bg-3.svg);
-          background-repeat: no-repeat;
-          background-position: left top;
-          background-size: cover; }
-        .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-5 {
-          background-image: url(../Images/blue-light-sliding-tile-gradient-bg-4.svg);
-          background-repeat: no-repeat;
-          background-position: left top;
-          background-size: cover; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-grey {
+        background-color: var(--site-grey-type-1); }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-2 {
+        background-image: url(../Images/blue-light-sliding-tile-gradient-bg-1.svg);
+        background-repeat: no-repeat;
+        background-position: right top -5px;
+        background-size: cover; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-3 {
+        background-image: url(../Images/blue-light-sliding-tile-gradient-bg-2.svg);
+        background-repeat: no-repeat;
+        background-position: right -10px bottom;
+        background-size: cover; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-4 {
+        background-image: url(../Images/blue-light-sliding-tile-gradient-bg-3.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover; }
+      .bode .sliding-card-module-text-tile-view .slidings-tiles.type-3 .grid-item > .main-wrap.bg-type-5 {
+        background-image: url(../Images/blue-light-sliding-tile-gradient-bg-4.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover; }
   .bode .cover-bg-content-module {
     height: 100vh;
     position: relative; }
@@ -11207,6 +11211,9 @@ html:lang(de) body.bode {
     border-radius: 33px;
     text-decoration: none;
     color: inherit; }
+    .bode .tag-link-module .the-tag-link a:hover {
+      background-color: var(--site-primary-color-light);
+      color: var(--site-secondary-color); }
   .bode .global-text-upon-img-content.has-hanging-content-type-1 {
     padding-bottom: 180px; }
   .bode .global-text-upon-img-content .text-upon {
@@ -11659,6 +11666,9 @@ html:lang(de) body.bode {
   position: relative;
   min-height: 708px;
   margin-bottom: 17px; }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    .bode footer.footer .footer-build {
+      min-height: 379px !important; } }
   .bode footer.footer .footer-build:last-child {
     margin-bottom: 0px; }
   .bode footer.footer .footer-build.set-back {

@@ -91,6 +91,11 @@ jQuery(document).ready(function () {
 
 
 
+// text frame
+jQuery('.text-white + .frame').addClass('text-white');
+jQuery('.frame').addClass('basic-entry');
+
+
 
 
 
@@ -847,6 +852,10 @@ jQuery(document).ready(function () {
 
 // load
 jQuery(window).load(function () {
+
+// matomo-opt-out
+jQuery('#matomo-opt-out').addClass('container-inset mx-auto');
+
 
 
 

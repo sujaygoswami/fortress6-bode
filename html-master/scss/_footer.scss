@@ -43,6 +43,9 @@
             position: relative;
             min-height: 708px;
             margin-bottom: 17px;
+            @media screen and (max-width: $lg) and (min-width: $smEnd) {
+                min-height: 379px !important;
+            }
             &:last-child{
                 margin-bottom: 0px;
             }

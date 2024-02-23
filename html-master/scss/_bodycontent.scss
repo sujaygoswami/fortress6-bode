@@ -1,10 +1,14 @@
-html:lang(de) {
+html{
     body.bode{
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
         hyphens: auto;
-        word-break: inherit;
+        word-wrap: anywhere;
+        // word-break: inherit;
 
         *{
-            word-break: inherit !important;
+            // word-break: inherit !important;
         }
 
         .sliding-card-module-text-tile-view{
@@ -12,7 +16,7 @@ html:lang(de) {
                 &.type-1{
                     .my-col{
                         & > .main-wrap{
-                            word-break: inherit;
+                            // word-break: inherit;
                         }
                     }
                 }
@@ -598,6 +602,23 @@ html:lang(de) {
 
 
     // basic end
+
+    // #matomo-opt-out
+    #matomo-opt-out{
+        margin-bottom: 40px;
+
+        label{
+            padding-left: 10px;
+            max-width: 95%;
+            vertical-align: top;
+            line-height: normal;
+        }
+
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    // #matomo-opt-out
 
     // curve-link
     .curved-module-header{
@@ -1335,7 +1356,7 @@ html:lang(de) {
 
         ul:not(.normal-listing){
             list-style: none;
-            margin: 0px;
+            // margin: 0px;
             padding: 0px;
 
             li{
@@ -2336,8 +2357,8 @@ html:lang(de) {
         }
 
         .basic-entry a, a{
-            color: inherit;
-            text-decoration: none;
+            color: inherit !important;
+            text-decoration: none !important;
         }
         .main-module{
             .my-col{
@@ -3400,7 +3421,7 @@ html:lang(de) {
 
     // sliding-card-module-text-tile-view
     .sliding-card-module-text-tile-view{
-        word-wrap: normal;
+        // word-wrap: normal;
         
         &.no-height{
             height: 0px;
@@ -3431,7 +3452,7 @@ html:lang(de) {
                         font-size: 25px;
                         line-height: 30px;
                         font-weight: var(--site-primary-font-Semibold);
-                        word-break: break-all;
+                        // word-break: break-all;
 
     
                         span{
@@ -3993,6 +4014,11 @@ html:lang(de) {
                 border-radius: 33px;
                 text-decoration: none;
                 color: inherit;
+
+                &:hover{
+                    background-color: var(--site-primary-color-light);
+                    color: var(--site-secondary-color);
+                }
             }
         }
     }
