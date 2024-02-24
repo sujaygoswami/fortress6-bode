@@ -10167,6 +10167,11 @@ html body.bode {
   .bode .news-listing-module .basic-entry a, .bode .news-listing-module a {
     color: inherit !important;
     text-decoration: none !important; }
+    .bode .news-listing-module .basic-entry a .news-excerpt, .bode .news-listing-module a .news-excerpt {
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .bode .news-listing-module .basic-entry a:hover .news-excerpt, .bode .news-listing-module a:hover .news-excerpt {
+      color: var(--site-primary-color-light) !important; }
   .bode .news-listing-module .main-module .my-col {
     border-left: 1px solid; }
     .bode .news-listing-module .main-module .my-col:first-child {

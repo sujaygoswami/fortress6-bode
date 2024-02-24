@@ -2359,6 +2359,16 @@ html{
         .basic-entry a, a{
             color: inherit !important;
             text-decoration: none !important;
+
+            .news-excerpt{
+                @include transition(all 0.3s ease 0s);
+            }
+
+            &:hover{
+                .news-excerpt{
+                    color: var(--site-primary-color-light) !important;
+                }
+            }
         }
         .main-module{
             .my-col{
