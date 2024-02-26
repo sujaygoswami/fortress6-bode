@@ -9778,7 +9778,7 @@ html body.bode {
       .bode .banner-module .banner-image-module.set-back {
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left top; }
+        background-position: center top; }
   .bode .product-stage-image .main-wrap {
     background-image: url(../Images/global-product-stage.svg);
     background-position: center bottom 13px;

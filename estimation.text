@@ -465,6 +465,10 @@ date: 24.02.2024 [hours not given yet]
 34) https://app.asana.com/0/1205756026608526/1206676678336192
 ## cr 30 min [adding hover color to news listing]
 
+date: 26.02.2024 [hours not given yet]
+34) https://app.asana.com/0/1205756026608526/1206680601916406
+## cr 15 min [banner image positioning]
+
 
 STATUS OF NEW 95% COMPLETE DESIGN
 
@@ -496,6 +500,15 @@ ssh bodtvete@37.228.154.195
 yes
 LpS$f80D1bOT
 cd www.bode-global.com/
+pull
+ATBBjAV46rCK7mvCrRksfxXByfTUEFAC0A00
+
+staging pull migrate
+================
+ssh bodtvete@37.228.154.195
+yes
+LpS$f80D1bOT
+cd staging.bode-global.com
 pull
 ATBBjAV46rCK7mvCrRksfxXByfTUEFAC0A00
 
