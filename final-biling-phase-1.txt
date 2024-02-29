@@ -1,0 +1,191 @@
+======================================
+Esitimation for required animations
+======================================
+1) https://app.asana.com/0/1205756026608526/1205756026608529
+==> need r&d [spent 8hrs but not achieved finally on scroll behaviour]
+
+2) https://app.asana.com/0/1205756026608526/1205756026608537
+==> this item is done [spent 16hrs]
+
+3) https://app.asana.com/0/1205756026608526/1205756026608541
+==> for paralax effect [spent 3hrs but not achieved finally on scroll behaviour and also this is under discussion]
+
+4) https://app.asana.com/0/1205756026608526/1205756026608547
+==> this item is done [spent 4hrs, for now this content is not used in site]
+
+5) https://app.asana.com/0/1205756026608526/1205756029604359
+==> this is done [16hrs]
+
+6) https://app.asana.com/0/1205756026608526/1205756029604373
+==> need r&d [spent 8hrs but not achieved finally on scroll behaviour]
+
+7) https://app.asana.com/0/1205756026608526/1205766612702273
+==>  this is done [time spent: 5hrs]
+
+8) https://app.asana.com/0/1205756026608526/1205766612702279
+==> this is done [time spent:3hrs]
+
+9) https://app.asana.com/0/1205756026608526/1205766612702285
+==> this is done [time spent:2hrs]
+
+
+------------------
+TOTAL HOURS = 65hrs
+------------------
+
+|
+|
+|
+|
+|
+|
+
+======================================
+not pre estimated but achieved modules
+======================================
+
+1) https://xd.adobe.com/view/13130253-1f2c-4331-8c1f-f28499f16132-4640/screen/7f1bfe2a-d6cb-4ab4-b3c3-fb866f6bcf9a/specs/
+==> this is done [time spent: 16hrs (product hotspot with car swipe slide not pre estimated)]
+
+2) page 11 map [https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/c7d0e2f5-b602-49f6-a5dd-d196096a25d5/specs/]
+==> done [time spent: 12hrs (map module not pre estimated)]
+
+------------------
+TOTAL HOURS = 28hrs
+------------------
+
+|
+|
+|
+|
+|
+|
+
+====================
+NEW DESIGN EXTRA HRS
+====================
+
+1)The name of the page is displayed in a section of the image at the bottom left.
+Navigation bar: Should disappear when scrolling up. When scrolling up, the navigation bar should slide in again from top to bottom.
+## Done with related paralax change [New Feature: 4hrs ]
+
+2) Header video: The video starts automatically when the page is accessed. It has no sound and cannot be stopped by the user. The video runs in a loop, meaning it automatically restarts as soon as it reaches the end. There are two video versions in landscape and portrait format adapted to the desktop and mobile versions.
+## Done [New Feature: 3hrs]
+
+3) Mail-To-Link: info@ Schaltbau-bode.de
+## done [New Feature: 1hr]
+
+4) The arrow should be slightly enlarged when mouseover.
+When you mouse over, the yellow circle turns blue.
+## done [New Feature: 2hr]
+
+5) menu hmbg animation
+##done [2hrs]
+
+6) menu animation with body
+##done [1hr]
+
+7) home page new nes listing
+## done [2hrs]
+
+8) page 5 tag link module [https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/da44c74f-4550-4eb8-9741-508cc532f71f/specs/]
+## doen [1hr]
+
+9) page 5 tag new serialbox with new overlay style text[https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/da44c74f-4550-4eb8-9741-508cc532f71f/specs/]
+## doen [2hr]
+
+10) page 5 new list content with new news listing[https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/da44c74f-4550-4eb8-9741-508cc532f71f/specs/]
+## doen [1hr]
+
+11) page 5 new new elements mentioned above responsive [[https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/da44c74f-4550-4eb8-9741-508cc532f71f/specs/]]
+## doen [2hrs]
+
+12) page 6 new new elements with responsive [https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/daf285f5-4bfb-40f1-9f7a-9ebe78e02ce2/specs/]
+## doen [12hrs] [new elements: video and bild element eg: Erfahrungsberichte, new anchor cards over image element, email box]
+
+13) page 8 new new elements with responsive [https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/c03a4ecc-b298-4a20-beb3-b2cabcb1a0f5/specs/]
+## doen [8hrs] [the whole page is new]
+
+14) page 13 new new elements with responsive [https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/ed6ab5b1-0d66-4bf1-ab7b-97d1e9a901d5/specs/]
+## doen [8hrs] [the whole page is new]
+
+15) page 12 new new elements with responsive [https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/e55bf506-96a9-4f4f-8841-202fd11d5af0/specs/]
+## doen [5hrs] [new element: new card paralax]
+
+16) page 7 new new elements with responsive [https://xd.adobe.com/view/98b623bb-91fd-4d42-b2b8-4f419f2b8343-cde5/screen/e97848ed-5280-4cd3-8471-57899e57d465/specs/]
+## doen [16hrs] [new elements: mini serial box, radial counting serial box, mini card link boxes, fancy box new caption styling, faq, new team member informatio design]
+
+17) transparent curve link
+## doen [4hrs]
+
+------------------
+TOTAL HOURS = 74hrs
+------------------
+
+|
+|
+|
+|
+|
+|
+
+
+====================
+CR HOURS WITH TICKETS
+====================
+1) https://app.asana.com/0/1205756026608526/1206533713023164
+## 30min
+
+2) https://app.asana.com/0/1205756026608526/1206431115498637
+## 1hr
+
+3) https://app.asana.com/0/1205756026608526/1206544335205001
+## 1hr
+
+4) https://app.asana.com/0/1205756026608526/1206589676304746
+## 30min
+
+5) https://app.asana.com/0/1205756026608526/1206589677767325
+## 1hr
+
+6) https://app.asana.com/0/1205756026608526/1206533713023164
+## 15min
+
+7) https://app.asana.com/0/1205756026608526/1206612816956591
+8) https://app.asana.com/0/1205756026608526/1206545303355370
+## 1hr
+
+9) https://app.asana.com/0/1205756026608526/1206620992040875
+## design cr adjustment, we have not found such thing in our mobile browser and mobile chrome browser, altough we have move this to right for 1px in mobile devices, please chek once. [30min]
+
+10) https://app.asana.com/0/1205756026608526/1206620992040887
+## 30min
+
+11) https://app.asana.com/0/1205756026608526/1206632882357764
+## 15min
+
+12) https://app.asana.com/0/1205756026608526/1206431115498637
+## 30min
+
+13) https://app.asana.com/0/1205756026608526/1206656732651362
+## 30min
+
+14) https://app.asana.com/0/1205756026608526/1206656732651354
+## 3hrs
+
+15) https://app.asana.com/0/1205756026608526/1206656734907644
+## 30min
+
+16)  https://app.asana.com/0/1205756026608526/1206667556051236
+https://app.asana.com/0/1205756026608526/1206667556051242
+## 30min
+
+17) https://app.asana.com/0/1205756026608526/1206676678336192
+## 30min
+
+18) https://app.asana.com/0/1205756026608526/1206680601916406
+## 15min
+
+------------------
+TOTAL HOURS = 12.30hrs
+------------------
