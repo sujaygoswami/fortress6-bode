@@ -186,6 +186,10 @@ html{
         @include border-radius(20px);
     }
 
+    .section-overflow-x-hidden-all-device{
+        overflow-x: hidden;
+    }
+
     .section-mx-height-100{
         max-height: 100vh;
     }
@@ -4648,5 +4652,62 @@ html{
         }
     }
     // map-slider-module
+
+    // type-element-count-slider
+    .type-element-count-slider{
+        .slick-dots{
+            margin: 50px 0 0 0;
+            padding: 0px;
+            text-align: center;
+
+            li{
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 7px;
+                padding: 0px;
+                width: 88px;
+                height: 6px;
+                font-size: 0px;
+                background-color: var(--site-secondary-color);
+                opacity: 0.4;
+                overflow: hidden;
+                border-radius: 15px;
+                &.slick-active{
+                    opacity: 1;
+                }
+                button{
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    border: none;
+                }
+            }
+        }
+        .slick-slider{
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+        @media screen and (max-width: ($xxl - 1px)) and (min-width: $md) {
+            .slick-list{
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            .slick-slide{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        @media screen and (min-width: $xxl) {
+            .slick-list{
+                margin-left: -45px;
+                margin-right: -45px;
+            }
+            .slick-slide{
+                padding-left: 45px;
+                padding-right: 45px;
+            }
+        }
+    }
+    // type-element-count-slider
 
 }

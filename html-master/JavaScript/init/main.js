@@ -716,7 +716,27 @@ jQuery('.frame').addClass('basic-entry');
       });
     });
 
-  }
+  };
+
+// type element count slider type 1
+site.TYPEELEMENTCOUNTSLIDERTYPE1 = function () {
+  jQuery('.type-element-count-slider-type-1').each(function(){
+    var ELEMENTCOUNT = jQuery(this).find('.count-slider-element').length;
+    var SLIDERWRAP = jQuery(this).find('> .row');
+    if(ELEMENTCOUNT > 3){
+        SLIDERWRAP.slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false
+        });
+    }
+  });
+};
+if ($(window).width() >= 1000) {
+  site.TYPEELEMENTCOUNTSLIDERTYPE1();
+}
 
 
 
