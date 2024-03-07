@@ -1,22 +1,33 @@
 // client logo slider
-if ($(".splide").length) {
-  document.addEventListener('DOMContentLoaded', function () {
-    new Splide('.client-logo-module .splide', {
-      type: 'loop',
-      drag: 'free',
-      focus: 'center',
-      arrows: false,
-      pagination: false,
-      autoWidth: true,
-      gap: 112,
-      perPage: 7,
-      autoScroll: {
-        speed: 1,
-      },
-    }).mount(window.splide.Extensions);
-  });
-}
+// if ($(".splide").length) {
+//   document.addEventListener('DOMContentLoaded', function () {
+//     new Splide('.client-logo-module .splide', {
+//       type: 'loop',
+//       drag: 'free',
+//       focus: 'center',
+//       arrows: false,
+//       pagination: false,
+//       autoWidth: true,
+//       gap: 112,
+//       perPage: 7,
+//       autoScroll: {
+//         speed: 1,
+//       },
+//     }).mount(window.splide.Extensions);
+//   });
+// }
 
+
+// splide radial count slider
+if ($(".splide-radial-count-slider").length) {
+  var splideRadialCount = new Splide( '.splide-radial-count-slider .splide', {
+    direction: 'ttb',
+    height   : '10rem',
+    wheel    : true,
+  } );
+  
+  splideRadialCount.mount();
+}
 
 
 jQuery(document).ready(function () {
@@ -529,11 +540,11 @@ jQuery('.frame').addClass('basic-entry');
     );
 
     if ($(window).width() >= 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
 
     if ($(window).width() < 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
   });
 

@@ -1101,6 +1101,43 @@ html{
 
     // special-iconic-input-box
     .special-iconic-input-box{
+
+        &.centered-auto-width{
+            text-align: center;
+            max-width: inherit !important;
+
+            a{
+                display: inline-block;
+                
+            }
+        }
+
+        &.color-type-2{
+            .main-wrap{
+                background-color: var(--site-secondary-color);
+            }
+
+            a{
+                &:hover{
+                    .main-wrap{
+                        background-color: var(--site-primary-color);
+
+                        &.has-iconic-bg{
+                            &.mail-send-input{
+                                &:before{
+                                    background-image: url(../Images/paper-plane-white.svg);
+                                }
+                            }
+                        }
+                    }
+
+                    .text-input{
+                        color: white;
+                    }
+                }
+            }
+        }
+
         &.has-center-width{
             margin: 0 auto;
             .text-input{
@@ -1119,6 +1156,13 @@ html{
             overflow: hidden;
             position: relative;
             background-color: white;
+
+            &.has-no-icon-bg{
+                .text-input{
+                    padding: 0 30px;
+                }
+            }
+            
 
             &.button-type{
                 line-height: 70px;
@@ -1154,7 +1198,7 @@ html{
 
         .text-input{
             height: 100%;
-            padding: 0 20px 0 77px;
+            padding: 0 30px 0 77px;
             border: none;
             background-color: transparent;
             font-size: 20px;

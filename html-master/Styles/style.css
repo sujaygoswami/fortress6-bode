@@ -9389,6 +9389,19 @@ html body.bode {
       background-color: var(--site-primary-color-light); }
     .bode .curve-link.hover-type-primary span:after {
       background-color: var(--site-primary-color); }
+  .bode .special-iconic-input-box.centered-auto-width {
+    text-align: center;
+    max-width: inherit !important; }
+    .bode .special-iconic-input-box.centered-auto-width a {
+      display: inline-block; }
+  .bode .special-iconic-input-box.color-type-2 .main-wrap {
+    background-color: var(--site-secondary-color); }
+  .bode .special-iconic-input-box.color-type-2 a:hover .main-wrap {
+    background-color: var(--site-primary-color); }
+    .bode .special-iconic-input-box.color-type-2 a:hover .main-wrap.has-iconic-bg.mail-send-input:before {
+      background-image: url(../Images/paper-plane-white.svg); }
+  .bode .special-iconic-input-box.color-type-2 a:hover .text-input {
+    color: white; }
   .bode .special-iconic-input-box.has-center-width {
     margin: 0 auto; }
     .bode .special-iconic-input-box.has-center-width .text-input {
@@ -9406,6 +9419,8 @@ html body.bode {
     overflow: hidden;
     position: relative;
     background-color: white; }
+    .bode .special-iconic-input-box .main-wrap.has-no-icon-bg .text-input {
+      padding: 0 30px; }
     .bode .special-iconic-input-box .main-wrap.button-type {
       line-height: 70px; }
       .bode .special-iconic-input-box .main-wrap.button-type:hover {
@@ -9426,7 +9441,7 @@ html body.bode {
       background-size: 22.74px; }
   .bode .special-iconic-input-box .text-input {
     height: 100%;
-    padding: 0 20px 0 77px;
+    padding: 0 30px 0 77px;
     border: none;
     background-color: transparent;
     font-size: 20px;
@@ -12383,6 +12398,8 @@ html body.bode {
         border-bottom: none; }
     .bode .special-iconic-input-box .main-wrap {
       height: 40px; }
+      .bode .special-iconic-input-box .main-wrap.has-no-icon-bg .text-input {
+        padding: 0 20px; }
       .bode .special-iconic-input-box .main-wrap.button-type {
         line-height: 40px; }
       .bode .special-iconic-input-box .main-wrap.has-iconic-bg:before {

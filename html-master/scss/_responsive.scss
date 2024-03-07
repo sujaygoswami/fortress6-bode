@@ -1110,6 +1110,11 @@
         .special-iconic-input-box{
             .main-wrap{
                 height: 40px;
+                &.has-no-icon-bg{
+                    .text-input{
+                        padding: 0 20px;
+                    }
+                }
                 &.button-type{
                     line-height: 40px;
                 }
