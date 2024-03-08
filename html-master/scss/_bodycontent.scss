@@ -1,4 +1,5 @@
 html{
+    // scroll-behavior: auto !important;
     body.bode{
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
@@ -1160,6 +1161,9 @@ html{
             &.has-no-icon-bg{
                 .text-input{
                     padding: 0 30px;
+                    text-transform: uppercase;
+                    font-weight: var(--site-primary-font-Semibold);
+                    letter-spacing: 3.6px;
                 }
             }
             
