@@ -505,10 +505,10 @@ jQuery('.frame').addClass('basic-entry');
       $(PARENTS).find('.slidings-tiles.type-1'), .5, { css: { top: -APPLIEDTOTALHEIGHTPLUS } }
     );
     if ($(window).width() >= 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
     if ($(window).width() < 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
   });
 
@@ -522,10 +522,10 @@ jQuery('.frame').addClass('basic-entry');
       $(PARENTS).find('.slidings-tiles.type-2'), .5, { css: { top: -APPLIEDTOTALHEIGHT } }
     );
     if ($(window).width() >= 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
     if ($(window).width() < 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
   });
 
@@ -558,10 +558,10 @@ jQuery('.frame').addClass('basic-entry');
       $(PARENTS).find('.slidings-tiles.type-3'), .5, { css: { top: -TOTALHEIGHTPLUS } }
     );
     if ($(window).width() >= 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
     if ($(window).width() < 1000) {
-      controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+      controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
     }
   });
 
@@ -578,10 +578,10 @@ jQuery('.frame').addClass('basic-entry');
         $(PARENTS).find('.slidings-tiles.type-3'), .5, { css: { top: -APPLIEDASPERHEIGHT } }
       );
       if ($(window).width() >= 1000) {
-        controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+        controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
       }
       if ($(window).width() < 1000) {
-        controller.pin(PARENTS, 4000, { offset: -30, anim: paralaxCard });
+        controller.pin(PARENTS, 1500, { offset: -30, anim: paralaxCard });
       }
     }
   });

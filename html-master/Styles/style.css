@@ -10844,6 +10844,9 @@ html body.bode {
   .bode .paralax-pause-scroller {
     width: 100%;
     margin-top: -30px; }
+    .bode .paralax-pause-scroller.type-1 .slidings-tiles, .bode .paralax-pause-scroller.type-2 .slidings-tiles, .bode .paralax-pause-scroller.type-3 .slidings-tiles, .bode .paralax-pause-scroller.type-4 .slidings-tiles, .bode .paralax-pause-scroller.type-6 .slidings-tiles {
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
   .bode .sliding-card-module-text-tile-view.no-height {
     height: 0px; }
   .bode .sliding-card-module-text-tile-view .slidings-tiles.type-1 {

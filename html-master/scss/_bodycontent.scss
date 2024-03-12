@@ -8,21 +8,9 @@ html{
         word-wrap: anywhere;
         // word-break: inherit;
 
-        *{
-            // word-break: inherit !important;
-        }
+       
 
-        .sliding-card-module-text-tile-view{
-            .slidings-tiles{
-                &.type-1{
-                    .my-col{
-                        & > .main-wrap{
-                            // word-break: inherit;
-                        }
-                    }
-                }
-            }
-        }
+       
     }
   }
 
@@ -3478,6 +3466,14 @@ html{
     .paralax-pause-scroller{
         width: 100%;
         margin-top: -30px;
+
+        
+            &.type-1,  &.type-2,  &.type-3,  &.type-4, &.type-6{
+                .slidings-tiles{
+                    @include transition(all 0.3s ease 0s);
+                }
+            }
+       
     }
     // paralax-pause-scroller
 
