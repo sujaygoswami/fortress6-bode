@@ -709,7 +709,11 @@ jQuery('.frame').addClass('basic-entry');
     });
 
     jQuery('.type-mobile-slider-type-two').each(function () {
-      var RESPONSIVEMEASURECARDSLIDERELEMENT = jQuery(this).find('> .row');
+      var TESTIOTHERCONTENT = jQuery(this).find('.testimonial-other-content');
+      var SLIDERTARGETEDROW = jQuery(this).find('.slider-target-row');
+      jQuery(TESTIOTHERCONTENT).detach().insertAfter(SLIDERTARGETEDROW);
+      jQuery(TESTIOTHERCONTENT).wrap('<div class="row my-row"></div>');
+      var RESPONSIVEMEASURECARDSLIDERELEMENT = jQuery(this).find('> .row.slider-target-row');
       RESPONSIVEMEASURECARDSLIDERELEMENT.slick({
         infinite: false,
         slidesToShow: 2,
