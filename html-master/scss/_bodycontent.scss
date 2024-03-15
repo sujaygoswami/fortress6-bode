@@ -3475,7 +3475,7 @@ html{
         
             &.type-1,  &.type-2,  &.type-3,  &.type-4, &.type-6{
                 .slidings-tiles{
-                    @include transition(all 0.3s ease 0s);
+                    @include transition(all 0.1s ease 0s);
                 }
             }
        
