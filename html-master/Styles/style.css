@@ -12463,7 +12463,7 @@ html body.bode {
     .bode footer.footer .footer-mail-box {
       margin-bottom: 55px; }
     .bode footer.footer .special-iconic-input-box {
-      max-width: 230px;
+      max-width: inherit;
       margin: 0 auto; }
       .bode footer.footer .special-iconic-input-box .text-input {
         width: 100%; }
