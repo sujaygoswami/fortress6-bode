@@ -9452,7 +9452,6 @@ html body.bode {
     border: none;
     background-color: transparent;
     font-size: 20px;
-    width: 360px;
     color: var(--site-primary-color); }
     .bode .special-iconic-input-box .text-input::placeholder {
       opacity: 1;

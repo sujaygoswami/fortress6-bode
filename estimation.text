@@ -546,6 +546,17 @@ pull
 ATBBjAV46rCK7mvCrRksfxXByfTUEFAC0A00
 
 
+live merge
+==============
+git checkout dev
+pull
+git checkout master
+git merge dev
+git commit
+git push
+ATBBjAV46rCK7mvCrRksfxXByfTUEFAC0A00
+
+
 
 
 
