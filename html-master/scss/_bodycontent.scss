@@ -8,6 +8,30 @@ html{
         word-wrap: anywhere;
         // word-break: inherit;
 
+        &.no-touch{
+            .splide-radial-count-slider{
+                .splide__pagination{
+                    display: none;
+                }
+            }
+        }
+
+        &.touch{
+            
+
+            @media screen and (max-width: $lg){
+                .splide-radial-count-slider{
+                    .splide__slide{
+                        .container{
+                            .main-wrap{
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
        
 
        
@@ -4766,6 +4790,19 @@ html{
         // background-color: grey;
         // padding-top: 370px;
 
+        .splide__pagination__page{
+            
+                background-color: var(--site-primary-color-light);
+                width: 20px;
+                height: 20px;
+                margin: 10px 3px;
+
+                &.is-active{
+                    transform: none;
+                }
+            
+        }
+
         @media screen and (max-height: (800px)) {
             // typo graphy
             // .basic-entry{
@@ -4898,7 +4935,8 @@ html{
         }
 
         &.splide-ends{
-            pointer-events: none;
+            // pointer-events: none;
+            // touch-action: none;
         }
         
 
