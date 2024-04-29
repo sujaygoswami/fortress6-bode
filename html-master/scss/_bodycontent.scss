@@ -69,8 +69,43 @@ html{
     }
 
     .tx-powermail{
-        .powermail_label{
+        visibility: hidden;
+        pointer-events: none;
+        & > .container-fluid{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        &.loaded{
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .powermail_select-wrap{
+            position: relative;
+            select{
+                padding-right: 45px;
+            }
+            &:after{
+                font-family: 'FontAwesome';
+                content: "\f107";
+                color: var(--site-primary-color-light);
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                pointer-events: none;
+                display: block;
+                z-index: 1;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-size: 30px;
+            }
+        }
+        .powermail_label, .form-check-label{
             font-size: 18px;
+        }
+
+        .form-check-input{
+            margin-top: 0.5em;
         }
     }
 

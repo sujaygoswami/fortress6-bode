@@ -187,6 +187,13 @@ jQuery('.tx-powermail').each(function(){
   jQuery(this).find('.powermail_input').addClass('form-control');
   jQuery(this).find('textarea').addClass('form-control');
   jQuery(this).find('.powermail_submit').addClass('site-btn');
+  jQuery(this).find('.powermail_fieldwrap_type_radio, .powermail_fieldwrap_type_checkbox').addClass('form-check');
+  jQuery(this).find('.powermail_radio, .powermail_checkbox').addClass('form-check-input');
+  jQuery(this).find('.radio label, .checkbox label').addClass('form-check-label');
+  jQuery(this).find('.radio, .checkbox').each(function(){
+    jQuery(this).find('input').detach().prependTo(this);
+  });
+  jQuery(this).find('.powermail_select').wrap('<div class="powermail_select-wrap"></div>');
 });
 
 
@@ -1164,6 +1171,10 @@ jQuery('#matomo-opt-out').addClass('container-inset mx-auto');
 
   // type-mobile-slider
   jQuery('.type-mobile-slider, .type-mobile-slider-type-two').find('.slick-list').css('overflow', 'inherit');
+
+
+  // powermail loaded
+  jQuery('.tx-powermail').addClass('loaded');
 
 
 });
