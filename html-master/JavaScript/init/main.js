@@ -179,7 +179,15 @@ jQuery(document).ready(function () {
   checkMobile();
 
 
-
+// tx-powermail
+jQuery('.tx-powermail').each(function(){
+  jQuery(this).find('.powermail_fieldwrap').addClass('mb-3');
+  jQuery(this).find('.powermail_label').addClass('form-label');
+  jQuery(this).find('.powermail_select').addClass('form-control');
+  jQuery(this).find('.powermail_input').addClass('form-control');
+  jQuery(this).find('textarea').addClass('form-control');
+  jQuery(this).find('.powermail_submit').addClass('site-btn');
+});
 
 
 
