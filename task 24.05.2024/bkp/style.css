@@ -11599,23 +11599,17 @@ html body.bode {
     list-style: none; }
     .bode .map-slider-module .nav-dots ul li {
       margin: 0px;
-      padding: 1px;
+      padding: 3px;
       display: inline-block;
       position: absolute;
       left: 0px;
       top: 0px;
-      width: 10px;
-      height: 10px;
-      border: 1px solid transparent;
+      width: 25px;
+      height: 25px;
+      border: 2px solid transparent;
       border-radius: 100%;
       -webkit-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s; }
-      @media screen and (min-width: 1000px) {
-        .bode .map-slider-module .nav-dots ul li {
-          width: 25px;
-          height: 25px;
-          border: 2px solid transparent;
-          padding: 3px; } }
       @media screen and (min-width: 1700px) {
         .bode .map-slider-module .nav-dots ul li {
           width: 44px;
