@@ -971,7 +971,8 @@ if ($(window).width() >= 1000) {
   });
 
 
-
+  // custom select
+  jQuery('.job-advance-search-module .custom-select-menu').selectmenu();
 
 
 });
