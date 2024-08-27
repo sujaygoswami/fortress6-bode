@@ -972,7 +972,7 @@ if ($(window).width() >= 1000) {
 
 
   // custom select
-  jQuery('.job-advance-search-module .custom-select-menu').selectmenu();
+  // jQuery('.job-advance-search-module .custom-select-menu').selectmenu();
 
 
 });
@@ -1022,7 +1022,28 @@ jQuery('#matomo-opt-out').addClass('container-inset mx-auto');
     jQuery(this).find('.previous').addClass('curve-link type-3-back hover-type-primary-light no-text-button size-type-2');
     jQuery(this).find('.next').addClass('curve-link type-2 hover-type-primary-light no-text-button size-type-2');
 
+   
+
+
   });
+
+  jQuery('.flickty-slider-parent').each(function(){
+    var $carousel = jQuery(this).find('.cover-slider-module').flickity();
+    var $carouselStatus = jQuery(this).find('.carousel-status');
+    var flkty = $carousel.data('flickity');
+
+    function updateStatus() {
+      var cellNumber = flkty.selectedIndex + 1;
+      $carouselStatus.text( cellNumber + '/' + flkty.slides.length );
+    }
+    updateStatus();
+    $carousel.on( 'change.flickity', updateStatus );
+  });
+
+
+
+
+
 
 
   // navigation
