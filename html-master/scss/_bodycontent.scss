@@ -308,6 +308,11 @@ html{
         padding-bottom: 125px;
     }
 
+    .section-padding-type-9{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
     .section-padding-default{
         padding-top: 90px;
         padding-bottom: 90px;
@@ -631,6 +636,14 @@ html{
             }
         }
 
+        &.special-row-gap-extreme-lg{
+            row-gap: 40px;
+
+            @media screen and (min-width: $md) {
+                row-gap: 120px;
+            }
+        }
+
         &.special-row-gap-lg{
             row-gap: 40px;
 
@@ -803,6 +816,27 @@ html{
         text-decoration: none;
         border: none;
         font-weight: var(--site-primary-font-Semibold);
+
+        &.no-bg{
+            background-image: none !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            min-height: 75px;
+            line-height: 75px;
+
+            @media screen and (max-width: $sm) {
+                min-height: 40px;
+                line-height: 40px;
+            }
+
+            &.type-3-back{
+                padding-left: 97px;
+
+                @media screen and (max-width: $sm) {
+                    padding-left: 62px;
+                }
+            }
+        }
 
         &.angle-view{
             span{
@@ -1330,6 +1364,22 @@ html{
     }
     .basic-entry{
 
+        .normal-table-content{
+            table{
+                border: 0px;
+
+                td{
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding: 10px 30px 10px 10px;
+
+                    &:first-child{
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+
         &.link-white{
             a{
                 color: white !important;
@@ -1408,6 +1458,12 @@ html{
                 font-size: 60px;
                 line-height: 70px;
             }
+        }
+
+        .focus-header{
+            font-family: var(--site-secondary-font);
+            font-weight: var(--site-secondary-font-normal);
+            text-transform: uppercase;
         }
 
         h2{
@@ -1595,7 +1651,7 @@ html{
         }
 
         a{
-            &:not(.site-btn){
+            &:not(.site-btn):not(.curve-link){
                 text-decoration: none;
                 color: var(--site-primary-color-light);
             }
@@ -3014,6 +3070,14 @@ html{
     }
     .cover-slider-module{
 
+        &.has-page-status{
+            @media screen and (max-width: ($xlPlus - 1px)) {
+                .slider-element{
+                    padding-top: 100px !important;
+                }
+            }
+        }
+
         &.has-cover-bg{
             .flickity-button{
                 bottom: 63px;
@@ -3072,7 +3136,7 @@ html{
             
             &.content-slider{
                 &.view-1{
-                    padding: 100px 124px;
+                    padding: 100px 0;
                 }
             }
         }
@@ -3238,8 +3302,13 @@ html{
     .measure-card-module{
 
         .bottom-absolute-content{
-            position: absolute;
-            bottom: 75px;
+            padding: 50px 0 0 0;
+            @media screen and (min-width: $smEnd) {
+                position: absolute;
+                bottom: 75px;
+                padding: 0px;
+            }
+            
         }
 
         &.type-content-listing-view{
@@ -5249,6 +5318,7 @@ html{
             column-gap: 18px;
             align-items: center;
             row-gap: 18px;
+            flex-wrap: wrap;
 
             .item-normal{
                 text-decoration: underline;
@@ -5288,7 +5358,13 @@ html{
 
             .form-block-wrap{
                 &.width-type-1{
-                    width: 363px;
+                    width: 100%;
+                    @media screen and (min-width: $xl) {
+                        width: 300px;
+                    }
+                    @media screen and (min-width: $xxl) {
+                        width: 363px;
+                    }
                 }
             }
         }
@@ -5312,6 +5388,7 @@ html{
             align-items: center;
             padding-left: 8.5px;
             padding-right: 8.5px;
+            flex-wrap: wrap;
 
             .form-block-wrap{
                 padding-left: 0px;
@@ -5332,10 +5409,25 @@ html{
             padding-right: 8.5px; 
 
             &.width-type-1{
-                width: 342px;
+                width: 100%;
+                @media screen and (min-width: $xl) {
+                    width: 300px;
+                }
+                @media screen and (min-width: $xxl) {
+                    width: 342px;
+                }
+                
             }
             &.width-type-2{
-                width: 280px;
+                width: 100%;
+
+                @media screen and (min-width: $xl) {
+                    width: 250px;
+                }
+
+                @media screen and (min-width: $xxl) {
+                    width: 280px;
+                }
             }
         }
 
@@ -5544,4 +5636,22 @@ html{
     }
     // iconic feature widget module
 
+    // global-back-header
+    .global-back-header{
+        @media screen and (max-width: $sm) {
+            margin-bottom: 60px;
+        }
+    }
+    // global-back-header
+
 }
+
+
+/* changes 30.05.2024 */
+.bode .tx-powermail .form-label{
+    margin-bottom: 0.1rem;
+  }
+  .bode .tx-powermail .form-control{
+    border: none;
+  }
+  /* changes 30.05.2024 */

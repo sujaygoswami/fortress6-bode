@@ -181,7 +181,7 @@ jQuery(document).ready(function () {
 
 // tx-powermail
 jQuery('.tx-powermail').each(function(){
-  jQuery(this).find('.powermail_fieldwrap').addClass('mb-4');
+  jQuery(this).find('.powermail_fieldwrap').addClass('mb-3');
   jQuery(this).find('.powermail_label').addClass('form-label');
   jQuery(this).find('.powermail_select').addClass('form-control');
   jQuery(this).find('.powermail_input').addClass('form-control');
@@ -902,9 +902,7 @@ if ($(window).width() >= 1000) {
           breakpoint: 999,
           settings: {
             fade: false,
-            infinite: false,
-            draggable: true,
-            swipe: true,
+            infinite: false
           }
         }
       ]
@@ -951,15 +949,6 @@ if ($(window).width() >= 1000) {
       e.stopPropagation();
     });
 
-
-    // On swipe event
-    jQuery(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
-      jQuery('.slick-dots-clone-wrap li').removeClass('current');
-      var AFTERCHAGEACTIVEDOT = jQuery(this).find('.slick-dots-wrap .slick-active').attr('data-dot');
-      jQuery(this).find('.slick-dots-clone-wrap').find('.' + AFTERCHAGEACTIVEDOT).addClass('current');
-      event.stopPropagation();
-    });
-
     jQuery(this).find('.slick-dots-clone-wrap').detach().appendTo(this);
 
     jQuery(this).find('.slick-dots-wrap').detach().prependTo(this);
@@ -984,14 +973,6 @@ if ($(window).width() >= 1000) {
 
   // custom select
   // jQuery('.job-advance-search-module .custom-select-menu').selectmenu();
-
-  // measure-card-module bottom absolute content
-  jQuery('.measure-card-module .bottom-absolute-content').each(function(){
-    var HEIGHT = jQuery(this).height();
-    if ($(window).width() >= 768) {
-      jQuery(this).parents('.measure-card-info').find('.basic-entry').not(this).css('margin-bottom', HEIGHT);
-    }
-  });
 
 
 });
@@ -1133,11 +1114,6 @@ jQuery('#matomo-opt-out').addClass('container-inset mx-auto');
 
   jQuery('.equal-description').matchHeight();
   jQuery('.equal-heading').matchHeight();
-
-  
-
-
-  jQuery('.map-slider-module .sliding-item .map-info').matchHeight();
 
 
   // paralax
