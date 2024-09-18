@@ -1525,7 +1525,7 @@ html{
             }
         }
 
-        ul:not(.normal-listing){
+        ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi){
             list-style: none;
             // margin: 0px;
             padding: 0px;

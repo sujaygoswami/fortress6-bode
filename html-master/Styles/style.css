@@ -10198,16 +10198,16 @@ html body.bode {
     margin-bottom: 40px; }
     .bode .basic-entry ul:last-child, .bode .basic-entry ol:last-child {
       margin-bottom: 0px; }
-  .bode .basic-entry ul:not(.normal-listing) {
+  .bode .basic-entry ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi) {
     list-style: none;
     padding: 0px; }
-    .bode .basic-entry ul:not(.normal-listing) li {
+    .bode .basic-entry ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi) li {
       margin: 15px 0 0 0;
       padding: 0 0 0 36px;
       position: relative; }
-      .bode .basic-entry ul:not(.normal-listing) li:first-child {
+      .bode .basic-entry ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi) li:first-child {
         margin-top: 0px; }
-      .bode .basic-entry ul:not(.normal-listing) li:before {
+      .bode .basic-entry ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi) li:before {
         content: ' ';
         display: block;
         width: 20.13px;
@@ -13137,10 +13137,10 @@ html body.bode {
       font-size: 13px;
       line-height: 22px;
       margin-bottom: 20px; }
-    .bode .basic-entry ul li, .bode .basic-entry ul:not(.normal-listing) li {
+    .bode .basic-entry ul li, .bode .basic-entry ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi) li {
       padding-left: 20px;
       margin-top: 15px; }
-      .bode .basic-entry ul li:before, .bode .basic-entry ul:not(.normal-listing) li:before {
+      .bode .basic-entry ul li:before, .bode .basic-entry ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi) li:before {
         background-size: 11.85px;
         top: 6px; }
     .bode .basic-entry p.sm-para {

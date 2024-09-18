@@ -521,7 +521,7 @@
                 margin-bottom: 20px;
             }
 
-            ul, ul:not(.normal-listing){
+            ul, ul:not(.normal-listing):not(.number-pagi):not(.fwd-bwd-pagi){
                 li{
                     padding-left: 20px;
                     margin-top: 15px;
