@@ -203,6 +203,7 @@ jQuery('.tx-powermail').each(function(){
 // text frame
 jQuery('.text-white + .frame').addClass('text-white');
 jQuery('.frame').addClass('basic-entry');
+jQuery('.no-basic-entry-frame').parent('.frame').removeClass('basic-entry');
 
 
 
