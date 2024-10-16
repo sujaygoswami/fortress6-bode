@@ -55,6 +55,13 @@ html{
         
     }
 
+    a{
+        &.text-white-underline-link{
+            color: white !important;
+            text-decoration: underline !important;
+        }
+    }
+
     main{
         margin-top: 0px;
         @include transition(all 0.5s ease 0s);
@@ -3069,6 +3076,16 @@ html{
         }
     }
     .cover-slider-module{
+
+        &.no-page-dots{
+            .flickity-page-dots{
+                display: none;
+            }
+
+            .flickity-button{
+                bottom: 0px;
+            }
+        }
 
         &.has-page-status{
             @media screen and (max-width: ($xlPlus - 1px)) {

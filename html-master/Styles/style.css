@@ -9300,6 +9300,9 @@ html body.bode {
       -webkit-mask-size: cover;
       mask-position: bottom right;
       -webkit-mask-position: bottom right; } }
+  .bode a.text-white-underline-link {
+    color: white !important;
+    text-decoration: underline !important; }
   .bode main {
     margin-top: 0px;
     -webkit-transition: all 0.5s ease 0s;
@@ -11174,6 +11177,10 @@ html body.bode {
       line-height: 36px;
       font-weight: var(--site-primary-font-Semibold);
       color: var(--site-grey-type-1); }
+  .bode .cover-slider-module.no-page-dots .flickity-page-dots {
+    display: none; }
+  .bode .cover-slider-module.no-page-dots .flickity-button {
+    bottom: 0px; }
   @media screen and (max-width: 1399px) {
     .bode .cover-slider-module.has-page-status .slider-element {
       padding-top: 100px !important; } }
