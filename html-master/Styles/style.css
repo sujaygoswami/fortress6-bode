@@ -12714,9 +12714,22 @@ html body.bode {
       .bode .job-advance-search-module .search-input-text-field.iconic.iconic-search {
         background-image: url(../Images/header-search.svg);
         background-size: 16.22px; }
-      .bode .job-advance-search-module .search-input-text-field.iconic input {
+      .bode .job-advance-search-module .search-input-text-field.iconic input:not(.field-inside-action-button) {
         padding-left: 55px; }
-    .bode .job-advance-search-module .search-input-text-field input {
+    .bode .job-advance-search-module .search-input-text-field.has-field-button {
+      position: relative; }
+      .bode .job-advance-search-module .search-input-text-field.has-field-button .field-inside-action-button {
+        position: absolute;
+        font-size: 0px;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        height: 100%;
+        width: 55px; }
+    .bode .job-advance-search-module .search-input-text-field input:not(.field-inside-action-button) {
       width: 100%;
       height: 100%;
       margin: 0px;
@@ -12725,7 +12738,7 @@ html body.bode {
       background-color: transparent;
       font-size: 18px;
       color: var(--site-primary-color); }
-      .bode .job-advance-search-module .search-input-text-field input::placeholder {
+      .bode .job-advance-search-module .search-input-text-field input:not(.field-inside-action-button)::placeholder {
         opacity: 1;
         color: var(--site-primary-color); }
   .bode .iconic-feature-widget-module .main-icon-widget-holder {

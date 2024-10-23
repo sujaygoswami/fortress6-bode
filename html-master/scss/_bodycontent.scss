@@ -5594,11 +5594,26 @@ html{
                     background-image: url(../Images/header-search.svg);
                     background-size: 16.22px;
                 }
-                input{
+                input:not(.field-inside-action-button){
                     padding-left: 55px;
                 }
             }
-            input{
+            &.has-field-button{
+                position: relative;
+                .field-inside-action-button{
+                    position: absolute;
+                    font-size: 0px;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 1;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 55px;
+                }
+            }
+            input:not(.field-inside-action-button){
                 width: 100%;
                 height: 100%;
                 margin: 0px;
