@@ -994,6 +994,15 @@ if ($(window).width() >= 1000) {
     }
   });
 
+  // show-selected-filter
+  // jQuery('.show-selected-filter .this-check-box').click(function(){
+  //   if(jQuery(this).is(':checked')) {
+  //     var CHECKEDITEM = jQuery(this).parent().find('.this-check-box-label').html();
+  //     jQuery(this).parents('.show-selected-filter').find('.dropdown-toggle span').html(CHECKEDITEM);
+  //     jQuery(this).parents('.show-selected-filter').find('.dropdown-toggle').trigger('click');
+  //   }
+  // });
+
 
 });
 
